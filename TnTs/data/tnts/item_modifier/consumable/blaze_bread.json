@@ -1,0 +1,33 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "text": "烈焰面包",
+        "color": "gold"
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["blaze_bread"]
+      },
+      "minecraft:consumable": {
+        "sound": "minecraft:entity.generic.eat",
+        "on_consume_effects": [
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:fire_resistance",
+                "duration": 200
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:food": {
+        "can_always_eat": true,
+        "nutrition": 5,
+        "saturation": 6
+      }
+    }
+  }
+]

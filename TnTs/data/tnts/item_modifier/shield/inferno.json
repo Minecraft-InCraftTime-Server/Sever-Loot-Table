@@ -1,0 +1,86 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:max_damage": 532,
+      "minecraft:rarity": "epic",
+      "minecraft:repairable": {
+        "items": "minecraft:blaze_rod"
+      },
+      "minecraft:tooltip_style": "tnts:inferno",
+      "minecraft:item_name": {
+        "translate": "item.tnts.inferno_shield",
+        "fallback": "Inferno Shield",
+        "color": "#FB9439"
+      },
+      "minecraft:enchantments": {
+        "tnts:attribute/inferno_shield": 1
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["inferno_shield"]
+      },
+      "minecraft:weapon": {
+        "item_damage_per_attack": 2
+      },
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:panic_causes"
+      },
+      "minecraft:use_cooldown": {
+        "seconds": 0.05,
+        "cooldown_group": "tnts:inferno_shield"
+      },
+      "minecraft:blocks_attacks": {
+        "block_delay_seconds": 0.25,
+        "disable_cooldown_scale": 0.6,
+        "item_damage": {
+          "threshold": 3,
+          "base": 1,
+          "factor": 1
+        },
+        "block_sound": "minecraft:entity.blaze.hurt",
+        "disabled_sound": "minecraft:item.shield.break",
+        "bypassed_by": "#minecraft:bypasses_shield"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_damage",
+          "id": "minecraft:base_attack_damage",
+          "amount": 3,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "id": "minecraft:base_attack_speed",
+          "amount": -3.2,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_knockback",
+          "id": "minecraft:base_attack_knockback",
+          "amount": 1,
+          "operation": "add_value",
+          "slot": "mainhand"
+        }
+      ]
+    }
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:movement_speed",
+        "id": "tnts:inferno_shield",
+        "amount": {
+          "type": "minecraft:uniform",
+          "min": -0.15,
+          "max": -0.05
+        },
+        "operation": "add_multiplied_base",
+        "slot": "hand"
+      }
+    ],
+    "replace": false
+  }
+]

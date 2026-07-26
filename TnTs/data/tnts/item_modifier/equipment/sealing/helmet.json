@@ -1,0 +1,52 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:damage_resistant": {
+      "types": "#minecraft:is_fire"
+    },
+    "minecraft:repairable": {
+      "items": "#minecraft:repairs_netherite_armor"
+    },
+    "minecraft:max_damage": 481,
+    "minecraft:rarity": "epic",
+    "minecraft:item_name": {
+      "translate": "equip.tnts.sealing_helmet",
+      "fallback": "Sealing Helmet",
+      "color": "#8308E4"
+    },
+    "minecraft:equippable": {
+      "slot": "head",
+      "equip_sound": "minecraft:item.armor.equip_netherite"
+    },
+    "minecraft:attribute_modifiers": [
+      {
+        "type": "minecraft:armor",
+        "id": "tnts:sealing_helmet",
+        "amount": 3,
+        "operation": "add_value",
+        "slot": "head"
+      },
+      {
+        "type": "minecraft:armor_toughness",
+        "id": "tnts:sealing_helmet",
+        "amount": 3,
+        "operation": "add_value",
+        "slot": "head"
+      },
+      {
+        "type": "minecraft:knockback_resistance",
+        "id": "tnts:sealing_helmet",
+        "amount": 0.1,
+        "operation": "add_value",
+        "slot": "head"
+      },
+      {
+        "type": "minecraft:explosion_knockback_resistance",
+        "id": "tnts:sealing_helmet",
+        "amount": 0.3,
+        "operation": "add_value",
+        "slot": "head"
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:fishing_rod"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "text": "精铜",
+        "color": "#DE7F6A",
+        "extra": [
+          {
+            "text": "钓竿",
+            "color": "#57AE8F"
+          }
+        ]
+      },
+      "minecraft:tooltip_style": "tnts:copper",
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:is_fire"
+      },
+      "minecraft:rarity": "epic",
+      "minecraft:lore": [
+        {
+          "text": ""
+        },
+        {
+          "text": "ICT愚人节限定道具",
+          "color": "#57AE8F",
+          "italic": false
+        },
+        {
+          "text": "老大，你说我们用这个钓竿真的能钓到鱼嘛？",
+          "color": "#57AE8F",
+          "italic": false
+        }
+      ],
+      "minecraft:use_cooldown": {
+        "seconds": 0.75,
+        "cooldown_group": "tnts:copper_bobber"
+      },
+      "minecraft:repair_cost": 1
+    }
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "tnts:attribute/copper_bobber": 1
+    }
+  }
+]

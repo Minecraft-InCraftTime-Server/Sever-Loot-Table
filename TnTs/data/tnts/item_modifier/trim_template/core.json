@@ -1,0 +1,43 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "!minecraft:entity_data": {},
+      "minecraft:item_name": {
+        "text": "核心盔甲纹饰"
+      },
+      "minecraft:custom_data": "{core_trim:true}",
+      "minecraft:rarity": "epic",
+      "minecraft:lore": [
+        {
+          "text": "锻造模板",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "可应用于：",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": " 盔甲",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "text": "所需原材料：",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": " 锭或晶体",
+          "color": "blue",
+          "italic": false
+        }
+      ]
+    }
+  }
+]

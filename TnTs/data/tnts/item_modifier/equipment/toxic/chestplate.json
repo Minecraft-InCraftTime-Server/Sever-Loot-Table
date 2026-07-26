@@ -1,0 +1,61 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "equip.tnts.toxic_chestplate",
+        "fallback": "Toxic Chestplate",
+        "color": "#6C7E45"
+      },
+      "minecraft:rarity": "rare",
+      "minecraft:lore": [
+        {
+          "text": "+1 近战剧毒反伤",
+          "italic": false,
+          "color": "#6C7E45"
+        }
+      ],
+      "minecraft:repairable": {
+        "items": "minecraft:bone"
+      },
+      "minecraft:equippable": {
+        "slot": "chest",
+        "asset_id": "tnts:toxic",
+        "equip_sound": "minecraft:entity.bogged.ambient"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:toxic_chestplate",
+          "amount": 6,
+          "operation": "add_value",
+          "slot": "chest"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "tnts:toxic_chestplate",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "chest"
+        }
+      ]
+    }
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:attack_speed",
+        "id": "tnts:toxic_chestplate",
+        "amount": {
+          "type": "minecraft:uniform",
+          "min": 0.15,
+          "max": 0.15
+        },
+        "operation": "add_value",
+        "slot": "chest"
+      }
+    ],
+    "replace": false
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "function": "minecraft:reference",
+    "name": "tnts:potion/parent"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_model_data": {
+        "strings": ["breeze"]
+      },
+      "minecraft:tooltip_style": "tnts:breeze",
+      "minecraft:item_name": {
+        "text": "旋风精华",
+        "color": "#546899"
+      },
+      "minecraft:consumable": {
+        "animation": "drink",
+        "consume_seconds": 1.6,
+        "has_consume_particles": false,
+        "sound": "minecraft:entity.generic.drink",
+        "on_consume_effects": [
+          {
+            "type": "minecraft:clear_all_effects"
+          },
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:wind_charged",
+                "amplifier": 0,
+                "duration": 18000
+              },
+              {
+                "id": "minecraft:resistance",
+                "amplifier": 0,
+                "duration": 18000
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+]

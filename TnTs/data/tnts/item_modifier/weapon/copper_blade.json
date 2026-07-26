@@ -1,0 +1,60 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "text": "精铜",
+        "color": "#DE7F6A",
+        "extra": [
+          {
+            "text": "源刃",
+            "color": "#57AE8F"
+          }
+        ]
+      },
+      "minecraft:max_damage": 592,
+      "minecraft:rarity": "rare",
+      "minecraft:custom_model_data": {
+        "strings": ["copper_blade"]
+      }
+    }
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:attack_damage",
+        "id": "minecraft:base_attack_damage",
+        "amount": {
+          "type": "minecraft:uniform",
+          "min": 5,
+          "max": 7
+        },
+        "operation": "add_value",
+        "slot": "mainhand"
+      },
+      {
+        "attribute": "minecraft:attack_speed",
+        "id": "minecraft:base_attack_speed",
+        "amount": -2.4,
+        "operation": "add_value",
+        "slot": "mainhand"
+      }
+    ],
+    "replace": false
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "tnts:attribute/copper_blade": 1
+    }
+  },
+  {
+    "function": "minecraft:set_damage",
+    "damage": {
+      "type": "minecraft:uniform",
+      "min": 0.3,
+      "max": 0.7
+    }
+  }
+]

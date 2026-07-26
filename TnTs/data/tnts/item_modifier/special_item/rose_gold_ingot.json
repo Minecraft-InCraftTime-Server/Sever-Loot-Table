@@ -1,0 +1,10 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:provides_trim_material": "tnts:rose",
+    "minecraft:item_name": {
+      "translate": "item.tnts.rose_gold_ingot",
+      "fallback": "Rose Gold Ingot"
+    }
+  }
+}

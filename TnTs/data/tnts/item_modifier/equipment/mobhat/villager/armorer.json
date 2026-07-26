@@ -1,0 +1,30 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:equippable": {
+        "slot": "head",
+        "equip_sound": "minecraft:entity.villager.ambient",
+        "shearing_sound": "minecraft:entity.villager.no"
+      },
+      "minecraft:custom_model_data": {
+        "floats": [2310021]
+      },
+      "minecraft:item_name": {
+        "text": "盔甲匠护目镜"
+      },
+      "minecraft:rarity": "uncommon",
+      "minecraft:enchantment_glint_override": false,
+      "minecraft:max_damage": 100,
+      "attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "minecraft:village_headarmor",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "head"
+        }
+      ]
+    }
+  }
+]

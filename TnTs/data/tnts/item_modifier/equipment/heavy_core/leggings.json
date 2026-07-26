@@ -1,0 +1,44 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "equip.tnts.heavy_leggings",
+        "fallback": "Heavy Metal Leggings"
+      },
+      "minecraft:rarity": "epic",
+      "max_damage": 615,
+      "minecraft:repairable": {
+        "items": "minecraft:heavy_core"
+      },
+      "minecraft:equippable": {
+        "slot": "legs",
+        "asset_id": "tnts:heavy_core",
+        "equip_sound": "item.armor.equip_netherite"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:heavy_leggings",
+          "amount": 8,
+          "operation": "add_value",
+          "slot": "legs"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "tnts:heavy_leggings",
+          "amount": 4,
+          "operation": "add_value",
+          "slot": "legs"
+        },
+        {
+          "type": "minecraft:knockback_resistance",
+          "id": "tnts:heavy_leggings",
+          "amount": 0.15,
+          "operation": "add_value",
+          "slot": "legs"
+        }
+      ]
+    }
+  }
+]

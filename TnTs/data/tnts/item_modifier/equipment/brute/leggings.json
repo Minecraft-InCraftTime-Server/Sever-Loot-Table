@@ -1,0 +1,41 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "equip.tnts.brute_leggings",
+        "fallback": "Brute Leggings",
+        "color": "#b2770c"
+      },
+      "minecraft:rarity": "rare",
+      "minecraft:equippable": {
+        "slot": "legs",
+        "asset_id": "tnts:brute",
+        "equip_sound": "item.armor.equip_gold"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:brute_leggings",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "legs"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "tnts:brute_leggings",
+          "amount": 1,
+          "operation": "add_value",
+          "slot": "legs"
+        },
+        {
+          "type": "minecraft:knockback_resistance",
+          "id": "tnts:brute_leggings",
+          "amount": 0.2,
+          "operation": "add_value",
+          "slot": "legs"
+        }
+      ]
+    }
+  }
+]

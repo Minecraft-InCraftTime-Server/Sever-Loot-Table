@@ -1,0 +1,45 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:item_name": {
+      "text": "硫方胸甲",
+      "color": "#E5E533"
+    },
+    "minecraft:enchantable": {
+      "value": 12
+    },
+    "minecraft:attribute_modifiers": [
+      {
+        "type": "minecraft:armor",
+        "id": "tnts:sulfur_chestplate",
+        "amount": 8,
+        "operation": "add_value",
+        "slot": "chest"
+      },
+      {
+        "type": "minecraft:armor_toughness",
+        "id": "tnts:sulfur_chestplate",
+        "amount": 1,
+        "operation": "add_value",
+        "slot": "chest"
+      },
+      {
+        "type": "minecraft:air_drag_modifier",
+        "id": "tnts:sulfur_chestplate",
+        "amount": -0.30,
+        "operation": "add_multiplied_base",
+        "slot": "chest"
+      }
+    ],
+    "minecraft:equippable": {
+      "slot": "chest",
+      "asset_id": "tnts:sulfur",
+      "equip_sound": "minecraft:entity.sulfur_cube.absorb"
+    },
+    "minecraft:max_damage": 528,
+    "minecraft:repairable": {
+      "items": "minecraft:sulfur"
+    },
+    "minecraft:tooltip_style": "tnts:sulfur"
+  }
+}

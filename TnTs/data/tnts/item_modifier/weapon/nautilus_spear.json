@@ -1,0 +1,60 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:max_damage": 500,
+      "minecraft:repair_cost": 1,
+      "minecraft:item_model": "tnts:nautilus_spear",
+      "minecraft:enchantments": {
+        "tnts:attribute/tidal_flow": 1
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_damage",
+          "id": "minecraft:base_attack_damage",
+          "amount": 4,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "id": "minecraft:base_attack_speed",
+          "amount": -3.13,
+          "operation": "add_value",
+          "slot": "mainhand"
+        }
+      ],
+      "minecraft:piercing_weapon": {
+        "deals_knockback": true,
+        "dismounts": false,
+        "sound": "minecraft:item.spear.attack",
+        "hit_sound": "minecraft:item.trident.hit"
+      },
+      "minecraft:kinetic_weapon": {
+        "delay_ticks": 6,
+        "contact_cooldown_ticks": 10,
+        "dismount_conditions": {
+          "max_duration_ticks": 50,
+          "min_speed": 7
+        },
+        "knockback_conditions": {
+          "max_duration_ticks": 100,
+          "min_speed": 5.1
+        },
+        "damage_conditions": {
+          "max_duration_ticks": 150,
+          "min_relative_speed": 4.6
+        },
+        "forward_movement": 0.38,
+        "damage_multiplier": 1.05,
+        "sound": "minecraft:item.spear.use",
+        "hit_sound": "minecraft:item.trident.hit"
+      },
+      "minecraft:rarity": "epic",
+      "minecraft:item_name": "鹦鹉螺矛",
+      "minecraft:repairable": {
+        "items": "minecraft:nautilus_shell"
+      }
+    }
+  }
+]

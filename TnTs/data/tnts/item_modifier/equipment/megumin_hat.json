@@ -1,0 +1,76 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_model_data": {
+        "strings": ["megumin_hat"]
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:megumin_hat",
+          "amount": 3,
+          "operation": "add_value",
+          "slot": "head"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "tnts:megumin_hat",
+          "amount": 1,
+          "operation": "add_value",
+          "slot": "head"
+        }
+      ],
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:is_fire"
+      },
+      "minecraft:max_damage": 400,
+      "minecraft:item_name": {
+        "text": "魔法帽子",
+        "color": "red"
+      },
+      "minecraft:equippable": {
+        "slot": "head",
+        "equip_sound": "minecraft:item.armor.equip_leather"
+      },
+      "minecraft:enchantable": {
+        "value": 15
+      }
+    }
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "mode": "replace_all",
+    "lore": [
+      {
+        "text": "Explosion!",
+        "italic": true,
+        "color": "red",
+        "bold": true
+      },
+      {
+        "text": "属于 ",
+        "color": "green",
+        "underlined": false,
+        "italic": false,
+        "extra": [
+          {
+            "selector": "@s",
+            "underlined": true,
+            "italic": false,
+            "color": "gold",
+            "extra": [
+              {
+                "text": " 的50小时在线时长奖励",
+                "underlined": false,
+                "italic": false,
+                "color": "green"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

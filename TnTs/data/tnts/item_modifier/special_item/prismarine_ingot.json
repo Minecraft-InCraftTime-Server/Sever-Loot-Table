@@ -1,0 +1,10 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:provides_trim_material": "tnts:prismarine",
+    "minecraft:item_name": {
+      "translate": "item.tnts.prismarine_ingot",
+      "fallback": "Prismarine Ingot"
+    }
+  }
+}

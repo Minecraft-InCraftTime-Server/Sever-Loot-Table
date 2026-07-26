@@ -1,0 +1,39 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:consumable": {
+      "consume_seconds": 1.6,
+      "animation": "eat",
+      "sound": "minecraft:entity.generic.eat",
+      "has_consume_particles": true,
+      "on_consume_effects": [
+        {
+          "type": "minecraft:apply_effects",
+          "effects": [
+            {
+              "id": "minecraft:regeneration",
+              "amplifier": 0,
+              "duration": 200
+            },
+            {
+              "id": "minecraft:absorption",
+              "amplifier": 1,
+              "duration": 1200
+            }
+          ]
+        }
+      ]
+    },
+    "minecraft:food": {
+      "nutrition": 10,
+      "saturation": 12,
+      "can_always_eat": false
+    },
+    "minecraft:custom_model_data": {
+      "strings": ["golden_apple_pie"]
+    },
+    "minecraft:item_name": {
+      "text": "金苹果派"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "equip.tnts.toxic_helmet",
+        "fallback": "Toxic Helmet",
+        "color": "#6C7E45"
+      },
+      "minecraft:rarity": "rare",
+      "minecraft:repairable": {
+        "items": "minecraft:bone"
+      },
+      "minecraft:equippable": {
+        "slot": "head",
+        "asset_id": "tnts:toxic",
+        "equip_sound": "minecraft:entity.bogged.ambient"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:toxic_helmet",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "head"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "tnts:toxic_helmet",
+          "amount": 1,
+          "operation": "add_value",
+          "slot": "head"
+        }
+      ]
+    }
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:camera_distance",
+        "id": "tnts:toxic_helmet",
+        "amount": {
+          "type": "minecraft:uniform",
+          "min": 0.3,
+          "max": 0.75
+        },
+        "operation": "add_multiplied_base",
+        "slot": "head"
+      }
+    ],
+    "replace": false
+  }
+]

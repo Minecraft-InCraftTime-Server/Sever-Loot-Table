@@ -1,0 +1,48 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "equip.tnts.tide_helmet",
+        "fallback": "Tide Helmet",
+        "color": "#4B8375"
+      },
+      "minecraft:rarity": "epic",
+      "max_damage": 215,
+      "minecraft:damage_resistant": {
+        "types": "#tnts:thorns"
+      },
+      "minecraft:repairable": {
+        "items": "minecraft:prismarine_shard"
+      },
+      "minecraft:equippable": {
+        "slot": "head",
+        "asset_id": "tnts:tide",
+        "equip_sound": "item.armor.equip_chain"
+      },
+      "minecraft:lore": [
+        {
+          "text": "+1 深海漫游速率",
+          "color": "#4B8375",
+          "italic": false
+        }
+      ],
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:tide_helmet",
+          "amount": 3,
+          "operation": "add_value",
+          "slot": "head"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "tnts:tide_helmet",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "head"
+        }
+      ]
+    }
+  }
+]

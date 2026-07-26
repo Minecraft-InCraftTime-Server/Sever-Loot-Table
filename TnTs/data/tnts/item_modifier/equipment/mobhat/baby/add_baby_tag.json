@@ -1,0 +1,9 @@
+[
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "is_baby": true,
+      "is_totem": false
+    }
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:piglin_brute_spawn_egg"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "!minecraft:entity_data": {},
+      "minecraft:item_name": {
+        "text": "镶金翎羽",
+        "color": "#855909"
+      },
+      "minecraft:custom_data": "{brute_feather:true}"
+    }
+  }
+]

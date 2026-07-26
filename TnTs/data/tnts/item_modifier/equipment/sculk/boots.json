@@ -1,0 +1,38 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "equip.tnts.sculk_boots",
+        "fallback": "Sculk Boots",
+        "color": "#0E5660"
+      },
+      "minecraft:rarity": "epic",
+      "max_damage": 429,
+      "minecraft:repairable": {
+        "items": "minecraft:echo_shard"
+      },
+      "minecraft:equippable": {
+        "slot": "feet",
+        "asset_id": "tnts:sculk",
+        "equip_sound": "block.sculk_sensor.clicking_stop"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:sculk_boots",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "feet"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "tnts:sculk_boots",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "feet"
+        }
+      ]
+    }
+  }
+]

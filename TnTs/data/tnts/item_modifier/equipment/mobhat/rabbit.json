@@ -1,0 +1,211 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:equippable": {
+        "slot": "head",
+        "equip_sound": "minecraft:entity.rabbit.ambient"
+      },
+      "minecraft:item_name": {
+        "text": "兔耳帽"
+      },
+      "minecraft:enchantment_glint_override": false,
+      "minecraft:rarity": "uncommon",
+      "minecraft:max_damage": 200,
+      "attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "minecraft:armor.helmet",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "head"
+        }
+      ]
+    }
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_model_data": {
+        "floats": [2310071]
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "minecraft:components": {
+            "minecraft:rabbit/variant": "black"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_model_data": {
+        "floats": [2310072]
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "minecraft:components": {
+            "minecraft:rabbit/variant": "brown"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_model_data": {
+        "floats": [2310073]
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "minecraft:components": {
+            "minecraft:rabbit/variant": "evil"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_model_data": {
+        "floats": [2310074]
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "minecraft:components": {
+            "minecraft:rabbit/variant": "gold"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_model_data": {
+        "floats": [2310075]
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "minecraft:components": {
+            "minecraft:rabbit/variant": "salt"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_model_data": {
+        "floats": [2310077]
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "minecraft:components": {
+            "minecraft:rabbit/variant": "white"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_model_data": {
+        "floats": [2310078]
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "minecraft:components": {
+            "minecraft:rabbit/variant": "white_splotched"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_model_data": {
+        "floats": [2310076]
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:any_of",
+        "terms": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:nbt": "{CustomName:\"Toast\"}"
+            }
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:nbt": "{CustomName:{extra:[\"Toast\"],text:\"\"}}"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "predicates": {
+        "minecraft:custom_model_data": {}
+      }
+    },
+    "on_fail": [
+      {
+        "function": "minecraft:set_custom_model_data",
+        "floats": {
+          "mode": "replace_all",
+          "values": [
+            {
+              "type": "minecraft:uniform",
+              "min": 2310071,
+              "max": 2310078
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

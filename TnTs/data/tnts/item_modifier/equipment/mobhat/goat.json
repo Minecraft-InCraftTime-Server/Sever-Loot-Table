@@ -1,0 +1,27 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "text": "山羊角头饰"
+      },
+      "minecraft:rarity": "uncommon",
+      "minecraft:equippable": {
+        "slot": "head",
+        "equip_sound": "minecraft:entity.goat.ambient"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "minecraft:armor.helmet",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "head"
+        }
+      ],
+      "minecraft:custom_model_data": {
+        "floats": [2310051]
+      }
+    }
+  }
+]

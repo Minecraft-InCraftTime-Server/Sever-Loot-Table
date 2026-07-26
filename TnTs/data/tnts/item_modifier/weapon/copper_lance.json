@@ -1,0 +1,85 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:max_damage": 1201,
+      "minecraft:swing_animation": {
+        "type": "stab",
+        "duration": 32
+      },
+      "minecraft:item_model": "tnts:copper_lance",
+      "minecraft:attack_range": {
+        "min_reach": 2,
+        "min_creative_reach": 0,
+        "max_reach": 4.5,
+        "max_creative_reach": 7,
+        "hitbox_margin": 0.125,
+        "mob_factor": 0.4
+      },
+      "minecraft:piercing_weapon": {
+        "deals_knockback": true,
+        "dismounts": false,
+        "sound": "minecraft:item.spear.attack",
+        "hit_sound": "minecraft:item.spear.hit"
+      },
+      "minecraft:kinetic_weapon": {
+        "delay_ticks": 12,
+        "contact_cooldown_ticks": 10,
+        "dismount_conditions": {
+          "max_duration_ticks": 40,
+          "min_speed": 5.1
+        },
+        "knockback_conditions": {
+          "max_duration_ticks": 80,
+          "min_speed": 4.6
+        },
+        "damage_conditions": {
+          "max_duration_ticks": 120,
+          "min_relative_speed": 5.1
+        },
+        "forward_movement": 0.45,
+        "damage_multiplier": 1.6,
+        "sound": "minecraft:item.spear.use",
+        "hit_sound": "minecraft:item.spear.hit"
+      },
+      "minecraft:rarity": "epic",
+      "minecraft:item_name": {
+        "text": "精铜",
+        "color": "#DE7F6A",
+        "extra": [
+          {
+            "text": "骑枪",
+            "color": "#57AE8F"
+          }
+        ]
+      },
+      "minecraft:repairable": {
+        "items": "minecraft:copper_ingot"
+      }
+    }
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "replace": false,
+    "modifiers": [
+      {
+        "attribute": "minecraft:attack_damage",
+        "id": "minecraft:base_attack_damage",
+        "amount": {
+          "type": "minecraft:uniform",
+          "min": 6,
+          "max": 8
+        },
+        "operation": "add_value",
+        "slot": "mainhand"
+      },
+      {
+        "attribute": "minecraft:attack_speed",
+        "id": "minecraft:base_attack_speed",
+        "amount": -3.4,
+        "operation": "add_value",
+        "slot": "mainhand"
+      }
+    ]
+  }
+]

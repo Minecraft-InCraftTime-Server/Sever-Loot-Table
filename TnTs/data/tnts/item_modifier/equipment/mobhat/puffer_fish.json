@@ -1,0 +1,33 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "text": "鼓气河豚帽"
+      },
+      "minecraft:rarity": "uncommon",
+      "minecraft:enchantments": {
+        "tnts:attribute/mobhat": 1
+      },
+      "minecraft:enchantment_glint_override": false,
+      "minecraft:max_damage": 100,
+      "minecraft:equippable": {
+        "slot": "head",
+        "damage_on_hurt": false,
+        "equip_sound": "minecraft:entity.puffer_fish.blow_up"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "minecraft:armor.helmet",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "head"
+        }
+      ],
+      "minecraft:custom_model_data": {
+        "floats": [2310079]
+      }
+    }
+  }
+]

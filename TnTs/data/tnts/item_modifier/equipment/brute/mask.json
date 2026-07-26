@@ -1,0 +1,40 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "equip.tnts.brute_mask",
+        "fallback": "Brute Mask",
+        "color": "#b2770c"
+      },
+      "minecraft:rarity": "rare",
+      "minecraft:repairable": {
+        "items": "minecraft:leather"
+      },
+      "minecraft:equippable": {
+        "slot": "head",
+        "asset_id": "tnts:brute",
+        "equip_sound": "item.armor.equip_leather"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:brute_mask",
+          "amount": 1,
+          "operation": "add_value",
+          "slot": "head"
+        },
+        {
+          "type": "minecraft:waypoint_transmit_range",
+          "id": "tnts:brute_mask",
+          "amount": -1,
+          "operation": "add_multiplied_base",
+          "slot": "head",
+          "display": {
+            "type": "hidden"
+          }
+        }
+      ]
+    }
+  }
+]

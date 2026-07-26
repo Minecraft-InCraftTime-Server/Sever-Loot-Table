@@ -1,0 +1,88 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "text": "瞌睡狐狸帽"
+      },
+      "minecraft:rarity": "uncommon",
+      "minecraft:equippable": {
+        "slot": "head",
+        "equip_sound": "minecraft:entity.fox.ambient"
+      },
+      "minecraft:enchantment_glint_override": false,
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "minecraft:armor.helmet",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "head"
+        }
+      ]
+    }
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_model_data": {
+        "floats": [2310052]
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "minecraft:entity_type": "minecraft:fox",
+          "minecraft:components": {
+            "minecraft:fox/variant": "red"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_model_data": {
+        "floats": [2310053]
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "minecraft:entity_type": "minecraft:fox",
+          "minecraft:components": {
+            "minecraft:fox/variant": "snow"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "predicates": {
+        "minecraft:custom_model_data": {}
+      }
+    },
+    "on_fail": [
+      {
+        "function": "minecraft:set_custom_model_data",
+        "floats": {
+          "mode": "replace_all",
+          "values": [
+            {
+              "type": "minecraft:uniform",
+              "min": 2310052,
+              "max": 2310053
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

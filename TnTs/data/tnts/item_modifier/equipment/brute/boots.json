@@ -1,0 +1,34 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "equip.tnts.brute_boots",
+        "fallback": "Brute Boots",
+        "color": "#b2770c"
+      },
+      "minecraft:rarity": "rare",
+      "minecraft:equippable": {
+        "slot": "feet",
+        "asset_id": "tnts:brute",
+        "equip_sound": "item.armor.equip_leather"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:brute_boots",
+          "amount": 1,
+          "operation": "add_value",
+          "slot": "feet"
+        },
+        {
+          "type": "minecraft:knockback_resistance",
+          "id": "tnts:brute_boots",
+          "amount": 0.2,
+          "operation": "add_value",
+          "slot": "feet"
+        }
+      ]
+    }
+  }
+]

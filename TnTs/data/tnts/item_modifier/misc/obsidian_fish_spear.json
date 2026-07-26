@@ -1,0 +1,71 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:iron_spear"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:max_damage": 250,
+      "minecraft:item_model": "minecraft:cod",
+      "minecraft:item_name": "黑曜石鱼枪",
+      "minecraft:rarity": "epic",
+      "minecraft:custom_model_data": {
+        "strings": ["obsidian_fish_spear"]
+      },
+      "minecraft:attack_range": {
+        "hitbox_margin": 0.125,
+        "min_reach": 1.5,
+        "max_reach": 3.5,
+        "min_creative_reach": 0,
+        "max_creative_reach": 6,
+        "mob_factor": 0.5
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_damage",
+          "id": "minecraft:base_attack_damage",
+          "amount": 3,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "id": "minecraft:base_attack_speed",
+          "amount": -3,
+          "operation": "add_value",
+          "slot": "mainhand"
+        }
+      ],
+      "minecraft:kinetic_weapon": {
+        "contact_cooldown_ticks": 10,
+        "delay_ticks": 5,
+        "sound": "minecraft:item.spear.use",
+        "hit_sound": "minecraft:item.spear.hit",
+        "forward_movement": 0.38,
+        "damage_multiplier": 1.05,
+        "dismount_conditions": {
+          "max_duration_ticks": 50,
+          "min_speed": 8.1
+        },
+        "knockback_conditions": {
+          "max_duration_ticks": 100,
+          "min_speed": 5.1
+        },
+        "damage_conditions": {
+          "max_duration_ticks": 150,
+          "min_relative_speed": 4.6
+        }
+      }
+    }
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:is_fire"
+      }
+    }
+  }
+]

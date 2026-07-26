@@ -1,0 +1,10 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:provides_trim_material": "tnts:breeze",
+    "minecraft:item_name": {
+      "translate": "item.tnts.breeze_ingot",
+      "fallback": "Breeze Ingot"
+    }
+  }
+}

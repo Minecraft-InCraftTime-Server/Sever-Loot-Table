@@ -1,0 +1,49 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "minecraft:copper_helmet",
+          "amount": 3,
+          "operation": "add_value",
+          "slot": "head"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "minecraft:copper_helmet",
+          "amount": 1,
+          "operation": "add_value",
+          "slot": "head"
+        }
+      ],
+      "minecraft:rarity": "epic",
+      "minecraft:equippable": {
+        "slot": "head",
+        "equip_sound": "minecraft:item.armor.equip_diamond",
+        "asset_id": "tnts:trial_castle_crown"
+      },
+      "minecraft:repairable": {
+        "items": "minecraft:copper_ingot"
+      },
+      "minecraft:item_name": {
+        "translate": "equip.tnts.trial_castle_crown",
+        "fallback": "Trial Castle Crown",
+        "color": "#e77c56"
+      },
+      "minecraft:max_damage": 592,
+      "minecraft:enchantments": {
+        "protection": 4,
+        "unbreaking": 3,
+        "mending": 1
+      }
+    }
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "tnts:attribute/trial_master": 1
+    }
+  }
+]

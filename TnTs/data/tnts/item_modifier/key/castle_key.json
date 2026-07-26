@@ -1,0 +1,14 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "key.tnts.castle_key",
+        "fallback": "Castle Key"
+      },
+      "minecraft:custom_model_data": {
+        "floats": [231]
+      }
+    }
+  }
+]

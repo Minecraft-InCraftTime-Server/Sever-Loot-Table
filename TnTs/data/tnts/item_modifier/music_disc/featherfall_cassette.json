@@ -1,0 +1,14 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:jukebox_playable": "tnts:featherfall_cassette",
+      "minecraft:item_name": {
+        "translate": "item.tnts.cassette_tape",
+        "fallback": "Music Cassette",
+        "color": "red"
+      },
+      "minecraft:rarity": "rare"
+    }
+  }
+]

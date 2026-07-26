@@ -1,0 +1,27 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:cooked_cod"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_model": "minecraft:cod",
+      "!minecraft:consumable": {},
+      "!minecraft:food": {},
+      "minecraft:item_name": "深渊黑曜石鱼",
+      "minecraft:rarity": "epic",
+      "minecraft:custom_model_data": {
+        "strings": ["epic_obsidian_fish"]
+      }
+    }
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:is_fire"
+      }
+    }
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "function": "minecraft:reference",
+    "name": "tnts:accessory/parent"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "text": "幽匿护符",
+        "color": "#0c8585"
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["sculk"]
+      },
+      "minecraft:tooltip_style": "tnts:echo"
+    }
+  }
+]

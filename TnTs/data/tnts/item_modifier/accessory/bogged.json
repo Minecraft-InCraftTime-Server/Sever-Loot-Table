@@ -1,0 +1,19 @@
+[
+  {
+    "function": "minecraft:reference",
+    "name": "tnts:accessory/parent"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "text": "淬毒护符",
+        "color": "#90dd74"
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["bogged"]
+      },
+      "minecraft:tooltip_style": "tnts:pothos"
+    }
+  }
+]

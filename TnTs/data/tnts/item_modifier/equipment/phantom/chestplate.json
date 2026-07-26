@@ -1,0 +1,54 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "equip.tnts.phantom_chestplate",
+        "fallback": "Phantom Chestplate",
+        "color": "#3D497F"
+      },
+      "minecraft:rarity": "rare",
+      "minecraft:repairable": {
+        "items": "minecraft:phantom_membrane"
+      },
+      "minecraft:equippable": {
+        "slot": "chest",
+        "asset_id": "tnts:phantom",
+        "equip_sound": "item.armor.equip_leather"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:phantom_chestplate",
+          "amount": 6,
+          "operation": "add_value",
+          "slot": "chest"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "tnts:phantom_chestplate",
+          "amount": 1,
+          "operation": "add_value",
+          "slot": "chest"
+        }
+      ]
+    }
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:attack_speed",
+        "id": "tnts:phantom_chestplate",
+        "amount": {
+          "type": "minecraft:uniform",
+          "min": 0.15,
+          "max": 0.15
+        },
+        "operation": "add_value",
+        "slot": "chest"
+      }
+    ],
+    "replace": false
+  }
+]

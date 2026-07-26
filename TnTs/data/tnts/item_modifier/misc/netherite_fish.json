@@ -1,0 +1,25 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:netherite_ingot"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_model": "minecraft:cod",
+      "minecraft:item_name": "下界合金鱼",
+      "minecraft:rarity": "epic",
+      "minecraft:custom_model_data": {
+        "strings": ["netherite_fish"]
+      }
+    }
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:is_fire"
+      }
+    }
+  }
+]

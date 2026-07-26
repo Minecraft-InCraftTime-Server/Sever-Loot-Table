@@ -1,0 +1,17 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:ghast_spawn_egg"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "!minecraft:entity_data": {},
+      "minecraft:item_name": {
+        "text": "禁锢翎羽",
+        "color": "#6006AB"
+      },
+      "minecraft:custom_data": "{sealing_feather:true}"
+    }
+  }
+]

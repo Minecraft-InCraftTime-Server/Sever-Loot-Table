@@ -1,0 +1,13 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:jukebox_playable": "tnts:precipice_cassette",
+      "minecraft:item_name": {
+        "translate": "item.tnts.cassette_tape",
+        "fallback": "Music Cassette"
+      },
+      "minecraft:rarity": "rare"
+    }
+  }
+]

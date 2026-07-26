@@ -1,0 +1,14 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:instrument": "tnts:echo_rush",
+    "minecraft:use_cooldown": {
+      "seconds": 90,
+      "cooldown_group": "tnts:echo_rush"
+    },
+    "minecraft:item_name": {
+      "text": "音波号角",
+      "color": "#0E5660"
+    }
+  }
+}

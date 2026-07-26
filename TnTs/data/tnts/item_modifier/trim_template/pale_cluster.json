@@ -1,0 +1,25 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:skeleton_spawn_egg"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:custom_data": {
+        "tooltip_style": "pale"
+      },
+      "minecraft:item_name": {
+        "text": "苍白晶簇",
+        "color": "#F5E9EF"
+      },
+      "minecraft:tooltip_style": "tnts:pale",
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:panic_causes"
+      },
+      "minecraft:max_stack_size": 16,
+      "!minecraft:entity_data": {}
+    }
+  }
+]

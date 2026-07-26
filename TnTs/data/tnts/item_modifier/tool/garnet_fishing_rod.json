@@ -1,0 +1,32 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:fishing_rod"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "text": "熔岩钓竿",
+        "color": "#DD503F"
+      },
+      "minecraft:max_damage": 128,
+      "minecraft:use_cooldown": {
+        "seconds": 0.5,
+        "cooldown_group": "tnts:garnet_fishing_rod"
+      },
+      "minecraft:tooltip_style": "tnts:garnet",
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:is_fire"
+      },
+      "minecraft:rarity": "epic",
+      "minecraft:repair_cost": 1
+    }
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "tnts:attribute/lava_bobber": 1
+    }
+  }
+]

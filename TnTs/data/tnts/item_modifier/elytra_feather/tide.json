@@ -1,0 +1,17 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:guardian_spawn_egg"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "!minecraft:entity_data": {},
+      "minecraft:item_name": {
+        "text": "潮汐翎羽",
+        "color": "#4B8375"
+      },
+      "minecraft:custom_data": "{tide_feather:true}"
+    }
+  }
+]

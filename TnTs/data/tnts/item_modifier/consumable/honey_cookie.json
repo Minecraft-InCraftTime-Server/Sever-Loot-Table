@@ -1,0 +1,51 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_model_data": {
+        "strings": ["honey_cookie"]
+      },
+      "minecraft:item_name": "蜂蜜曲奇",
+      "minecraft:rarity": "uncommon",
+      "minecraft:consumable": {
+        "animation": "eat",
+        "consume_seconds": 0.8,
+        "has_consume_particles": true,
+        "sound": "minecraft:entity.generic.eat",
+        "on_consume_effects": [
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:regeneration",
+                "duration": 200,
+                "amplifier": 0
+              },
+              {
+                "id": "minecraft:haste",
+                "duration": 300,
+                "amplifier": 0
+              }
+            ]
+          },
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:haste",
+                "duration": 300,
+                "amplifier": 1
+              }
+            ],
+            "probability": 0.3
+          }
+        ]
+      },
+      "minecraft:food": {
+        "can_always_eat": true,
+        "saturation": 4,
+        "nutrition": 4
+      }
+    }
+  }
+]

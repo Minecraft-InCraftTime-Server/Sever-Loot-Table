@@ -1,0 +1,45 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:item_name": {
+      "text": "硫方护腿",
+      "color": "#E5E533"
+    },
+    "minecraft:enchantable": {
+      "value": 12
+    },
+    "minecraft:attribute_modifiers": [
+      {
+        "type": "minecraft:armor",
+        "id": "tnts:sulfur_leggings",
+        "amount": 6,
+        "operation": "add_value",
+        "slot": "legs"
+      },
+      {
+        "type": "minecraft:armor_toughness",
+        "id": "tnts:sulfur_leggings",
+        "amount": 2,
+        "operation": "add_value",
+        "slot": "legs"
+      },
+      {
+        "type": "minecraft:bounciness",
+        "id": "tnts:sulfur_leggings",
+        "amount": 0.25,
+        "operation": "add_value",
+        "slot": "legs"
+      }
+    ],
+    "minecraft:equippable": {
+      "slot": "legs",
+      "asset_id": "tnts:sulfur",
+      "equip_sound": "minecraft:entity.sulfur_cube.absorb"
+    },
+    "minecraft:max_damage": 495,
+    "minecraft:repairable": {
+      "items": "minecraft:sulfur"
+    },
+    "minecraft:tooltip_style": "tnts:sulfur"
+  }
+}

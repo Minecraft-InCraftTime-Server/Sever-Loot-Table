@@ -1,0 +1,29 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:equippable": {
+        "slot": "head",
+        "equip_sound": "minecraft:entity.glow_squid.ambient"
+      },
+      "minecraft:item_name": {
+        "text": "荧光鱿鱼帽子"
+      },
+      "minecraft:max_damage": 100,
+      "minecraft:rarity": "uncommon",
+      "minecraft:enchantment_glint_override": false,
+      "minecraft:custom_model_data": {
+        "floats": [2310055]
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "minecraft:armor.helmet",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "head"
+        }
+      ]
+    }
+  }
+]

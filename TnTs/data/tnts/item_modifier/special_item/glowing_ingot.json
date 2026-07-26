@@ -1,0 +1,10 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:provides_trim_material": "tnts:glow",
+    "minecraft:item_name": {
+      "translate": "item.tnts.glowing_ingot",
+      "fallback": "Glowing Ingot"
+    }
+  }
+}

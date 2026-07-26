@@ -1,0 +1,25 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:squid_spawn_egg"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:custom_data": {
+        "tooltip_style": "ink"
+      },
+      "minecraft:item_name": {
+        "text": "永夜晶簇",
+        "color": "#3C3C44"
+      },
+      "minecraft:tooltip_style": "tnts:ink",
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:panic_causes"
+      },
+      "minecraft:max_stack_size": 16,
+      "!minecraft:entity_data": {}
+    }
+  }
+]

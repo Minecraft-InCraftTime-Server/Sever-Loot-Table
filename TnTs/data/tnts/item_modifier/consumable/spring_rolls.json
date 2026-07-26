@@ -1,0 +1,23 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_model_data": {
+        "strings": ["spring_rolls"]
+      },
+      "minecraft:item_name": "春卷",
+      "minecraft:rarity": "uncommon",
+      "minecraft:consumable": {
+        "animation": "eat",
+        "consume_seconds": 1.6,
+        "has_consume_particles": true,
+        "sound": "minecraft:entity.generic.eat"
+      },
+      "minecraft:food": {
+        "can_always_eat": false,
+        "saturation": 6,
+        "nutrition": 8
+      }
+    }
+  }
+]

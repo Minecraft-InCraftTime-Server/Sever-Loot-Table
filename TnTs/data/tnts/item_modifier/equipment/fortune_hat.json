@@ -1,0 +1,48 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_model_data": {
+        "strings": ["fortune_hat"]
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:fortune_hat",
+          "amount": 3,
+          "operation": "add_value",
+          "slot": "head"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "tnts:fortune_hat",
+          "amount": 1,
+          "operation": "add_value",
+          "slot": "head"
+        },
+        {
+          "type": "minecraft:luck",
+          "id": "tnts:fortune_hat",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "head"
+        }
+      ],
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:is_fire"
+      },
+      "minecraft:max_damage": 288,
+      "minecraft:item_name": {
+        "text": "财运帽",
+        "color": "red"
+      },
+      "minecraft:equippable": {
+        "slot": "head",
+        "equip_sound": "minecraft:item.armor.equip_leather"
+      },
+      "minecraft:enchantable": {
+        "value": 15
+      }
+    }
+  }
+]

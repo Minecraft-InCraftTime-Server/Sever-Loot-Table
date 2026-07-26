@@ -1,0 +1,54 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "equip.tnts.phantom_boots",
+        "fallback": "Phantom Boots",
+        "color": "#3D497F"
+      },
+      "minecraft:rarity": "rare",
+      "minecraft:repairable": {
+        "items": "minecraft:phantom_membrane"
+      },
+      "minecraft:equippable": {
+        "slot": "feet",
+        "asset_id": "tnts:phantom",
+        "equip_sound": "item.armor.equip_leather"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:phantom_boots",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "feet"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "tnts:phantom_boots",
+          "amount": 1,
+          "operation": "add_value",
+          "slot": "feet"
+        }
+      ]
+    }
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:fall_damage_multiplier",
+        "id": "tnts:phantom_boots",
+        "amount": {
+          "type": "minecraft:uniform",
+          "min": -0.2,
+          "max": -0.2
+        },
+        "operation": "add_multiplied_base",
+        "slot": "feet"
+      }
+    ],
+    "replace": false
+  }
+]

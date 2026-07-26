@@ -1,0 +1,47 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "equip.tnts.toxic_leggings",
+        "fallback": "Toxic Leggings",
+        "color": "#6C7E45"
+      },
+      "minecraft:rarity": "rare",
+      "minecraft:repairable": {
+        "items": "minecraft:bone"
+      },
+      "minecraft:equippable": {
+        "slot": "legs",
+        "asset_id": "tnts:toxic",
+        "equip_sound": "minecraft:entity.bogged.ambient"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:toxic_leggings",
+          "amount": 4,
+          "operation": "add_value",
+          "slot": "legs"
+        }
+      ]
+    }
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:armor_toughness",
+        "id": "tnts:toxic_leggings",
+        "amount": {
+          "type": "minecraft:uniform",
+          "min": 2,
+          "max": 2
+        },
+        "operation": "add_value",
+        "slot": "legs"
+      }
+    ],
+    "replace": false
+  }
+]

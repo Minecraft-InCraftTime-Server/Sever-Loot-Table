@@ -1,0 +1,45 @@
+[
+  {
+    "function": "minecraft:reference",
+    "name": "tnts:potion/parent"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_model_data": {
+        "strings": ["conduit"]
+      },
+      "minecraft:tooltip_style": "tnts:azure",
+      "minecraft:item_name": {
+        "text": "潮涌精华",
+        "color": "#37cced"
+      },
+      "minecraft:consumable": {
+        "animation": "drink",
+        "consume_seconds": 1.6,
+        "has_consume_particles": false,
+        "sound": "minecraft:entity.generic.drink",
+        "on_consume_effects": [
+          {
+            "type": "minecraft:clear_all_effects"
+          },
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:conduit_power",
+                "amplifier": 0,
+                "duration": 18000
+              },
+              {
+                "id": "minecraft:dolphins_grace",
+                "amplifier": 0,
+                "duration": 1800
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:netherite_scrap"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_model": "minecraft:cod",
+      "minecraft:item_name": "远古鱼",
+      "minecraft:rarity": "rare",
+      "minecraft:custom_model_data": {
+        "strings": ["ancient_fish"]
+      }
+    }
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:is_fire"
+      }
+    }
+  }
+]

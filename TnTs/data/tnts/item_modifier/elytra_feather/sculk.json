@@ -1,0 +1,17 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:warden_spawn_egg"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "!minecraft:entity_data": {},
+      "minecraft:item_name": {
+        "text": "幽匿翎羽",
+        "color": "#0E5660"
+      },
+      "minecraft:custom_data": "{sculk_feather:true}"
+    }
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:structure_block"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:max_damage": 1200,
+      "minecraft:max_stack_size": 1,
+      "minecraft:damage": 0,
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:is_fire"
+      },
+      "minecraft:enchantments": {
+        "tnts:attribute/potion_accessory": 1
+      },
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:repair_cost": 1,
+      "minecraft:tooltip_display": {
+        "hidden_components": ["minecraft:enchantments","minecraft:attribute_modifiers"]
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:block_interaction_range",
+          "id": "minecraft:block_interaction_range",
+          "amount": -1,
+          "operation": "add_multiplied_total",
+          "slot": "hand"
+        }
+      ],
+      "minecraft:equippable": {
+        "slot": "body",
+        "allowed_entities": "minecraft:player",
+        "swappable": true,
+        "damage_on_hurt": false,
+        "can_be_sheared": false,
+        "dispensable": false
+      },
+      "minecraft:rarity": "epic"
+    }
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:provides_trim_material": "tnts:violet",
+    "minecraft:item_name": {
+      "translate": "item.tnts.violet_ingot",
+      "fallback": "Violet Ingot"
+    }
+  }
+}

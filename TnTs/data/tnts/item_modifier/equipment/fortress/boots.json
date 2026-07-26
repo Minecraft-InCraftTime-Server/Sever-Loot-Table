@@ -1,0 +1,55 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "max_damage": 180,
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:is_fire"
+      },
+      "minecraft:item_name": {
+        "translate": "equip.tnts.fortress_boots",
+        "fallback": "Fortress Boots",
+        "color": "#943400"
+      },
+      "minecraft:rarity": "rare",
+      "minecraft:equippable": {
+        "slot": "feet",
+        "asset_id": "tnts:fortress",
+        "equip_sound": "item.armor.equip_gold"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:fortress_boots",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "feet"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "tnts:fortress_boots",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "feet"
+        }
+      ]
+    }
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:safe_fall_distance",
+        "id": "tnts:fortress_boots",
+        "amount": {
+          "type": "uniform",
+          "min": 2,
+          "max": 2
+        },
+        "operation": "add_value",
+        "slot": "feet"
+      }
+    ],
+    "replace": false
+  }
+]

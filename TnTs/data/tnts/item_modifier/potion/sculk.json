@@ -1,0 +1,55 @@
+[
+  {
+    "function": "minecraft:reference",
+    "name": "tnts:potion/parent"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_model_data": {
+        "strings": ["sculk"]
+      },
+      "minecraft:tooltip_style": "tnts:echo",
+      "minecraft:item_name": {
+        "text": "幽匿精华",
+        "color": "#0c8585"
+      },
+      "minecraft:consumable": {
+        "animation": "drink",
+        "consume_seconds": 1.6,
+        "has_consume_particles": false,
+        "sound": "minecraft:entity.generic.drink",
+        "on_consume_effects": [
+          {
+            "type": "minecraft:clear_all_effects"
+          },
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:blindness",
+                "amplifier": 1,
+                "duration": 600
+              },
+              {
+                "id": "minecraft:darkness",
+                "amplifier": 1,
+                "duration": 600
+              },
+              {
+                "id": "minecraft:strength",
+                "amplifier": 4,
+                "duration": 600
+              },
+              {
+                "id": "minecraft:absorption",
+                "amplifier": 4,
+                "duration": 600
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+]

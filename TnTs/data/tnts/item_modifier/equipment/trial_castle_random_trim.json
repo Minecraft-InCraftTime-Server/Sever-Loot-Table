@@ -1,0 +1,167 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:trim": {
+        "material": "minecraft:quartz",
+        "pattern": "minecraft:tide"
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:random_chance",
+        "chance": 0.3
+      }
+    ]
+  },
+  {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "predicates": {
+        "minecraft:trim": {}
+      }
+    },
+    "on_fail": [
+      {
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:trim": {
+            "material": "minecraft:gold",
+            "pattern": "minecraft:silence"
+          }
+        },
+        "conditions": [
+          {
+            "condition": "minecraft:random_chance",
+            "chance": 0.3
+          }
+        ]
+      }
+    ],
+    "on_pass": []
+  },
+  {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "predicates": {
+        "minecraft:trim": {}
+      }
+    },
+    "on_fail": [
+      {
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:trim": {
+            "material": "minecraft:amethyst",
+            "pattern": "minecraft:flow"
+          }
+        },
+        "conditions": [
+          {
+            "condition": "minecraft:random_chance",
+            "chance": 0.3
+          }
+        ]
+      }
+    ],
+    "on_pass": []
+  },
+  {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "predicates": {
+        "minecraft:trim": {}
+      }
+    },
+    "on_fail": [
+      {
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:trim": {
+            "material": "minecraft:redstone",
+            "pattern": "minecraft:eye"
+          }
+        },
+        "conditions": [
+          {
+            "condition": "minecraft:random_chance",
+            "chance": 0.3
+          }
+        ]
+      }
+    ],
+    "on_pass": []
+  },
+  {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "predicates": {
+        "minecraft:trim": {}
+      }
+    },
+    "on_fail": [
+      {
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:trim": {
+            "material": "minecraft:emerald",
+            "pattern": "minecraft:wayfinder"
+          }
+        },
+        "conditions": [
+          {
+            "condition": "minecraft:random_chance",
+            "chance": 0.3
+          }
+        ]
+      }
+    ],
+    "on_pass": []
+  },
+  {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "predicates": {
+        "minecraft:trim": {}
+      }
+    },
+    "on_fail": [
+      {
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:trim": {
+            "material": "minecraft:resin",
+            "pattern": "minecraft:dune"
+          }
+        },
+        "conditions": [
+          {
+            "condition": "minecraft:random_chance",
+            "chance": 0.3
+          }
+        ]
+      }
+    ],
+    "on_pass": []
+  },
+  {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "predicates": {
+        "minecraft:trim": {}
+      }
+    },
+    "on_fail": [
+      {
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:trim": {
+            "material": "minecraft:copper",
+            "pattern": "minecraft:bolt"
+          }
+        }
+      }
+    ],
+    "on_pass": []
+  }
+]

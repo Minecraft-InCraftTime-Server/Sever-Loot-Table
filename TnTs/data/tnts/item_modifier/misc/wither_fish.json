@@ -1,0 +1,53 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:wither_rose"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_model": "minecraft:cod",
+      "minecraft:item_name": "凋零鱼",
+      "minecraft:rarity": "uncommon",
+      "minecraft:custom_model_data": {
+        "strings": ["wither_fish"]
+      },
+      "minecraft:consumable": {
+        "animation": "eat",
+        "consume_seconds": 1.6,
+        "has_consume_particles": true,
+        "on_consume_effects": [
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:wither",
+                "amplifier": 0,
+                "duration": 300
+              },
+              {
+                "id": "minecraft:hunger",
+                "amplifier": 0,
+                "duration": 300
+              }
+            ]
+          }
+        ],
+        "sound": "minecraft:entity.generic.eat"
+      },
+      "minecraft:food": {
+        "can_always_eat": true,
+        "nutrition": 2,
+        "saturation": 2
+      }
+    }
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:is_fire"
+      }
+    }
+  }
+]

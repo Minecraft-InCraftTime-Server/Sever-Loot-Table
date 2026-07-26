@@ -1,0 +1,17 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:jukebox_playable": "tnts:pigstep_cassette",
+      "minecraft:item_name": {
+        "translate": "item.tnts.cassette_tape",
+        "fallback": "Music Cassette",
+        "color": "gold"
+      },
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:is_fire"
+      },
+      "minecraft:rarity": "epic"
+    }
+  }
+]

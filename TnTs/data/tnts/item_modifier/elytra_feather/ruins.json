@@ -1,0 +1,47 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:spider_spawn_egg"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "!minecraft:entity_data": {},
+      "minecraft:item_name": {
+        "text": "废墟翎羽",
+        "color": "#636363"
+      },
+      "minecraft:custom_data": "{ruins_feather:true}",
+      "minecraft:lore": [
+        {
+          "text": "由玩家 ",
+          "extra": [
+            {
+              "text": "[",
+              "color": "#A6E5DF"
+            },
+            {
+              "player": {
+                "name": "ForloradDream"
+              },
+              "color": "#FFFFFF"
+            },
+            {
+              "text": "]",
+              "color": "#A6E5DF"
+            },
+            {
+              "text": "ForloradDream ",
+              "color": "#A6E5DF"
+            },
+            {
+              "text": "绘制"
+            }
+          ],
+          "italic": false,
+          "color": "#636363"
+        }
+      ]
+    }
+  }
+]

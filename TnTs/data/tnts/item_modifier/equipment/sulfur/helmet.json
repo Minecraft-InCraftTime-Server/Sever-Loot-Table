@@ -1,0 +1,44 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:item_name": {
+      "text": "硫方头罩",
+      "color": "#E5E533"
+    },
+    "minecraft:enchantable": {
+      "value": 12
+    },
+    "minecraft:attribute_modifiers": [
+      {
+        "type": "minecraft:armor",
+        "id": "tnts:sulfur_helmet",
+        "amount": 2,
+        "operation": "add_value",
+        "slot": "head"
+      },
+      {
+        "type": "minecraft:armor_toughness",
+        "id": "tnts:sulfur_helmet",
+        "amount": 1,
+        "operation": "add_value",
+        "slot": "head"
+      },
+      {
+        "type": "minecraft:bounciness",
+        "id": "tnts:sulfur_helmet",
+        "amount": 0.25,
+        "operation": "add_value",
+        "slot": "head"
+      }
+    ],
+    "minecraft:equippable": {
+      "slot": "head",
+      "equip_sound": "minecraft:entity.sulfur_cube.absorb"
+    },
+    "minecraft:max_damage": 407,
+    "minecraft:repairable": {
+      "items": "minecraft:sulfur"
+    },
+    "minecraft:tooltip_style": "tnts:sulfur"
+  }
+}

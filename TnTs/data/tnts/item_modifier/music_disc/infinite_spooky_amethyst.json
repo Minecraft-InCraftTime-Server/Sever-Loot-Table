@@ -1,0 +1,9 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:jukebox_playable": "tnts:infinite_spooky_amethyst",
+      "minecraft:rarity": "epic"
+    }
+  }
+]

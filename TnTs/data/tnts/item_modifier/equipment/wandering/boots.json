@@ -1,0 +1,44 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "equip.tnts.wandering_boots",
+        "fallback": "Wandering Boots",
+        "color": "#4c78c4"
+      },
+      "minecraft:rarity": "rare",
+      "minecraft:repairable": {
+        "items": "minecraft:iron_ingot"
+      },
+      "minecraft:equippable": {
+        "slot": "feet",
+        "asset_id": "tnts:wandering",
+        "equip_sound": "item.armor.equip_chain"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:wandering_boots",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "feet"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "tnts:wandering_boots",
+          "amount": 1,
+          "operation": "add_value",
+          "slot": "feet"
+        },
+        {
+          "type": "minecraft:safe_fall_distance",
+          "id": "tnts:wandering_boots",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "feet"
+        }
+      ]
+    }
+  }
+]

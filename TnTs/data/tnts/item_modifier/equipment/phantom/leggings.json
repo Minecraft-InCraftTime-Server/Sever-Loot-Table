@@ -1,0 +1,54 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "equip.tnts.phantom_leggings",
+        "fallback": "Phantom Leggings",
+        "color": "#3D497F"
+      },
+      "minecraft:rarity": "rare",
+      "minecraft:repairable": {
+        "items": "minecraft:phantom_membrane"
+      },
+      "minecraft:equippable": {
+        "slot": "legs",
+        "asset_id": "tnts:phantom",
+        "equip_sound": "item.armor.equip_leather"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:phantom_leggings",
+          "amount": 4,
+          "operation": "add_value",
+          "slot": "legs"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "tnts:phantom_leggings",
+          "amount": 1,
+          "operation": "add_value",
+          "slot": "legs"
+        }
+      ]
+    }
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:gravity",
+        "id": "tnts:phantom_leggings",
+        "amount": {
+          "type": "minecraft:uniform",
+          "min": -0.2,
+          "max": -0.15
+        },
+        "operation": "add_multiplied_base",
+        "slot": "legs"
+      }
+    ],
+    "replace": false
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "function": "minecraft:reference",
+    "name": "tnts:accessory/parent"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "text": "烈焰护符",
+        "color": "gold"
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["blaze"]
+      },
+      "minecraft:tooltip_style": "tnts:inferno"
+    }
+  }
+]

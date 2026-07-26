@@ -1,0 +1,37 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "equip.tnts.wandering_chestplate",
+        "fallback": "Wandering chestplate",
+        "color": "#4c78c4"
+      },
+      "minecraft:rarity": "rare",
+      "minecraft:repairable": {
+        "items": "minecraft:leather"
+      },
+      "minecraft:equippable": {
+        "slot": "chest",
+        "asset_id": "tnts:wandering",
+        "equip_sound": "item.armor.equip_leather"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:wandering_chestplate",
+          "amount": 5,
+          "operation": "add_value",
+          "slot": "chest"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "tnts:wandering_chestplate",
+          "amount": 1,
+          "operation": "add_value",
+          "slot": "chest"
+        }
+      ]
+    }
+  }
+]

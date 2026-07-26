@@ -1,0 +1,17 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:bogged_spawn_egg"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "!minecraft:entity_data": {},
+      "minecraft:item_name": {
+        "text": "剧毒翎羽",
+        "color": "#6C7E45"
+      },
+      "minecraft:custom_data": "{toxic_feather:true}"
+    }
+  }
+]

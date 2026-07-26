@@ -1,0 +1,17 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:blaze_spawn_egg"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "!minecraft:entity_data": {},
+      "minecraft:item_name": {
+        "text": "下界翎羽",
+        "color": "#6B2D2D"
+      },
+      "minecraft:custom_data": "{fortress_feather:true}"
+    }
+  }
+]

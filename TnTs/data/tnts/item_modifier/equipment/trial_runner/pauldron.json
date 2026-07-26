@@ -1,0 +1,38 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "equip.tnts.trial_runner_pauldron",
+        "fallback": "Trial Runner Pauldron",
+        "color": "#C36350"
+      },
+      "minecraft:rarity": "rare",
+      "max_damage": 215,
+      "minecraft:repairable": {
+        "items": "minecraft:copper_ingot"
+      },
+      "minecraft:equippable": {
+        "slot": "chest",
+        "asset_id": "tnts:trial_runner",
+        "equip_sound": "item.armor.equip_diamond"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:trial_runner_pauldron",
+          "amount": 6,
+          "operation": "add_value",
+          "slot": "chest"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "tnts:trial_runner_pauldron",
+          "amount": 1,
+          "operation": "add_value",
+          "slot": "chest"
+        }
+      ]
+    }
+  }
+]

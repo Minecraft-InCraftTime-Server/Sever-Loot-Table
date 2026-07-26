@@ -1,0 +1,50 @@
+[
+  {
+    "function": "minecraft:reference",
+    "name": "tnts:potion/parent"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_model_data": {
+        "strings": ["bogged"]
+      },
+      "minecraft:tooltip_style": "tnts:pothos",
+      "minecraft:item_name": {
+        "text": "淬毒精华",
+        "color": "#90dd74"
+      },
+      "minecraft:consumable": {
+        "animation": "drink",
+        "consume_seconds": 1.6,
+        "has_consume_particles": false,
+        "sound": "minecraft:entity.generic.drink",
+        "on_consume_effects": [
+          {
+            "type": "minecraft:clear_all_effects"
+          },
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:poison",
+                "amplifier": 2,
+                "duration": 600
+              },
+              {
+                "id": "minecraft:nausea",
+                "amplifier": 1,
+                "duration": 600
+              },
+              {
+                "id": "minecraft:weaving",
+                "amplifier": 0,
+                "duration": 36000
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+]

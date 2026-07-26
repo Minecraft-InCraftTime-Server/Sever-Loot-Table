@@ -1,0 +1,36 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:equippable": {
+        "slot": "head",
+        "equip_sound": "minecraft:entity.copper_golem.step"
+      },
+      "minecraft:custom_model_data": {
+        "floats": [2310031]
+      },
+      "minecraft:enchantment_glint_override": false,
+      "minecraft:item_name": {
+        "text": "铜傀儡头盔"
+      },
+      "minecraft:rarity": "uncommon",
+      "minecraft:max_damage": 200,
+      "attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "minecraft:copper_golem_headarmor",
+          "amount": 3,
+          "operation": "add_value",
+          "slot": "head"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "minecraft:copper_golem_headarmor",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "head"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:camel_spawn_egg"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "!minecraft:entity_data": {},
+      "minecraft:item_name": {
+        "text": "流沙翎羽",
+        "color": "#E0CD9B"
+      },
+      "minecraft:custom_data": "{quicksand_feather:true}",
+      "minecraft:lore": [
+        {
+          "text": "由玩家 ",
+          "extra": [
+            {
+              "text": "[",
+              "color": "#A6E5DF"
+            },
+            {
+              "player": {
+                "name": "ForloradDream"
+              },
+              "color": "#FFFFFF"
+            },
+            {
+              "text": "]",
+              "color": "#A6E5DF"
+            },
+            {
+              "text": "ForloradDream ",
+              "color": "#A6E5DF"
+            },
+            {
+              "text": "绘制"
+            }
+          ],
+          "italic": false,
+          "color": "#E0CD9B"
+        }
+      ]
+    }
+  }
+]

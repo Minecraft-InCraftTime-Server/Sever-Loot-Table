@@ -1,0 +1,37 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "equip.tnts.wandering_leggings",
+        "fallback": "Wandering Leggings",
+        "color": "#4c78c4"
+      },
+      "minecraft:rarity": "rare",
+      "minecraft:repairable": {
+        "items": "minecraft:leather"
+      },
+      "minecraft:equippable": {
+        "slot": "legs",
+        "asset_id": "tnts:wandering",
+        "equip_sound": "item.armor.equip_leather"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:wandering_leggings",
+          "amount": 3,
+          "operation": "add_value",
+          "slot": "legs"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "tnts:wandering_leggings",
+          "amount": 1,
+          "operation": "add_value",
+          "slot": "legs"
+        }
+      ]
+    }
+  }
+]

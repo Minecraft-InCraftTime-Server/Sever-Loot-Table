@@ -1,0 +1,76 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:panic_causes"
+      },
+      "minecraft:custom_data": {
+        "id": "sword_piercing_upgrade"
+      },
+      "minecraft:item_name": {
+        "translate": "smithing_teamplate.tnts.sword_piercing_upgrade",
+        "fallback": "Sword Piercing Upgrade",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "translate": "smithing_teamplate.tnts.sword_piercing_upgrade.1",
+          "fallback": "Smithing Template",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "",
+          "italic": false
+        },
+        {
+          "translate": "smithing_teamplate.tnts.sword_piercing_upgrade.2",
+          "fallback": "Applies to:",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": " ",
+          "extra": [
+            {
+              "translate": "smithing_teamplate.tnts.sword_piercing_upgrade.3",
+              "fallback": "Swords Weapon",
+              "color": "blue",
+              "italic": false
+            }
+          ],
+          "italic": false
+        },
+        {
+          "translate": "smithing_teamplate.tnts.sword_piercing_upgrade.4",
+          "fallback": "Ingredients:",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": " ",
+          "extra": [
+            {
+              "translate": "smithing_teamplate.tnts.sword_piercing_upgrade.5",
+              "fallback": "Amethyst Shard",
+              "color": "blue"
+            }
+          ],
+          "italic": false
+        },
+        {
+          "text": "",
+          "italic": false
+        },
+        {
+          "translate": "smithing_teamplate.tnts.sword_piercing_upgrade.6",
+          "fallback": "Can't Duplicate",
+          "color": "light_purple",
+          "italic": false
+        }
+      ]
+    }
+  }
+]

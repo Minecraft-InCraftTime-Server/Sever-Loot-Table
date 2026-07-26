@@ -1,0 +1,45 @@
+[
+  {
+    "function": "minecraft:reference",
+    "name": "tnts:potion/parent"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_model_data": {
+        "strings": ["blaze"]
+      },
+      "minecraft:tooltip_style": "tnts:inferno",
+      "minecraft:item_name": {
+        "text": "烈焰精华",
+        "color": "gold"
+      },
+      "minecraft:consumable": {
+        "animation": "drink",
+        "consume_seconds": 1.6,
+        "has_consume_particles": false,
+        "sound": "minecraft:entity.generic.drink",
+        "on_consume_effects": [
+          {
+            "type": "minecraft:clear_all_effects"
+          },
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:fire_resistance",
+                "amplifier": 0,
+                "duration": 18000
+              },
+              {
+                "id": "minecraft:resistance",
+                "amplifier": 0,
+                "duration": 18000
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+]

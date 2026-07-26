@@ -1,0 +1,46 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "text": "附魔金胡萝卜",
+        "color": "light_purple"
+      },
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:food": {
+        "nutrition": 6,
+        "saturation": 20,
+        "can_always_eat": true
+      },
+      "minecraft:consumable": {
+        "on_consume_effects": [
+          {
+            "type": "apply_effects",
+            "effects": [
+              {
+                "id": "resistance",
+                "duration": 6000,
+                "amplifier": 0
+              },
+              {
+                "id": "fire_resistance",
+                "duration": 6000,
+                "amplifier": 0
+              },
+              {
+                "id": "absorption",
+                "duration": 2400,
+                "amplifier": 3
+              },
+              {
+                "id": "regeneration",
+                "duration": 400,
+                "amplifier": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+]

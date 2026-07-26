@@ -1,0 +1,44 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:equippable": {
+        "slot": "body",
+        "equip_sound": "minecraft:item.armor.equip_wolf",
+        "asset_id": "tnts:turtle_scute_wolf_armor",
+        "allowed_entities": "minecraft:wolf",
+        "can_be_sheared": true,
+        "shearing_sound": "minecraft:item.armor.unequip_wolf"
+      },
+      "minecraft:rarity": "uncommon",
+      "minecraft:repairable": {
+        "items": "minecraft:turtle_scute"
+      },
+      "minecraft:item_name": "龟壳狼凯",
+      "minecraft:max_damage": 96,
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:turtle_scute_wolf_armor",
+          "amount": 16,
+          "operation": "add_value",
+          "slot": "body"
+        },
+        {
+          "type": "minecraft:water_movement_efficiency",
+          "id": "tnts:turtle_scute_wolf_armor",
+          "amount": 1,
+          "operation": "add_value",
+          "slot": "body"
+        },
+        {
+          "type": "minecraft:oxygen_bonus",
+          "id": "tnts:turtle_scute_wolf_armor",
+          "amount": 2,
+          "operation": "add_multiplied_base",
+          "slot": "body"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:fishing_rod"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "text": "皓月钓竿",
+        "color": "#5491FF"
+      },
+      "minecraft:tooltip_style": "tnts:moonlight",
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:is_fire"
+      },
+      "minecraft:rarity": "epic"
+    }
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "minecraft:vanishing_curse": 0,
+      "tnts:attribute/moonlight_bobber": 1
+    }
+  }
+]

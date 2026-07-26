@@ -1,0 +1,48 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:gold_ingot"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_model": "minecraft:cod",
+      "minecraft:item_name": "镶金黑石鱼",
+      "minecraft:rarity": "uncommon",
+      "minecraft:custom_model_data": {
+        "strings": ["blackstone_fish"]
+      },
+      "minecraft:consumable": {
+        "animation": "eat",
+        "consume_seconds": 1.6,
+        "has_consume_particles": true,
+        "on_consume_effects": [
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:glowing",
+                "amplifier": 0,
+                "duration": 300
+              }
+            ]
+          }
+        ],
+        "sound": "minecraft:entity.generic.eat"
+      },
+      "minecraft:food": {
+        "can_always_eat": true,
+        "nutrition": 5,
+        "saturation": 5
+      }
+    }
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:is_fire"
+      }
+    }
+  }
+]

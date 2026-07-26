@@ -1,0 +1,54 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "equip.tnts.phantom_helmet",
+        "fallback": "Phantom Helmet",
+        "color": "#3D497F"
+      },
+      "minecraft:rarity": "rare",
+      "minecraft:repairable": {
+        "items": "minecraft:phantom_membrane"
+      },
+      "minecraft:equippable": {
+        "slot": "head",
+        "asset_id": "tnts:phantom",
+        "equip_sound": "item.armor.equip_leather"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:phantom_helmet",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "head"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "tnts:phantom_helmet",
+          "amount": 1,
+          "operation": "add_value",
+          "slot": "head"
+        }
+      ]
+    }
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:camera_distance",
+        "id": "tnts:phantom_helmet",
+        "amount": {
+          "type": "minecraft:uniform",
+          "min": 0.3,
+          "max": 0.75
+        },
+        "operation": "add_multiplied_base",
+        "slot": "head"
+      }
+    ],
+    "replace": false
+  }
+]

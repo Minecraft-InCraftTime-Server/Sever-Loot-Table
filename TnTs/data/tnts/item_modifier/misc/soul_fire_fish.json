@@ -1,0 +1,53 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:cooked_cod"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_model": "minecraft:cod",
+      "minecraft:item_name": "灵魂火鱼",
+      "minecraft:rarity": "uncommon",
+      "minecraft:custom_model_data": {
+        "strings": ["soul_fire_fish"]
+      },
+      "minecraft:consumable": {
+        "animation": "eat",
+        "consume_seconds": 1.6,
+        "has_consume_particles": true,
+        "on_consume_effects": [
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:blindness",
+                "amplifier": 0,
+                "duration": 300
+              },
+              {
+                "id": "minecraft:invisibility",
+                "amplifier": 0,
+                "duration": 300
+              }
+            ]
+          }
+        ],
+        "sound": "minecraft:entity.generic.eat"
+      },
+      "minecraft:food": {
+        "can_always_eat": true,
+        "nutrition": 4,
+        "saturation": 4
+      }
+    }
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:is_fire"
+      }
+    }
+  }
+]

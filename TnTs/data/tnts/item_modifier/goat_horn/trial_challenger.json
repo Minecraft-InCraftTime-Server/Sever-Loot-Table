@@ -1,0 +1,14 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:instrument": "tnts:trial_challenger",
+    "minecraft:use_cooldown": {
+      "seconds": 90,
+      "cooldown_group": "tnts:trial_challenger"
+    },
+    "minecraft:item_name": {
+      "text": "试炼者铜号",
+      "color": "#e77c56"
+    }
+  }
+}

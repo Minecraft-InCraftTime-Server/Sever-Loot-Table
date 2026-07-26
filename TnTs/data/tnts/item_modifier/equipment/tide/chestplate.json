@@ -1,0 +1,58 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "equip.tnts.tide_chestplate",
+        "fallback": "Tide Chestplate",
+        "color": "#4B8375"
+      },
+      "minecraft:rarity": "epic",
+      "max_damage": 290,
+      "minecraft:damage_resistant": {
+        "types": "#tnts:thorns"
+      },
+      "minecraft:repairable": {
+        "items": "minecraft:prismarine_shard"
+      },
+      "minecraft:equippable": {
+        "slot": "chest",
+        "asset_id": "tnts:tide",
+        "equip_sound": "item.armor.equip_chain"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:tide_chestplate",
+          "amount": 5,
+          "operation": "add_value",
+          "slot": "chest"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "tnts:tide_chestplate",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "chest"
+        }
+      ]
+    }
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:oxygen_bonus",
+        "id": "tnts:tide_chestplate",
+        "amount": {
+          "type": "minecraft:uniform",
+          "min": 2,
+          "max": 2
+        },
+        "operation": "add_value",
+        "slot": "chest"
+      }
+    ],
+    "replace": false
+  }
+]

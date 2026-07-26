@@ -1,0 +1,41 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "equip.tnts.brute_chestplate",
+        "fallback": "Brute Chestplate",
+        "color": "#b2770c"
+      },
+      "minecraft:rarity": "rare",
+      "minecraft:equippable": {
+        "slot": "chest",
+        "asset_id": "tnts:brute",
+        "equip_sound": "item.armor.equip_gold"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:brute_chestplate",
+          "amount": 3,
+          "operation": "add_value",
+          "slot": "chest"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "tnts:brute_chestplate",
+          "amount": 1,
+          "operation": "add_value",
+          "slot": "chest"
+        },
+        {
+          "type": "minecraft:attack_knockback",
+          "id": "tnts:brute_chestplate",
+          "amount": 1,
+          "operation": "add_value",
+          "slot": "chest"
+        }
+      ]
+    }
+  }
+]

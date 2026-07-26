@@ -1,0 +1,48 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:item_name": "低调的黑客",
+    "minecraft:rarity": "uncommon",
+    "minecraft:max_stack_size": 1,
+    "minecraft:equippable": {
+      "slot": "head",
+      "equip_sound": "minecraft:item.armor.equip_leather"
+    },
+    "minecraft:custom_model_data": {
+      "strings": ["low_dick_jiahao"]
+    },
+    "minecraft:attribute_modifiers": [
+      {
+        "type": "minecraft:armor",
+        "id": "minecraft:armor.helmet",
+        "amount": 1,
+        "operation": "add_value",
+        "slot": "head"
+      }
+    ],
+    "!minecraft:food": {},
+    "!minecraft:consumable": {},
+    "minecraft:lore": [
+      {
+        "text": "ICT遭到神秘低调黑客的攻击",
+        "italic": false,
+        "color": "dark_gray"
+      },
+      {
+        "text": "小麦疑似卷款跑路",
+        "italic": false,
+        "color": "dark_gray"
+      },
+      {
+        "text": "管理组寻找小麦不知所踪......",
+        "italic": false,
+        "color": "dark_gray"
+      },
+      {
+        "text": "“太可怕了！”",
+        "italic": false,
+        "color": "red"
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "max_damage": 320,
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:is_fire"
+      },
+      "minecraft:item_name": {
+        "translate": "equip.tnts.fortress_chestplate",
+        "fallback": "Fortress Chestplate",
+        "color": "#943400"
+      },
+      "minecraft:rarity": "rare",
+      "minecraft:equippable": {
+        "slot": "chest",
+        "asset_id": "tnts:fortress",
+        "equip_sound": "item.armor.equip_gold"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:fortress_chestplate",
+          "amount": 5,
+          "operation": "add_value",
+          "slot": "chest"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "tnts:fortress_chestplate",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "chest"
+        }
+      ]
+    }
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:burning_time",
+        "id": "tnts:fortress_chestplate",
+        "amount": {
+          "type": "uniform",
+          "min": -0.25,
+          "max": -0.25
+        },
+        "operation": "add_multiplied_base",
+        "slot": "chest"
+      }
+    ],
+    "replace": false
+  }
+]

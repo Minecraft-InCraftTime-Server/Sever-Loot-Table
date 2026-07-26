@@ -1,0 +1,37 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "equip.tnts.wandering_helmet",
+        "fallback": "Wandering Helmet",
+        "color": "#4c78c4"
+      },
+      "minecraft:rarity": "rare",
+      "minecraft:repairable": {
+        "items": "minecraft:leather"
+      },
+      "minecraft:equippable": {
+        "slot": "head",
+        "asset_id": "tnts:wandering",
+        "equip_sound": "item.armor.equip_leather"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:wandering_helmet",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "head"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "tnts:wandering_helmet",
+          "amount": 1,
+          "operation": "add_value",
+          "slot": "head"
+        }
+      ]
+    }
+  }
+]

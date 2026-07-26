@@ -1,0 +1,44 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "equip.tnts.heavy_helmet",
+        "fallback": "Heavy Metal Helmet"
+      },
+      "minecraft:rarity": "epic",
+      "max_damage": 539,
+      "minecraft:repairable": {
+        "items": "minecraft:heavy_core"
+      },
+      "minecraft:equippable": {
+        "slot": "head",
+        "asset_id": "tnts:heavy_core",
+        "equip_sound": "item.armor.equip_netherite"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:heavy_helmet",
+          "amount": 4,
+          "operation": "add_value",
+          "slot": "head"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "tnts:heavy_helmet",
+          "amount": 4,
+          "operation": "add_value",
+          "slot": "head"
+        },
+        {
+          "type": "minecraft:knockback_resistance",
+          "id": "tnts:heavy_helmet",
+          "amount": 0.15,
+          "operation": "add_value",
+          "slot": "head"
+        }
+      ]
+    }
+  }
+]

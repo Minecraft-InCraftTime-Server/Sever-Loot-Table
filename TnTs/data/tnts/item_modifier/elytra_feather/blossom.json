@@ -1,0 +1,17 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:sniffer_spawn_egg"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "!minecraft:entity_data": {},
+      "minecraft:item_name": {
+        "text": "繁茂翎羽",
+        "color": "#70922D"
+      },
+      "minecraft:custom_data": "{blossom_feather:true}"
+    }
+  }
+]

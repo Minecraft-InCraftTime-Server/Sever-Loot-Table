@@ -1,0 +1,33 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:equippable": {
+        "slot": "head",
+        "damage_on_hurt": false,
+        "equip_sound": "minecraft:entity.strider.ambient"
+      },
+      "minecraft:custom_model_data": {
+        "floats": [2310082]
+      },
+      "minecraft:enchantments": {
+        "tnts:attribute/mobhat": 1
+      },
+      "minecraft:enchantment_glint_override": false,
+      "minecraft:item_name": {
+        "text": "炽足兽玩偶"
+      },
+      "minecraft:rarity": "rare",
+      "minecraft:max_damage": 100,
+      "attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "minecraft:armor.helmet",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "head"
+        }
+      ]
+    }
+  }
+]

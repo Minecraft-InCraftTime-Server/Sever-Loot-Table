@@ -1,0 +1,58 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "equip.tnts.tide_leggings",
+        "fallback": "Tide Leggings",
+        "color": "#4B8375"
+      },
+      "minecraft:rarity": "epic",
+      "max_damage": 275,
+      "minecraft:damage_resistant": {
+        "types": "#tnts:thorns"
+      },
+      "minecraft:repairable": {
+        "items": "minecraft:prismarine_shard"
+      },
+      "minecraft:equippable": {
+        "slot": "legs",
+        "asset_id": "tnts:tide",
+        "equip_sound": "item.armor.equip_chain"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:tide_leggings",
+          "amount": 4,
+          "operation": "add_value",
+          "slot": "legs"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "tnts:tide_leggings",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "legs"
+        }
+      ]
+    }
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:submerged_mining_speed",
+        "id": "tnts:tide_leggings",
+        "amount": {
+          "type": "minecraft:uniform",
+          "min": 1.5,
+          "max": 1.5
+        },
+        "operation": "add_multiplied_base",
+        "slot": "legs"
+      }
+    ],
+    "replace": false
+  }
+]

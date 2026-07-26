@@ -1,0 +1,46 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:light_blue_bundle"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_model": "tnts:breeze_jetpack",
+      "minecraft:use_effects": {
+        "can_sprint": true,
+        "speed_multiplier": 1
+      },
+      "minecraft:tooltip_style": "tnts:breeze",
+      "minecraft:tooltip_display": {
+        "hidden_components": ["minecraft:enchantments"]
+      },
+      "minecraft:attack_range": {
+        "hitbox_margin": 0,
+        "max_creative_reach": 0,
+        "max_reach": 0,
+        "min_creative_reach": 0,
+        "min_reach": 0,
+        "mob_factor": 0
+      },
+      "minecraft:max_damage": 1000,
+      "minecraft:damage": 0,
+      "minecraft:swing_animation": {
+        "type": "none"
+      },
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:panic_environmental_causes"
+      },
+      "minecraft:rarity": "epic",
+      "minecraft:repair_cost": 1,
+      "minecraft:item_name": {
+        "text": "旋风背包",
+        "color": "#5973b4"
+      },
+      "minecraft:enchantments": {
+        "tnts:attribute/breeze_jetpack": 1
+      },
+      "minecraft:enchantment_glint_override": true
+    }
+  }
+]

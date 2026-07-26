@@ -1,0 +1,10 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:provides_trim_material": "tnts:trial",
+    "minecraft:item_name": {
+      "translate": "item.tnts.refined_copper_ingot",
+      "fallback": "Refined Copper Ingot"
+    }
+  }
+}

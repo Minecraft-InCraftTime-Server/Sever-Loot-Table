@@ -1,0 +1,47 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "text": "旋风护目镜",
+        "color": "#958DD3"
+      },
+      "minecraft:rarity": "rare",
+      "minecraft:enchantments": {
+        "tnts:attribute/mobhat": 1
+      },
+      "minecraft:max_damage": 100,
+      "minecraft:equippable": {
+        "slot": "head",
+        "damage_on_hurt": false,
+        "equip_sound": "minecraft:entity.breeze.idle_air"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "minecraft:breeze_headarmor",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "head"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "minecraft:breeze_headarmor",
+          "amount": 1,
+          "operation": "add_value",
+          "slot": "head"
+        },
+        {
+          "type": "minecraft:explosion_knockback_resistance",
+          "id": "minecraft:breeze_headarmor",
+          "amount": 0.15,
+          "operation": "add_value",
+          "slot": "head"
+        }
+      ],
+      "minecraft:custom_model_data": {
+        "floats": [2310049]
+      }
+    }
+  }
+]

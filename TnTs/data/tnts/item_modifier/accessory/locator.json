@@ -1,0 +1,19 @@
+[
+  {
+    "function": "minecraft:reference",
+    "name": "tnts:accessory/parent"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "text": "矿晶护符",
+        "color": "aqua"
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["locator"]
+      },
+      "minecraft:tooltip_style": "tnts:turquoise"
+    }
+  }
+]

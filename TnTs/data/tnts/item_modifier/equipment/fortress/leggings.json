@@ -1,0 +1,55 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "max_damage": 270,
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:is_fire"
+      },
+      "minecraft:item_name": {
+        "translate": "equip.tnts.fortress_leggings",
+        "fallback": "Fortress Leggings",
+        "color": "#943400"
+      },
+      "minecraft:rarity": "rare",
+      "minecraft:equippable": {
+        "slot": "legs",
+        "asset_id": "tnts:fortress",
+        "equip_sound": "item.armor.equip_gold"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:fortress_leggings",
+          "amount": 3,
+          "operation": "add_value",
+          "slot": "legs"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "tnts:fortress_leggings",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "legs"
+        }
+      ]
+    }
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:movement_efficiency",
+        "id": "tnts:fortress_leggings",
+        "amount": {
+          "type": "uniform",
+          "min": 0.6,
+          "max": 0.6
+        },
+        "operation": "add_multiplied_base",
+        "slot": "legs"
+      }
+    ],
+    "replace": false
+  }
+]

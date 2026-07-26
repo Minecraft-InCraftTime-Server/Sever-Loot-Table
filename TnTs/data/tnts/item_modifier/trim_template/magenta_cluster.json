@@ -1,0 +1,25 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:zombified_piglin_spawn_egg"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:custom_data": {
+        "tooltip_style": "magenta"
+      },
+      "minecraft:item_name": {
+        "text": "洋红晶簇",
+        "color": "#D35D7A"
+      },
+      "minecraft:tooltip_style": "tnts:magenta",
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:panic_causes"
+      },
+      "minecraft:max_stack_size": 16,
+      "!minecraft:entity_data": {}
+    }
+  }
+]

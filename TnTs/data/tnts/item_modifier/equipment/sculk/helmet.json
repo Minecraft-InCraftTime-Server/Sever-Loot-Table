@@ -1,0 +1,37 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "equip.tnts.sculk_helmet",
+        "fallback": "Sculk Helmet",
+        "color": "#0E5660"
+      },
+      "minecraft:rarity": "epic",
+      "max_damage": 363,
+      "minecraft:repairable": {
+        "items": "minecraft:echo_shard"
+      },
+      "minecraft:equippable": {
+        "slot": "head",
+        "equip_sound": "block.sculk_sensor.clicking"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:sculk_helmet",
+          "amount": 3,
+          "operation": "add_value",
+          "slot": "head"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "tnts:sculk_helmet",
+          "amount": 1,
+          "operation": "add_value",
+          "slot": "head"
+        }
+      ]
+    }
+  }
+]

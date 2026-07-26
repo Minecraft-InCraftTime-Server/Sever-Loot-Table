@@ -1,0 +1,144 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:equippable": {
+        "slot": "head",
+        "equip_sound": "minecraft:entity.axolotl.hurt"
+      },
+      "minecraft:item_name": {
+        "text": "美西螈帽子"
+      },
+      "minecraft:enchantment_glint_override": false,
+      "minecraft:rarity": "uncommon",
+      "minecraft:max_damage": 100,
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "minecraft:armor.helmet",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "head"
+        }
+      ]
+    }
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_model_data": {
+        "floats": [2310043]
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "minecraft:components": {
+            "minecraft:axolotl/variant": "blue"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_model_data": {
+        "floats": [2310044]
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "minecraft:components": {
+            "minecraft:axolotl/variant": "cyan"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_model_data": {
+        "floats": [2310045]
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "minecraft:components": {
+            "minecraft:axolotl/variant": "gold"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_model_data": {
+        "floats": [2310046]
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "minecraft:components": {
+            "minecraft:axolotl/variant": "lucy"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_model_data": {
+        "floats": [2310047]
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "minecraft:components": {
+            "minecraft:axolotl/variant": "wild"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "predicates": {
+        "minecraft:custom_model_data": {}
+      }
+    },
+    "on_fail": [
+      {
+        "function": "minecraft:set_custom_model_data",
+        "floats": {
+          "mode": "replace_all",
+          "values": [
+            {
+              "type": "minecraft:uniform",
+              "min": 2310044,
+              "max": 2310047
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

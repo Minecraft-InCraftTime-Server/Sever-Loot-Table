@@ -1,0 +1,61 @@
+[
+  {
+    "function": "minecraft:reference",
+    "name": "tnts:potion/parent"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_model_data": {
+        "strings": ["locator"]
+      },
+      "minecraft:tooltip_style": "tnts:turquoise",
+      "minecraft:item_name": {
+        "text": "矿晶精华",
+        "color": "aqua"
+      },
+      "minecraft:consumable": {
+        "animation": "drink",
+        "consume_seconds": 1.6,
+        "has_consume_particles": false,
+        "sound": "minecraft:entity.generic.drink",
+        "on_consume_effects": [
+          {
+            "type": "minecraft:clear_all_effects"
+          },
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:glowing",
+                "amplifier": 0,
+                "duration": 36000
+              },
+              {
+                "id": "minecraft:haste",
+                "amplifier": 0,
+                "duration": 18000
+              },
+              {
+                "id": "minecraft:resistance",
+                "amplifier": 0,
+                "duration": 18000
+              }
+            ]
+          },
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:haste",
+                "duration": 6000,
+                "amplifier": 1
+              }
+            ],
+            "probability": 0.5
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "function": "minecraft:reference",
+    "name": "tnts:accessory/parent"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "text": "龙息护符",
+        "color": "#c744a8"
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["ender"]
+      },
+      "minecraft:tooltip_style": "tnts:violet"
+    }
+  }
+]

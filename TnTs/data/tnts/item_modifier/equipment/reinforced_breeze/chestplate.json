@@ -1,0 +1,44 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "equip.tnts.heavy_chestplate",
+        "fallback": "Heavy Metal Chestplate"
+      },
+      "minecraft:rarity": "epic",
+      "max_damage": 656,
+      "minecraft:repairable": {
+        "items": "minecraft:heavy_core"
+      },
+      "minecraft:equippable": {
+        "slot": "chest",
+        "asset_id": "tnts:reinforced_breeze",
+        "equip_sound": "item.armor.equip_netherite"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "id": "tnts:heavy_chestplate",
+          "amount": 10,
+          "operation": "add_value",
+          "slot": "chest"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "id": "tnts:heavy_chestplate",
+          "amount": 4,
+          "operation": "add_value",
+          "slot": "chest"
+        },
+        {
+          "type": "minecraft:knockback_resistance",
+          "id": "tnts:heavy_chestplate",
+          "amount": 0.15,
+          "operation": "add_value",
+          "slot": "chest"
+        }
+      ]
+    }
+  }
+]

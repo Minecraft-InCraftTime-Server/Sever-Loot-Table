@@ -1,0 +1,17 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:silverfish_spawn_egg"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "!minecraft:entity_data": {},
+      "minecraft:item_name": {
+        "text": "小精灵翎羽",
+        "color": "#f48c50"
+      },
+      "minecraft:custom_data": "{cockroach_feather:true}"
+    }
+  }
+]
