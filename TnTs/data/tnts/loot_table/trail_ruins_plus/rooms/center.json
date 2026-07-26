@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:archaeology",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:music_disc/voyage"
+            }
+          ],
+          "name": "minecraft:music_disc_relic",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "tnts:special_equipment/wandering",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.75
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "diamond",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gold_ingot",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "emerald_block",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_relic",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

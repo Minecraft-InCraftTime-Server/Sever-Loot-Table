@@ -1,0 +1,42 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:smithing_template/sword_piercing_smithing_template"
+            }
+          ],
+          "name": "minecraft:test_block",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:smithing_template/shield_kinetic_smithing_template"
+            }
+          ],
+          "name": "minecraft:test_block",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:smithing_template/spear_lightweigh_smithing_template"
+            }
+          ],
+          "name": "minecraft:test_block",
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}

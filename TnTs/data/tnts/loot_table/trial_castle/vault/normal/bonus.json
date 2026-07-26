@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:weapon/trial_trident"
+            }
+          ],
+          "name": "minecraft:trident",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:weapon/copper_lance"
+            }
+          ],
+          "name": "minecraft:copper_spear",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

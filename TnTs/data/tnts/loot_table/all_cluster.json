@@ -1,0 +1,290 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:trim_template/ink_cluster"
+                }
+              ],
+              "name": "minecraft:barrier"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:trim_template/echo_cluster"
+                }
+              ],
+              "name": "minecraft:barrier"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:trim_template/flow_cluster"
+                }
+              ],
+              "name": "minecraft:barrier"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:trim_template/mist_cluster"
+                }
+              ],
+              "name": "minecraft:barrier"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:trim_template/pale_cluster"
+                }
+              ],
+              "name": "minecraft:barrier"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:trim_template/rose_cluster"
+                }
+              ],
+              "name": "minecraft:barrier"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:trim_template/azure_cluster"
+                }
+              ],
+              "name": "minecraft:barrier"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:trim_template/breeze_cluster"
+                }
+              ],
+              "name": "minecraft:barrier"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:trim_template/copper_cluster"
+                }
+              ],
+              "name": "minecraft:barrier"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:trim_template/endrod_cluster"
+                }
+              ],
+              "name": "minecraft:barrier"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:trim_template/garnet_cluster"
+                }
+              ],
+              "name": "minecraft:barrier"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:trim_template/goldie_cluster"
+                }
+              ],
+              "name": "minecraft:barrier"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:trim_template/pothos_cluster"
+                }
+              ],
+              "name": "minecraft:barrier"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:trim_template/spring_cluster"
+                }
+              ],
+              "name": "minecraft:barrier"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:trim_template/violet_cluster"
+                }
+              ],
+              "name": "minecraft:barrier"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:trim_template/willow_cluster"
+                }
+              ],
+              "name": "minecraft:barrier"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:trim_template/inferno_cluster"
+                }
+              ],
+              "name": "minecraft:barrier"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:trim_template/magenta_cluster"
+                }
+              ],
+              "name": "minecraft:barrier"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:trim_template/phantom_cluster"
+                }
+              ],
+              "name": "minecraft:barrier"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:trim_template/verdant_cluster"
+                }
+              ],
+              "name": "minecraft:barrier"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:trim_template/amethyst_cluster"
+                }
+              ],
+              "name": "minecraft:barrier"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:trim_template/dullgold_cluster"
+                }
+              ],
+              "name": "minecraft:barrier"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:trim_template/sanctity_cluster"
+                }
+              ],
+              "name": "minecraft:barrier"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:trim_template/moonlight_cluster"
+                }
+              ],
+              "name": "minecraft:barrier"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:trim_template/turquoise_cluster"
+                }
+              ],
+              "name": "minecraft:barrier"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:trim_template/vermilion_cluster"
+                }
+              ],
+              "name": "minecraft:barrier"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:trim_template/sunset_cluster"
+                }
+              ],
+              "name": "minecraft:barrier"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

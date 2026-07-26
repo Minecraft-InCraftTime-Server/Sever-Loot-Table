@@ -1,0 +1,72 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:trim_template/moonlight_cluster"
+            }
+          ],
+          "name": "minecraft:wither_spawn_egg",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:trim_template/mist_cluster"
+            }
+          ],
+          "name": "minecraft:nautilus_spawn_egg",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:trim_template/sunset_cluster"
+            }
+          ],
+          "name": "minecraft:fox_spawn_egg",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:equipment/turtle_scute_wolf_armor"
+            }
+          ],
+          "name": "minecraft:wolf_armor",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:equipment/mobhat/puffer_fish"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": {
+                  "floats": [2310085]
+                }
+              }
+            }
+          ],
+          "name": "minecraft:leather_helmet",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

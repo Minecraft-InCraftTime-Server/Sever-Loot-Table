@@ -1,0 +1,147 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "tnts:loot_tier_3"
+            }
+          ],
+          "value": {
+            "pools": [
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:weapon/toxic_bow"
+                      }
+                    ],
+                    "name": "minecraft:bow"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "tnts:loot_tier_2"
+            }
+          ],
+          "value": {
+            "pools": [
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:equipment/toxic/helmet"
+                      }
+                    ],
+                    "name": "minecraft:chainmail_helmet",
+                    "weight": 1
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:equipment/toxic/chestplate"
+                      }
+                    ],
+                    "name": "minecraft:chainmail_chestplate",
+                    "weight": 1
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:equipment/toxic/leggings"
+                      }
+                    ],
+                    "name": "minecraft:chainmail_leggings",
+                    "weight": 1
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:equipment/toxic/boots"
+                      }
+                    ],
+                    "name": "minecraft:chainmail_boots",
+                    "weight": 1
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "tnts:loot_tier_1"
+            }
+          ],
+          "weight": 2,
+          "value": {
+            "pools": [
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:potion/bogged"
+                      }
+                    ],
+                    "name": "minecraft:dragon_breath",
+                    "conditions": [
+                      {
+                        "condition": "minecraft:reference",
+                        "name": "tnts:loot_tier_2"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:elytra_feather/toxic"
+                      }
+                    ],
+                    "name": "minecraft:bogged_spawn_egg"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

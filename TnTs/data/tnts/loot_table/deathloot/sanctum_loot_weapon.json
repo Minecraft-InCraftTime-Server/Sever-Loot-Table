@@ -1,0 +1,69 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:weapon/wraith_bow"
+            }
+          ],
+          "name": "minecraft:bow",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "tnts:loot_tier_3"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:weapon/daybreaker"
+            }
+          ],
+          "name": "minecraft:golden_sword",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "tnts:loot_tier_3"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:trim_template/sanctity_cluster"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "uniform",
+                "min": 2,
+                "max": 4
+              }
+            }
+          ],
+          "name": "minecraft:evoker_spawn_egg"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:elytra_feather/sanctity"
+            }
+          ],
+          "name": "minecraft:vindicator_spawn_egg"
+        }
+      ]
+    }
+  ]
+}

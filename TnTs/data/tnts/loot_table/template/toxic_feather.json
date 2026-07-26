@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:elytra_feather/toxic"
+            }
+          ],
+          "name": "minecraft:bogged_spawn_egg"
+        }
+      ]
+    }
+  ]
+}

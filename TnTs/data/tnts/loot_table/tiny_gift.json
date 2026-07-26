@@ -1,0 +1,33 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "幼年生物挂件盲盒",
+                  "color": "yellow"
+                },
+                "minecraft:consumable": {
+                  "animation": "bundle",
+                  "consume_seconds": 0.5,
+                  "has_consume_particles": false,
+                  "sound": "minecraft:entity.baby_chicken.ambient"
+                },
+                "minecraft:custom_model_data": {
+                  "strings": ["tiny_gift"]
+                }
+              }
+            }
+          ],
+          "name": "minecraft:paper"
+        }
+      ]
+    }
+  ]
+}

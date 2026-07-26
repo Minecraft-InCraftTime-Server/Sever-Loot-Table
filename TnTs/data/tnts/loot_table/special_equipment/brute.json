@@ -1,0 +1,126 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:equipment/brute/mask"
+            }
+          ],
+          "name": "minecraft:golden_helmet",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "tnts:loot_tier_2"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:equipment/brute/chestplate"
+            }
+          ],
+          "name": "minecraft:golden_chestplate",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "tnts:loot_tier_2"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:equipment/brute/leggings"
+            }
+          ],
+          "name": "minecraft:golden_leggings",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "tnts:loot_tier_2"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:equipment/brute/boots"
+            }
+          ],
+          "name": "minecraft:golden_boots",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "tnts:loot_tier_2"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:elytra_feather/brute"
+            }
+          ],
+          "name": "minecraft:piglin_brute_spawn_egg",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "tnts:loot_tier_1"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:reference",
+          "name": "tnts:special_loot"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:music_disc/pigstep_cassette"
+            }
+          ],
+          "name": "minecraft:music_disc_pigstep"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.2
+        },
+        {
+          "condition": "minecraft:reference",
+          "name": "tnts:special_loot"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:entity_data": {
+                  "id": "armor_stand",
+                  "Marker": true,
+                  "Tags": ["firework_armor_stand"],
+                  "Invisible": true,
+                  "Invulnerable": true,
+                  "NoGravity": true,
+                  "attributes": [
+                    {
+                      "id": "scale",
+                      "base": 0.0625
+                    }
+                  ],
+                  "equipment": {
+                    "body": {
+                      "id": "minecraft:barrier",
+                      "components": {
+                        "equippable": {
+                          "slot": "body"
+                        },
+                        "enchantments": {
+                          "minecraft:binding_curse": 1,
+                          "tnts:attribute/firework_armor_stand": 1
+                        }
+                      }
+                    }
+                  }
+                },
+                "minecraft:item_model": "minecraft:trial_spawner",
+                "minecraft:item_name": {
+                  "text": "新年烟花生成器",
+                  "color": "gold"
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "用于生成新年烟花的道具",
+                    "color": "red",
+                    "italic": true
+                  },
+                  {
+                    "text": "请对准完整方块上表面放置！",
+                    "color": "red",
+                    "italic": true
+                  }
+                ]
+              }
+            }
+          ],
+          "name": "minecraft:armor_stand"
+        }
+      ]
+    }
+  ]
+}

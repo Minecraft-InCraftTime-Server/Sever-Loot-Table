@@ -1,0 +1,78 @@
+{
+  "type": "minecraft:archaeology",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "equippable": {
+                  "slot": "head",
+                  "equip_sound": "minecraft:entity.allay.ambient_with_item"
+                },
+                "item_name": "欢乐晶簇",
+                "rarity": "epic",
+                "enchantments": {
+                  "eleven:noplace": 1
+                },
+                "lore": [
+                  {
+                    "text": "嘻嘻哼----,",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "水晶记录了这段声音",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ],
+          "name": "medium_amethyst_bud",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "amethyst_shard",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "emerald",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "diamond",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gold_ingot",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "golden_sword",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "golden_axe",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "tnts:special_equipment/wandering",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

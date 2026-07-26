@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:equipment/megumin_hat"
+            }
+          ],
+          "name": "minecraft:chainmail_helmet"
+        }
+      ]
+    }
+  ]
+}

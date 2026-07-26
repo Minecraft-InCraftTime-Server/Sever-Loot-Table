@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:gift",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:turtle_scute"
+        }
+      ],
+      "rolls": 1
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:trim_template/flow_cluster"
+            }
+          ],
+          "name": "minecraft:pufferfish_spawn_egg"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.5
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "biomes": ["minecraft:warm_ocean","minecraft:lukewarm_ocean","minecraft:deep_lukewarm_ocean","terralith:deep_warm_ocean"]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:gameplay/turtle_grow"
+}

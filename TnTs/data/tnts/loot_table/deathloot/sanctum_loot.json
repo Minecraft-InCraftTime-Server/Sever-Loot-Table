@@ -1,0 +1,33 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:trim_template/sanctity_cluster"
+            }
+          ],
+          "name": "minecraft:evoker_spawn_egg"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 15,
+                "max": 28
+              }
+            }
+          ],
+          "name": "minecraft:spectral_arrow"
+        }
+      ]
+    }
+  ]
+}

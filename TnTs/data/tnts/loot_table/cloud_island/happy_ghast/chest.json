@@ -1,0 +1,225 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 7,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:dried_ghast",
+          "weight": 2,
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.6
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "name": "minecraft:bone_block",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "name": "minecraft:soul_sand",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lead",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_potion",
+              "id": "minecraft:long_regeneration"
+            }
+          ],
+          "name": "minecraft:splash_potion",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 4
+              }
+            }
+          ],
+          "name": "minecraft:snow_block",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3,
+                "max": 7
+              }
+            }
+          ],
+          "name": "minecraft:snowball",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "tnts:ghastling"
+            }
+          ],
+          "name": "minecraft:book",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:equipment/mobhat/ghastling"
+            }
+          ],
+          "name": "minecraft:leather_helmet",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:equipment/dyeable_harness_hat"
+            }
+          ],
+          "name": "minecraft:leather_helmet",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": {
+            "pools": [
+              {
+                "functions": [
+                  {
+                    "function": "minecraft:set_enchantments",
+                    "enchantments": {
+                      "minecraft:protection": {
+                        "type": "minecraft:uniform",
+                        "min": 1,
+                        "max": 4
+                      }
+                    },
+                    "conditions": [
+                      {
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.7
+                      }
+                    ]
+                  }
+                ],
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "red_harness"
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "blue_harness"
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "purple_harness"
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "yellow_harness"
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "green_harness"
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "lime_harness"
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "white_harness"
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "black_harness"
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "orange_harness"
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "gray_harness"
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "light_blue_harness"
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "light_gray_harness"
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "magenta_harness"
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "brown_harness"
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "pink_harness"
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "cyan_harness"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

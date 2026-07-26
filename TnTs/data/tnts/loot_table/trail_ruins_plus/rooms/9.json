@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:archaeology",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "equippable": {
+                  "slot": "head",
+                  "camera_overlay": "block/ice",
+                  "equip_sound": "block.glass.fall"
+                },
+                "item_name": "即将来袭!",
+                "rarity": "uncommon",
+                "enchantments": {
+                  "eleven:noplace": 1
+                },
+                "lore": [
+                  {
+                    "text": "你才是笨蛋,",
+                    "color": "aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": "我可是最强的!",
+                    "color": "aqua",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ],
+          "name": "ice"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "type": "chest",
+  "functions": [
+    {
+      "function": "minecraft:reference",
+      "name": "nova_structures:loot_modifier"
+    }
+  ],
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:trial_key",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:coin"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2 ,"max": 4
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "tnts:special_equipment/toxic"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.6
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 2
+            }
+          ],
+          "name": "wild_armor_trim_smithing_template"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "skull_banner_pattern"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 12,
+                "min": 8
+              }
+            }
+          ],
+          "name": "verdant_froglight",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 12,
+                "min": 8
+              }
+            }
+          ],
+          "name": "ochre_froglight",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 12,
+                "min": 8
+              }
+            }
+          ],
+          "name": "pearlescent_froglight",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "skeleton_skull"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "poison"
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "max": 20,
+                "min": 10
+              }
+            }
+          ],
+          "name": "tipped_arrow"
+        }
+      ]
+    },
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 2,
+                "min": 1
+              }
+            }
+          ],
+          "name": "gold_block",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 2,
+                "min": 1
+              }
+            }
+          ],
+          "name": "emerald_block",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "diamond_block",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 3,
+                "min": 2
+              }
+            }
+          ],
+          "name": "iron_block",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 2,
+                "min": 1
+              }
+            }
+          ],
+          "name": "golden_apple",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "nova_structures:antidote": 1
+              }
+            }
+          ],
+          "name": "minecraft:book"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "nova_structures:multishot": 1
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "minecraft:filtered",
+              "item_filter": {
+                "predicates": {
+                  "minecraft:stored_enchantments": [
+                    {}
+                  ]
+                }
+              },
+              "on_fail": {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "nova_structures:piercing": {
+                    "type": "minecraft:uniform",
+                    "min": 2,
+                    "max": 4
+                  }
+                }
+              }
+            }
+          ],
+          "name": "minecraft:book"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "options": "#nova_structures:piercing",
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 30,
+              "options": "#nova_structures:structure/toxic_lair_no_dnt_enchant"
+            }
+          ],
+          "name": "minecraft:bow"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "options": "#nova_structures:multishot",
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 30,
+              "options": "#nova_structures:structure/toxic_lair_no_dnt_enchant"
+            }
+          ],
+          "name": "minecraft:bow"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "tnts:loot_tier_2"
+            }
+          ],
+          "value": {
+            "pools": [
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:equipment/phantom/helmet"
+                      }
+                    ],
+                    "name": "minecraft:chainmail_helmet",
+                    "weight": 1
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:equipment/phantom/chestplate"
+                      }
+                    ],
+                    "name": "minecraft:chainmail_chestplate",
+                    "weight": 1
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:equipment/phantom/leggings"
+                      }
+                    ],
+                    "name": "minecraft:chainmail_leggings",
+                    "weight": 1
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:equipment/phantom/boots"
+                      }
+                    ],
+                    "name": "minecraft:chainmail_boots",
+                    "weight": 1
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "tnts:loot_tier_1"
+            }
+          ],
+          "weight": 1,
+          "value": {
+            "pools": [
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:trim_template/magenta_cluster"
+                      }
+                    ],
+                    "name": "minecraft:zombified_piglin_spawn_egg",
+                    "weight": 2
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:trim_template/phantom_cluster"
+                      }
+                    ],
+                    "name": "minecraft:enderman_spawn_egg",
+                    "weight": 2
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:dragon_head",
+                    "weight": 1
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:elytra_feather/phantom"
+                      }
+                    ],
+                    "name": "minecraft:phantom_spawn_egg",
+                    "weight": 1
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_components",
+                        "components": {
+                          "minecraft:stored_enchantments": {
+                            "nova_structures:shulker_miniboss": 1
+                          }
+                        },
+                        "conditions": [
+                          {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.50
+                          }
+                        ]
+                      },
+                      {
+                        "function": "minecraft:filtered",
+                        "item_filter": {
+                          "predicates": {
+                            "minecraft:stored_enchantments": [
+                              {
+                                "enchantments": "nova_structures:shulker_miniboss"
+                              }
+                            ]
+                          }
+                        },
+                        "on_fail": {
+                          "function": "minecraft:set_components",
+                          "components": {
+                            "minecraft:stored_enchantments": {
+                              "nova_structures:shulker_boss": 1
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "name": "minecraft:enchanted_book",
+                    "weight": 1
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

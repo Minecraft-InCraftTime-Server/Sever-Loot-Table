@@ -1,0 +1,139 @@
+{
+  "type": "minecraft:chest",
+  "functions": [
+    {
+      "function": "minecraft:reference",
+      "name": "nova_structures:loot_modifier"
+    }
+  ],
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_potion",
+              "id": "minecraft:weakness"
+            }
+          ],
+          "name": "minecraft:lingering_potion"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_potion",
+              "id": "minecraft:slowness"
+            }
+          ],
+          "name": "minecraft:lingering_potion"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_potion",
+              "id": "minecraft:slowness"
+            }
+          ],
+          "name": "minecraft:tipped_arrow"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_potion",
+              "id": "minecraft:weakness"
+            }
+          ],
+          "name": "minecraft:tipped_arrow"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "minecraft:set_fireworks",
+              "explosions": {
+                "values": [
+                  {
+                    "shape": "small_ball",
+                    "colors": [16769360]
+                  }
+                ],
+                "mode": "replace_all"
+              },
+              "flight_duration": 2
+            }
+          ],
+          "name": "minecraft:firework_rocket"
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "minecraft:set_fireworks",
+              "explosions": {
+                "values": [
+                  {
+                    "shape": "small_ball",
+                    "colors": [13521124]
+                  }
+                ],
+                "mode": "replace_all"
+              },
+              "flight_duration": 2
+            }
+          ],
+          "name": "minecraft:firework_rocket"
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "minecraft:set_fireworks",
+              "explosions": {
+                "values": [
+                  {
+                    "shape": "creeper",
+                    "colors": [4295220]
+                  }
+                ],
+                "mode": "replace_all"
+              },
+              "flight_duration": 2
+            }
+          ],
+          "name": "minecraft:firework_rocket"
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "minecraft:set_fireworks",
+              "explosions": {
+                "values": [
+                  {
+                    "shape": "creeper",
+                    "colors": [8971818]
+                  }
+                ],
+                "mode": "replace_all"
+              },
+              "flight_duration": 2
+            }
+          ],
+          "name": "minecraft:firework_rocket"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:equipment/fortune_hat"
+            }
+          ],
+          "name": "minecraft:chainmail_helmet",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:equipment/mobhat/vex_and_allay"
+            }
+          ],
+          "name": "minecraft:leather_helmet",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:equipment/mobhat/nautilus"
+            }
+          ],
+          "name": "minecraft:leather_helmet",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:weapon/horse_shotgun"
+            }
+          ],
+          "name": "minecraft:crossbow",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 3,
+        "max": 4
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "附魔闪烁的西瓜片",
+                  "color": "red"
+                },
+                "minecraft:rarity": "epic",
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:food": {
+                  "saturation": 6,
+                  "nutrition": 6,
+                  "can_always_eat": true
+                },
+                "minecraft:consumable": {
+                  "animation": "eat",
+                  "consume_seconds": 1.6,
+                  "has_consume_particles": true,
+                  "sound": "minecraft:entity.generic.eat",
+                  "on_consume_effects": [
+                    {
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:health_boost",
+                          "amplifier": 2,
+                          "duration": 1200
+                        },
+                        {
+                          "id": "minecraft:absorption",
+                          "amplifier": 1,
+                          "duration": 1200
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "name": "minecraft:glistering_melon_slice",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:consumable/glow_berry_custard_horn"
+            }
+          ],
+          "name": "minecraft:blaze_powder",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:consumable/hot_cocoa_horn"
+            }
+          ],
+          "name": "minecraft:blaze_powder",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:consumable/melon_juice_horn"
+            }
+          ],
+          "name": "minecraft:blaze_powder",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:consumable/stuffed_nautilus_shell"
+            },
+            {
+              "function": "minecraft:set_count",
+              "add": true,
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 3
+              }
+            }
+          ],
+          "name": "minecraft:nautilus_shell",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:consumable/fungus_skewer"
+            },
+            {
+              "function": "minecraft:set_count",
+              "add": true,
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 3
+              }
+            }
+          ],
+          "name": "minecraft:blaze_powder",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:consumable/mushroom_skewer"
+            },
+            {
+              "function": "minecraft:set_count",
+              "add": true,
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 3
+              }
+            }
+          ],
+          "name": "minecraft:blaze_powder",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:consumable/melon_popsicle"
+            },
+            {
+              "function": "minecraft:set_count",
+              "add": true,
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 1
+              }
+            }
+          ],
+          "name": "minecraft:glistering_melon_slice",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:consumable/nether_salad"
+            }
+          ],
+          "name": "minecraft:bowl",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:consumable/honey_cookie"
+            },
+            {
+              "function": "minecraft:set_count",
+              "add": true,
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 7
+              }
+            }
+          ],
+          "name": "minecraft:cookie",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:consumable/roast_chicken"
+            },
+            {
+              "function": "minecraft:set_count",
+              "add": true,
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 2
+              }
+            }
+          ],
+          "name": "minecraft:cooked_chicken",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:consumable/spring_rolls"
+            },
+            {
+              "function": "minecraft:set_count",
+              "add": true,
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 4
+              }
+            }
+          ],
+          "name": "minecraft:cooked_porkchop",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

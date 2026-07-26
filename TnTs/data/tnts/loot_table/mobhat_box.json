@@ -1,0 +1,80 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "custom_data": {
+                  "id": "mobhat_box"
+                },
+                "minecraft:item_name": "生物帽子盲盒",
+                "minecraft:rarity": "uncommon",
+                "minecraft:consumable": {
+                  "animation": "bow",
+                  "consume_seconds": 1,
+                  "has_consume_particles": false,
+                  "sound": "minecraft:block.vault.open_shutter"
+                },
+                "minecraft:use_effects": {
+                  "can_sprint": true,
+                  "interact_vibrations": true,
+                  "speed_multiplier": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "selector": "@s",
+                  "underlined": false,
+                  "italic": false,
+                  "color": "gold",
+                  "extra": [
+                    {
+                      "text": " 欢迎来到ICT！",
+                      "underlined": false,
+                      "color": "green"
+                    }
+                  ]
+                },
+                {
+                  "text": "这是为你准备的见面礼，长按右键使用哦！",
+                  "italic": false,
+                  "color": "green"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "minecraft:type_specific/player": {
+                      "stats": [
+                        {
+                          "type": "minecraft:custom",
+                          "stat": "minecraft:play_time",
+                          "value": {
+                            "max": 100
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "minecraft:paper"
+        }
+      ]
+    }
+  ]
+}

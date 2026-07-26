@@ -1,0 +1,105 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "tnts:inferno_blaze/equipment/armor"
+        }
+      ]
+    },
+    {
+      "functions": [
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:trim": {
+              "material": "minecraft:quartz",
+              "pattern": "minecraft:silence"
+            }
+          }
+        },
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:trim": {
+              "material": "minecraft:amethyst",
+              "pattern": "minecraft:silence"
+            }
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:trim": {
+              "material": "minecraft:quartz",
+              "pattern": "minecraft:tide"
+            }
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          ]
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:set_enchantments",
+                  "enchantments": {
+                    "power": {
+                      "type": "uniform",
+                      "min": 1,
+                      "max": 3
+                    },
+                    "tnts:shatter": 3
+                  }
+                }
+              ],
+              "name": "minecraft:bow",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.7
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:set_enchantments",
+                  "enchantments": {
+                    "sharpness": {
+                      "type": "uniform",
+                      "min": 2,
+                      "max": 4
+                    },
+                    "breach": 1
+                  }
+                }
+              ],
+              "name": "minecraft:diamond_sword"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

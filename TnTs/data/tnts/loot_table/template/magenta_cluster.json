@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:trim_template/magenta_cluster"
+            }
+          ],
+          "name": "minecraft:zombified_piglin_spawn_egg"
+        }
+      ]
+    }
+  ]
+}

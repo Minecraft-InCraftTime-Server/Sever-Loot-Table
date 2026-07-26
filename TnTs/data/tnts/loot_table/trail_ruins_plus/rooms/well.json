@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:archaeology",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "bucket",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "bowl",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cauldron",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "glass_bottle",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pufferfish",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "turtle_scute",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "tnts:special_equipment/wandering",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

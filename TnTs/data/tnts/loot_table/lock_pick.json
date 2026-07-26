@@ -1,0 +1,23 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:lock_pick"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 3
+            }
+          ],
+          "name": "minecraft:ominous_trial_key"
+        }
+      ]
+    }
+  ]
+}

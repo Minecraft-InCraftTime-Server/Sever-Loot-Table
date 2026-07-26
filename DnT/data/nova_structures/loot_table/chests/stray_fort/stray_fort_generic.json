@@ -1,0 +1,471 @@
+{
+  "type": "minecraft:chest",
+  "functions": [
+    {
+      "function": "minecraft:reference",
+      "name": "nova_structures:loot_modifier"
+    }
+  ],
+  "pools": [
+    {
+      "rolls": {
+        "max": 3,
+        "min": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 3,
+                "min": 1
+              }
+            }
+          ],
+          "name": "minecraft:gunpowder",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 3,
+                "min": 1
+              }
+            }
+          ],
+          "name": "redstone",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 3,
+                "min": 1
+              }
+            }
+          ],
+          "name": "string",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 2,
+                "min": 1
+              }
+            }
+          ],
+          "name": "name_tag",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 2,
+                "min": 1
+              }
+            }
+          ],
+          "name": "lead",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "white_bundle",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "light_blue_bundle",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 2,
+                "min": 1
+              }
+            }
+          ],
+          "name": "saddle",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "diamond_horse_armor",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 2,
+                "min": 1
+              }
+            }
+          ],
+          "name": "leather_horse_armor",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "music_disc_strad",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "music_disc_wait",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 2,
+                "min": 1
+              }
+            }
+          ],
+          "name": "bucket",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": {
+                "max": 10,
+                "min": 5
+              },
+              "options": "#nova_structures:structure/snowy"
+            }
+          ],
+          "name": "book",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "max": 2,
+        "min": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:diamond",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "enchanted_golden_apple",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 3,
+                "min": 1
+              }
+            }
+          ],
+          "name": "lapis_lazuli",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": {
+                "max": 25,
+                "min": 5
+              },
+              "options": "#nova_structures:structure/snowy"
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "max": 1,
+                "min": 0.5
+              }
+            }
+          ],
+          "name": "iron_shovel",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": {
+                "max": 25,
+                "min": 5
+              },
+              "options": "#nova_structures:structure/snowy"
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "max": 1,
+                "min": 0.5
+              }
+            }
+          ],
+          "name": "diamond_shovel",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": {
+                "max": 25,
+                "min": 5
+              },
+              "options": "#nova_structures:structure/snowy"
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "max": 1,
+                "min": 0.5
+              }
+            }
+          ],
+          "name": "iron_boots",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": {
+                "max": 25,
+                "min": 5
+              },
+              "options": "#nova_structures:structure/snowy"
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "max": 1,
+                "min": 0.5
+              }
+            }
+          ],
+          "name": "diamond_boots",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "max": 2,
+        "min": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 3,
+                "min": 2
+              }
+            }
+          ],
+          "name": "apple",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 2,
+                "min": 1
+              }
+            }
+          ],
+          "name": "golden_apple",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 3,
+                "min": 1
+              }
+            }
+          ],
+          "name": "coal",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 2,
+                "min": 1
+              }
+            }
+          ],
+          "name": "amethyst_shard",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 3,
+                "min": 2
+              }
+            }
+          ],
+          "name": "iron_nugget",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 2,
+                "min": 1
+              }
+            }
+          ],
+          "name": "iron_ingot",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 2,
+                "min": 1
+              }
+            }
+          ],
+          "name": "emerald",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "nova_structures:chests/stray_fort/pools/cold"
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 3,
+                "min": 2
+              }
+            }
+          ],
+          "name": "pumpkin"
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 3,
+                "min": 2
+              }
+            }
+          ],
+          "name": "carved_pumpkin"
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 3,
+                "min": 2
+              }
+            }
+          ],
+          "name": "pumpkin_seeds"
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 3,
+                "min": 2
+              }
+            }
+          ],
+          "name": "beetroot"
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 3,
+                "min": 2
+              }
+            }
+          ],
+          "name": "sweet_berries"
+        }
+      ]
+    }
+  ]
+}

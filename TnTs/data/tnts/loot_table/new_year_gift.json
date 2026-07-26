@@ -1,0 +1,33 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "新年礼盒",
+                  "color": "red"
+                },
+                "minecraft:consumable": {
+                  "animation": "bundle",
+                  "consume_seconds": 0.5,
+                  "has_consume_particles": false,
+                  "sound": "minecraft:entity.allay.ambient_with_item"
+                },
+                "minecraft:custom_model_data": {
+                  "strings": ["new_year_gift"]
+                }
+              }
+            }
+          ],
+          "name": "minecraft:paper"
+        }
+      ]
+    }
+  ]
+}

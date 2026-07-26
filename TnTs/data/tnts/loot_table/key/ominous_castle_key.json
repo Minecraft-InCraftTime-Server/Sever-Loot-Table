@@ -1,0 +1,20 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:key/ominous_castle_key"
+            }
+          ],
+          "name": "minecraft:ominous_trial_key",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

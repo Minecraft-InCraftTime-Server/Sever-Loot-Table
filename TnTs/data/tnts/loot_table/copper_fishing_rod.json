@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:tool/copper_fishing_rod"
+            }
+          ],
+          "name": "minecraft:fishing_rod"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "tnts:loot_tier_2"
+            }
+          ],
+          "weight": 1,
+          "value": {
+            "pools": [
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:equipment/tide/helmet"
+                      }
+                    ],
+                    "name": "minecraft:chainmail_helmet",
+                    "weight": 1
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:equipment/tide/chestplate"
+                      }
+                    ],
+                    "name": "minecraft:chainmail_chestplate",
+                    "weight": 1
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:equipment/tide/leggings"
+                      }
+                    ],
+                    "name": "minecraft:chainmail_leggings",
+                    "weight": 1
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:equipment/tide/boots"
+                      }
+                    ],
+                    "name": "minecraft:chainmail_boots",
+                    "weight": 1
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "tnts:loot_tier_2"
+            }
+          ],
+          "weight": 1,
+          "value": {
+            "pools": [
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:potion/conduit"
+                      }
+                    ],
+                    "name": "minecraft:dragon_breath",
+                    "weight": 7
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:weapon/nautilus_spear"
+                      }
+                    ],
+                    "name": "minecraft:golden_spear",
+                    "weight": 3
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": {
+            "pools": [
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:elytra_feather/tide"
+                      }
+                    ],
+                    "name": "minecraft:guardian_spawn_egg",
+                    "weight": 1
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:equipment/mobhat/guardian"
+                      }
+                    ],
+                    "name": "minecraft:leather_helmet",
+                    "weight": 1
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_item",
+                        "item": "minecraft:diamond_nautilus_armor",
+                        "conditions": [
+                          {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.30
+                          }
+                        ]
+                      },
+                      {
+                        "function": "minecraft:set_enchantments",
+                        "enchantments": {
+                          "minecraft:protection": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 4
+                          }
+                        }
+                      }
+                    ],
+                    "name": "minecraft:iron_nautilus_armor"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

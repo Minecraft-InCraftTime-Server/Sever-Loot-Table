@@ -1,0 +1,198 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 8,
+                "max": 16
+              }
+            }
+          ],
+          "name": "minecraft:experience_bottle",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_item",
+              "item": "minecraft:enchanted_golden_apple",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ],
+          "name": "minecraft:golden_apple",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_effects": [
+                    {
+                      "id": "resistance",
+                      "amplifier": 2,
+                      "duration": 600
+                    }
+                  ],
+                  "custom_color": 9192677
+                },
+                "minecraft:custom_name": {
+                  "text": "高级抗性药水",
+                  "italic": false
+                }
+              }
+            }
+          ],
+          "name": "minecraft:potion",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:lunge": {
+                  "min": 2,
+                  "max": 3
+                },
+                "minecraft:sharpness": {
+                  "type": "minecraft:uniform",
+                  "min": 2,
+                  "max": 5
+                },
+                "minecraft:looting": {
+                  "min": 2,
+                  "max": 3
+                }
+              }
+            }
+          ],
+          "name": "minecraft:book",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": {
+            "pools": [
+              {
+                "functions": [
+                  {
+                    "function": "minecraft:set_enchantments",
+                    "enchantments": {
+                      "minecraft:protection": {
+                        "min": 3,
+                        "max": 4
+                      }
+                    }
+                  },
+                  {
+                    "function": "minecraft:set_enchantments",
+                    "enchantments": {
+                      "minecraft:unbreaking": {
+                        "min": 2,
+                        "max": 3
+                      },
+                      "minecraft:mending": 1
+                    }
+                  },
+                  {
+                    "function": "minecraft:set_components",
+                    "components": {
+                      "minecraft:trim": {
+                        "pattern": "minecraft:bolt",
+                        "material": "minecraft:copper"
+                      }
+                    },
+                    "conditions": [
+                      {
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.6
+                      }
+                    ]
+                  },
+                  {
+                    "function": "minecraft:filtered",
+                    "item_filter": {
+                      "predicates": {
+                        "minecraft:trim": {
+                          "pattern": "minecraft:bolt",
+                          "material": "minecraft:copper"
+                        }
+                      }
+                    },
+                    "on_fail": [
+                      {
+                        "function": "minecraft:set_components",
+                        "components": {
+                          "minecraft:trim": {
+                            "pattern": "minecraft:flow",
+                            "material": "minecraft:amethyst"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_helmet",
+                    "weight": 1
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_chestplate",
+                    "weight": 1
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_leggings",
+                    "weight": 1
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_boots",
+                    "weight": 1
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:guster_banner_pattern",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bolt_armor_trim_smithing_template",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:flow_armor_trim_smithing_template",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

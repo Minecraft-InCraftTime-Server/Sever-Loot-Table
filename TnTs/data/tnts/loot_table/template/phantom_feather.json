@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:elytra_feather/phantom"
+            }
+          ],
+          "name": "minecraft:phantom_spawn_egg"
+        }
+      ]
+    }
+  ]
+}

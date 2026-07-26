@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "tnts:trial_castle/equipment/equip_normal"
+        }
+      ]
+    },
+    {
+      "functions": [
+        {
+          "function": "minecraft:reference",
+          "name": "tnts:equipment/trial_castle_random_trim"
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "quick_charge": {
+                  "type": "uniform",
+                  "min": 2,
+                  "max": 4
+                },
+                "power": {
+                  "type": "uniform",
+                  "min": 2,
+                  "max": 4
+                },
+                "tnts:shatter": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 2
+                }
+              }
+            }
+          ],
+          "name": "minecraft:crossbow",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

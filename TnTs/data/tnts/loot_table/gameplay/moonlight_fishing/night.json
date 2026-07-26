@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "tnts:gameplay/moonlight_fishing/fish",
+          "weight": 85
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "tnts:gameplay/moonlight_fishing/treasure",
+          "weight": 15
+        }
+      ]
+    }
+  ]
+}

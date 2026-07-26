@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:equipment/mobhat/wither"
+                }
+              ],
+              "name": "minecraft:leather_helmet",
+              "conditions": [
+                {
+                  "condition": "minecraft:damage_source_properties",
+                  "predicate": {
+                    "source_entity": {
+                      "minecraft:entity_type": "minecraft:player"
+                    },
+                    "direct_entity": {
+                      "minecraft:entity_type": "minecraft:splash_potion"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:empty"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:entities/wither"
+}

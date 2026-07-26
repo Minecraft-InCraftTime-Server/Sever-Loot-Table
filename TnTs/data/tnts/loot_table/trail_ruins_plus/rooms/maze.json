@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:archaeology",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "book"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "bone"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "echo_shard"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "compass"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ender_eye"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "spyglass"
+        }
+      ]
+    }
+  ]
+}

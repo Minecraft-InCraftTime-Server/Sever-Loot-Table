@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "functions": [
+        {
+          "function": "minecraft:reference",
+          "name": "tnts:equipment/trial_castle_random_trim"
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_axe",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_axe",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

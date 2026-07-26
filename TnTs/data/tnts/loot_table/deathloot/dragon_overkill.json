@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:equipment/mobhat/ender_dragon"
+            }
+          ],
+          "name": "minecraft:leather_helmet"
+        }
+      ]
+    }
+  ]
+}

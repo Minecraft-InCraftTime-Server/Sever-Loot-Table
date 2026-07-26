@@ -1,0 +1,725 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!minecraft:entity_data": {}
+              }
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:trim_template/pale_cluster"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ],
+          "name": "minecraft:skeleton_spawn_egg"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.2
+        }
+      ]
+    },
+    {
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": {
+            "type": "minecraft:chest",
+            "functions": [
+              {
+                "function": "minecraft:reference",
+                "name": "nova_structures:loot_modifier"
+              }
+            ],
+            "pools": [
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "loot_table",
+                    "value": {
+                      "pools": [
+                        {
+                          "rolls": 1,
+                          "entries": [
+                            {
+                              "type": "item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 5,
+                                    "min": 2
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:bread"
+                            },
+                            {
+                              "type": "item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 3,
+                                    "min": 2
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:pumpkin_pie"
+                            },
+                            {
+                              "type": "item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 2,
+                                    "min": 1
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:lead"
+                            },
+                            {
+                              "type": "item",
+                              "name": "minecraft:bundle"
+                            },
+                            {
+                              "type": "item",
+                              "name": "minecraft:name_tag"
+                            }
+                          ]
+                        },
+                        {
+                          "rolls": 1,
+                          "entries": [
+                            {
+                              "type": "item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 3,
+                                    "min": 2
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:wheat"
+                            },
+                            {
+                              "type": "item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 3,
+                                    "min": 2
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:pumpkin_seeds"
+                            },
+                            {
+                              "type": "item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 4,
+                                    "min": 3
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:beetroot_seeds"
+                            },
+                            {
+                              "type": "item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 4,
+                                    "min": 3
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:wheat_seeds"
+                            },
+                            {
+                              "type": "item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 5,
+                                    "min": 4
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:beetroot"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "weight": 2
+                  },
+                  {
+                    "type": "loot_table",
+                    "value": {
+                      "pools": [
+                        {
+                          "rolls": 2,
+                          "entries": [
+                            {
+                              "type": "item",
+                              "name": "minecraft:diamond"
+                            },
+                            {
+                              "type": "item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 3,
+                                    "min": 2
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:amethyst_shard"
+                            },
+                            {
+                              "type": "item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 4,
+                                    "min": 2
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:redstone"
+                            },
+                            {
+                              "type": "item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 4,
+                                    "min": 2
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:emerald"
+                            },
+                            {
+                              "type": "item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 5,
+                                    "min": 3
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:lapis_lazuli"
+                            },
+                            {
+                              "type": "item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 5,
+                                    "min": 3
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:experience_bottle"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "weight": 2
+                  },
+                  {
+                    "type": "loot_table",
+                    "value": {
+                      "pools": [
+                        {
+                          "rolls": 1,
+                          "entries": [
+                            {
+                              "type": "item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 7,
+                                    "min": 4
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:iron_ingot"
+                            }
+                          ]
+                        },
+                        {
+                          "rolls": 2,
+                          "entries": [
+                            {
+                              "type": "item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 8,
+                                    "min": 5
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:iron_nugget",
+                              "weight": 3
+                            },
+                            {
+                              "type": "item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 4,
+                                    "min": 2
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:coal",
+                              "weight": 1
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "weight": 1
+                  },
+                  {
+                    "type": "loot_table",
+                    "value": {
+                      "pools": [
+                        {
+                          "rolls": 1,
+                          "entries": [
+                            {
+                              "type": "item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 7,
+                                    "min": 4
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:gold_ingot"
+                            }
+                          ]
+                        },
+                        {
+                          "rolls": 2,
+                          "entries": [
+                            {
+                              "type": "item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 9,
+                                    "min": 5
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:gold_nugget",
+                              "weight": 3
+                            },
+                            {
+                              "type": "item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 4,
+                                    "min": 2
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:coal",
+                              "weight": 1
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "weight": 1
+                  }
+                ]
+              },
+              {
+                "functions": [
+                  {
+                    "function": "enchant_with_levels",
+                    "levels": {
+                      "max": 30,
+                      "min": 20
+                    },
+                    "options": "#nova_structures:structure/pale_residence"
+                  }
+                ],
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_axe",
+                    "weight": 2
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_axe"
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:stone_axe"
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_chestplate",
+                    "weight": 2
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_chestplate"
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:chainmail_chestplate",
+                    "weight": 2
+                  }
+                ],
+                "conditions": [
+                  {
+                    "condition": "random_chance",
+                    "chance": 0.3
+                  }
+                ]
+              },
+              {
+                "rolls": 2,
+                "entries": [
+                  {
+                    "type": "loot_table",
+                    "value": {
+                      "pools": [
+                        {
+                          "rolls": 1,
+                          "entries": [
+                            {
+                              "type": "minecraft:item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 3,
+                                    "min": 2
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:pale_oak_sapling"
+                            },
+                            {
+                              "type": "minecraft:item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 2,
+                                    "min": 1
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:pale_oak_log"
+                            },
+                            {
+                              "type": "minecraft:item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 3,
+                                    "min": 2
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:pale_moss_block"
+                            },
+                            {
+                              "type": "minecraft:item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 4,
+                                    "min": 2
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:pale_hanging_moss"
+                            },
+                            {
+                              "type": "minecraft:item",
+                              "functions": [
+                                {
+                                  "function": "minecraft:set_count",
+                                  "count": {
+                                    "type": "minecraft:uniform",
+                                    "min": 1,
+                                    "max": 3
+                                  },
+                                  "add": false
+                                }
+                              ],
+                              "name": "minecraft:resin_clump"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "loot_table",
+                    "value": {
+                      "pools": [
+                        {
+                          "rolls": 1,
+                          "entries": [
+                            {
+                              "type": "minecraft:item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 3,
+                                    "min": 1
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:orange_candle",
+                              "weight": 3
+                            },
+                            {
+                              "type": "minecraft:item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 3,
+                                    "min": 1
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:black_candle",
+                              "weight": 3
+                            },
+                            {
+                              "type": "minecraft:item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 3,
+                                    "min": 1
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:light_gray_candle",
+                              "weight": 3
+                            },
+                            {
+                              "type": "minecraft:item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 3,
+                                    "min": 1
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:white_candle",
+                              "weight": 3
+                            },
+                            {
+                              "type": "minecraft:item",
+                              "functions": [
+                                {
+                                  "function": "set_ominous_bottle_amplifier",
+                                  "amplifier": {
+                                    "max": 3,
+                                    "min": 1
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:ominous_bottle",
+                              "weight": 1
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "loot_table",
+                    "value": {
+                      "pools": [
+                        {
+                          "rolls": 1,
+                          "entries": [
+                            {
+                              "type": "minecraft:item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 2,
+                                    "min": 1
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:bone",
+                              "weight": 3
+                            },
+                            {
+                              "type": "minecraft:item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 2,
+                                    "min": 1
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:gunpowder",
+                              "weight": 3
+                            },
+                            {
+                              "type": "minecraft:item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 2,
+                                    "min": 1
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:string",
+                              "weight": 3
+                            },
+                            {
+                              "type": "minecraft:item",
+                              "functions": [
+                                {
+                                  "function": "set_count",
+                                  "count": {
+                                    "max": 2,
+                                    "min": 1
+                                  }
+                                }
+                              ],
+                              "name": "minecraft:copper_ingot",
+                              "weight": 3
+                            },
+                            {
+                              "type": "minecraft:item",
+                              "name": "minecraft:music_disc_mellohi",
+                              "weight": 1
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "rolls": 1,
+                "bonus_rolls": 0.0,
+                "entries": [
+                  {
+                    "type": "minecraft:empty",
+                    "weight": 130
+                  },
+                  {
+                    "type": "item",
+                    "name": "minecraft:sentry_armor_trim_smithing_template",
+                    "weight": 2
+                  },
+                  {
+                    "type": "item",
+                    "name": "minecraft:vex_armor_trim_smithing_template",
+                    "weight": 2
+                  },
+                  {
+                    "type": "item",
+                    "name": "minecraft:creaking_heart",
+                    "weight": 10
+                  },
+                  {
+                    "type": "item",
+                    "functions": [
+                      {
+                        "function": "enchant_with_levels",
+                        "options": "#nova_structures:structure/pale_residence",
+                        "levels": {
+                          "max": 15,
+                          "min": 5
+                        }
+                      }
+                    ],
+                    "name": "book",
+                    "weight": 30
+                  }
+                ]
+              }
+            ]
+          },
+          "weight": 30
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:chests/woodland_mansion",
+          "weight": 1
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

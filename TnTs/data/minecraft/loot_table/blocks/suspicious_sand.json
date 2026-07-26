@@ -1,0 +1,77 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:copy_components",
+              "source": "block_entity",
+              "include": ["minecraft:custom_data","minecraft:item_name","minecraft:custom_name","minecraft:enchantment_glint_override"]
+            },
+            {
+              "function": "minecraft:copy_custom_data",
+              "source": {
+                "type": "minecraft:context",
+                "target": "block_entity"
+              },
+              "ops": [
+                {
+                  "source": "id",
+                  "target": "minecraft:block_entity_data.id",
+                  "op": "replace"
+                },
+                {
+                  "source": "LootTable",
+                  "target": "minecraft:block_entity_data.LootTable",
+                  "op": "replace"
+                },
+                {
+                  "source": "item",
+                  "target": "minecraft:block_entity_data.item",
+                  "op": "replace"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "text": "× 未经处理的可疑方块",
+                  "color": "red",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "name": "minecraft:suspicious_sand",
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "items": "minecraft:netherite_shovel",
+                "components": {
+                  "minecraft:repairable": {
+                    "items": "minecraft:heavy_core"
+                  }
+                },
+                "predicates": {
+                  "minecraft:enchantments": [
+                    {
+                      "enchantments": "minecraft:silk_touch"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "minecraft:blocks/suspicious_sand"
+}

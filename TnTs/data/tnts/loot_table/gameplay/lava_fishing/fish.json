@@ -1,0 +1,181 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:misc/blackstone_fish"
+            }
+          ],
+          "name": "minecraft:cooked_cod",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:misc/wither_fish"
+            }
+          ],
+          "name": "minecraft:cooked_cod",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:misc/blaze_fish"
+            }
+          ],
+          "name": "minecraft:cooked_cod",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:misc/common_obsidian_fish"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:misc/epic_obsidian_fish",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:misc/obsidian_fish_spear",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "name": "minecraft:cooked_cod",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:misc/common_warped_fish"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:misc/epic_warped_fish",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ],
+          "name": "minecraft:cooked_cod",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:misc/common_crimson_fish"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:misc/epic_crimson_fish",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ],
+          "name": "minecraft:cooked_cod",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:misc/golden_fish"
+            }
+          ],
+          "name": "minecraft:cooked_cod",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:misc/lava_fish"
+            }
+          ],
+          "name": "minecraft:cooked_cod",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:misc/quartz_fish"
+            }
+          ],
+          "name": "minecraft:cooked_cod",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:misc/soul_fire_fish"
+            }
+          ],
+          "name": "minecraft:cooked_cod",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:misc/soul_sand_fish"
+            }
+          ],
+          "name": "minecraft:cooked_cod",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:misc/soul_wart_fish"
+            }
+          ],
+          "name": "minecraft:cooked_cod",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:equipment/mobhat/breeze_glasses"
+            }
+          ],
+          "name": "minecraft:leather_helmet",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "tnts:loot_tier_1"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "tnts:loot_tier_2"
+            }
+          ],
+          "value": {
+            "pools": [
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:tool/breeze_flute"
+                      }
+                    ],
+                    "name": "minecraft:iron_spear",
+                    "weight": 1
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:smithing_template/reinforced_breeze_style_smithing_template"
+                      }
+                    ],
+                    "name": "minecraft:test_block",
+                    "weight": 1
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:potion/breeze"
+                      }
+                    ],
+                    "name": "minecraft:dragon_breath",
+                    "weight": 1
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "tnts:loot_tier_3"
+            }
+          ],
+          "weight": 1,
+          "value": {
+            "pools": [
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:weapon/breeze_bow"
+                      }
+                    ],
+                    "name": "minecraft:bow",
+                    "weight": 1,
+                    "conditions": [
+                      {
+                        "condition": "minecraft:reference",
+                        "name": "tnts:loot_tier_3"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:weapon/breeze_mace"
+                      }
+                    ],
+                    "name": "minecraft:mace",
+                    "weight": 1,
+                    "conditions": [
+                      {
+                        "condition": "minecraft:reference",
+                        "name": "tnts:loot_tier_3"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

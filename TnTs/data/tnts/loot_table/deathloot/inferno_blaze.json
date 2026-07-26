@@ -1,0 +1,259 @@
+{
+  "pools": [
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:shield/inferno"
+            }
+          ],
+          "name": "minecraft:shield"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:weapon/inferno_firearm"
+            }
+          ],
+          "name": "minecraft:bow"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:weapon/inferno_wand"
+            }
+          ],
+          "name": "minecraft:crossbow"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:weapon/inferno_blade"
+            }
+          ],
+          "name": "minecraft:golden_sword"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": {
+            "pools": [
+              {
+                "functions": [
+                  {
+                    "function": "minecraft:set_enchantments",
+                    "enchantments": {
+                      "minecraft:protection": 4
+                    }
+                  },
+                  {
+                    "function": "minecraft:reference",
+                    "name": "tnts:equipment/random_trim"
+                  }
+                ],
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_enchantments",
+                        "enchantments": {
+                          "minecraft:fire_protection": 3
+                        }
+                      }
+                    ],
+                    "weight": 2,
+                    "name": "minecraft:netherite_helmet"
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_enchantments",
+                        "enchantments": {
+                          "minecraft:fire_protection": 3
+                        }
+                      }
+                    ],
+                    "weight": 2,
+                    "name": "minecraft:netherite_chestplate"
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_enchantments",
+                        "enchantments": {
+                          "minecraft:fire_protection": 3
+                        }
+                      }
+                    ],
+                    "weight": 2,
+                    "name": "minecraft:netherite_leggings"
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_enchantments",
+                        "enchantments": {
+                          "minecraft:fire_protection": 3
+                        }
+                      }
+                    ],
+                    "weight": 2,
+                    "name": "minecraft:netherite_boots"
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:equipment/fortress/helmet"
+                      },
+                      {
+                        "function": "minecraft:set_enchantments",
+                        "enchantments": {
+                          "minecraft:unbreaking": 3,
+                          "minecraft:mending": 1
+                        }
+                      }
+                    ],
+                    "weight": 1,
+                    "name": "minecraft:golden_helmet"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "value": {
+                "functions": [
+                  {
+                    "function": "minecraft:set_count",
+                    "add": true,
+                    "count": {
+                      "min": 0,
+                      "max": 1
+                    }
+                  }
+                ],
+                "pools": [
+                  {
+                    "rolls": {
+                      "min": 2,
+                      "max": 3
+                    },
+                    "entries": [
+                      {
+                        "type": "minecraft:item",
+                        "functions": [
+                          {
+                            "function": "minecraft:reference",
+                            "name": "tnts:trim_template/amethyst_cluster"
+                          }
+                        ],
+                        "name": "minecraft:shulker_spawn_egg",
+                        "weight": 1
+                      },
+                      {
+                        "type": "minecraft:item",
+                        "functions": [
+                          {
+                            "function": "minecraft:reference",
+                            "name": "tnts:trim_template/inferno_cluster"
+                          }
+                        ],
+                        "name": "minecraft:magma_cube_spawn_egg",
+                        "weight": 1
+                      },
+                      {
+                        "type": "minecraft:item",
+                        "functions": [
+                          {
+                            "function": "minecraft:reference",
+                            "name": "tnts:trim_template/vermilion_cluster"
+                          }
+                        ],
+                        "name": "minecraft:piglin_spawn_egg",
+                        "weight": 1
+                      },
+                      {
+                        "type": "minecraft:item",
+                        "functions": [
+                          {
+                            "function": "minecraft:reference",
+                            "name": "tnts:trim_template/firestorm"
+                          }
+                        ],
+                        "name": "minecraft:strider_spawn_egg",
+                        "weight": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:consumable/blaze_bread"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 16,
+                "max": 48
+              }
+            }
+          ],
+          "name": "minecraft:bread"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 16,
+                "max": 64
+              }
+            }
+          ],
+          "name": "minecraft:spectral_arrow"
+        }
+      ]
+    }
+  ]
+}

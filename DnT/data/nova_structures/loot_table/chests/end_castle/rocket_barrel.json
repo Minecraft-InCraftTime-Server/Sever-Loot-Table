@@ -1,0 +1,133 @@
+{
+  "type": "minecraft:chest",
+  "functions": [
+    {
+      "function": "minecraft:reference",
+      "name": "nova_structures:loot_modifier"
+    }
+  ],
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:special_items/levitation_potion"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1.0,
+                "max": 2.0
+              },
+              "add": false
+            }
+          ],
+          "name": "minecraft:phantom_membrane",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "options": "#nova_structures:structure/end"
+            }
+          ],
+          "name": "minecraft:crossbow"
+        }
+      ],
+      "rolls": 2
+    },
+    {
+      "rolls": {
+        "min": 3,
+        "max": 4
+      },
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3.0,
+                "max": 5.0
+              },
+              "add": false
+            },
+            {
+              "function": "minecraft:set_fireworks",
+              "flight_duration": 4
+            }
+          ],
+          "name": "minecraft:firework_rocket"
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3.0,
+                "max": 5.0
+              },
+              "add": false
+            },
+            {
+              "function": "minecraft:set_fireworks",
+              "flight_duration": 3
+            }
+          ],
+          "name": "minecraft:firework_rocket"
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 5.0,
+                "max": 8.0
+              },
+              "add": false
+            },
+            {
+              "function": "minecraft:set_fireworks",
+              "flight_duration": 2
+            }
+          ],
+          "name": "minecraft:firework_rocket"
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 6.0,
+                "max": 10.0
+              },
+              "add": false
+            },
+            {
+              "function": "minecraft:set_fireworks",
+              "flight_duration": 1
+            }
+          ],
+          "name": "minecraft:firework_rocket"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "tnts:loot_tier_2"
+            }
+          ],
+          "value": {
+            "pools": [
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:equipment/fortress/helmet"
+                      }
+                    ],
+                    "name": "minecraft:golden_helmet",
+                    "weight": 1
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:equipment/fortress/chestplate"
+                      }
+                    ],
+                    "name": "minecraft:golden_chestplate",
+                    "weight": 1
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:equipment/fortress/leggings"
+                      }
+                    ],
+                    "name": "minecraft:golden_leggings",
+                    "weight": 1
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:equipment/fortress/boots"
+                      }
+                    ],
+                    "name": "minecraft:golden_boots",
+                    "weight": 1
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "tnts:loot_tier_1"
+            }
+          ],
+          "value": {
+            "pools": [
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:potion/blaze"
+                      }
+                    ],
+                    "name": "minecraft:dragon_breath",
+                    "weight": 1,
+                    "conditions": [
+                      {
+                        "condition": "minecraft:reference",
+                        "name": "tnts:loot_tier_2"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:trim_template/inferno_cluster"
+                      }
+                    ],
+                    "name": "minecraft:magma_cube_spawn_egg",
+                    "weight": 2
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:reference",
+                        "name": "tnts:elytra_feather/fortress"
+                      }
+                    ],
+                    "name": "minecraft:blaze_spawn_egg",
+                    "weight": 2
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

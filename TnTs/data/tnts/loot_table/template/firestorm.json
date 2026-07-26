@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:trim_template/firestorm"
+            }
+          ],
+          "name": "minecraft:strider_spawn_egg"
+        }
+      ]
+    }
+  ]
+}

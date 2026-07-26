@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:trim_template/inferno_cluster"
+            }
+          ],
+          "name": "minecraft:magma_cube_spawn_egg"
+        }
+      ]
+    }
+  ]
+}

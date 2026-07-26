@@ -1,0 +1,132 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "tnts:inferno_blaze/equipment/armor"
+        }
+      ]
+    },
+    {
+      "functions": [
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:trim": {
+              "material": "minecraft:gold",
+              "pattern": "tnts:core"
+            }
+          }
+        },
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:trim": {
+              "material": "minecraft:amethyst",
+              "pattern": "minecraft:silence"
+            }
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:trim": {
+              "material": "minecraft:quartz",
+              "pattern": "minecraft:tide"
+            }
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          ]
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:weapon/inferno_blade"
+                },
+                {
+                  "function": "minecraft:set_enchantments",
+                  "enchantments": {
+                    "sharpness": {
+                      "type": "uniform",
+                      "min": 1,
+                      "max": 3
+                    },
+                    "breach": 1
+                  }
+                }
+              ],
+              "name": "minecraft:netherite_sword",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.25
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:set_enchantments",
+                  "enchantments": {
+                    "sharpness": {
+                      "type": "uniform",
+                      "min": 1,
+                      "max": 3
+                    },
+                    "breach": 1
+                  }
+                }
+              ],
+              "name": "minecraft:netherite_sword",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.6
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:set_enchantments",
+                  "enchantments": {
+                    "sharpness": {
+                      "type": "uniform",
+                      "min": 2,
+                      "max": 4
+                    },
+                    "breach": 1
+                  }
+                }
+              ],
+              "name": "minecraft:diamond_sword"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

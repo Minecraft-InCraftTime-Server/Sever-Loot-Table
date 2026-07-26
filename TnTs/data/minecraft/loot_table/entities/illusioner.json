@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:trim_template/sanctity_cluster"
+            }
+          ],
+          "name": "minecraft:evoker_spawn_egg"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:type_specific/raider": {
+              "has_raid": false
+            },
+            "minecraft:location": {
+              "structures": "#tnts:can_drop_sanctity_cluster",
+              "dimension": "minecraft:the_nether"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:entities/illusioner"
+}

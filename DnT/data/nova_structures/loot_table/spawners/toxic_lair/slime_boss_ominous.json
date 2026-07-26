@@ -1,0 +1,82 @@
+{
+  "type": "chest",
+  "functions": [
+    {
+      "function": "minecraft:reference",
+      "name": "nova_structures:loot_modifier"
+    }
+  ],
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 3,
+                "min": 1
+              }
+            }
+          ],
+          "name": "cooked_cod"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 4,
+                "min": 2
+              }
+            }
+          ],
+          "name": "honey_bottle"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 2,
+                "min": 1
+              }
+            }
+          ],
+          "name": "cooked_beef"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "poison"
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "max": 8,
+                "min": 6
+              }
+            }
+          ],
+          "name": "potion"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "swiftness"
+            }
+          ],
+          "name": "potion"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:archaeology",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "totem_of_undying",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "turtle_helmet",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "diamond_helmet",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "enchanted_golden_apple",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "heart_of_the_sea",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "tnts:special_equipment/wandering",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

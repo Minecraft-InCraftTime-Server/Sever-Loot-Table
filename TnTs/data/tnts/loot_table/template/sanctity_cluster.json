@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:trim_template/sanctity_cluster"
+            }
+          ],
+          "name": "minecraft:evoker_spawn_egg"
+        }
+      ]
+    }
+  ]
+}

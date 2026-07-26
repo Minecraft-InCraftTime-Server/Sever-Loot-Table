@@ -1,0 +1,24 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "tnts:gameplay/lava_fishing/treasure",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "tnts:gameplay/lava_fishing/fish",
+          "weight": 70
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "tnts:gameplay/lava_fishing/junk",
+          "weight": 15
+        }
+      ]
+    }
+  ]
+}

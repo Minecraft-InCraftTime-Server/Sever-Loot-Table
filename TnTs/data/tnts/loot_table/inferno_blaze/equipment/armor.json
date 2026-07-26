@@ -1,0 +1,164 @@
+{
+  "type": "minecraft:equipment",
+  "functions": [
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "minecraft:trim": {
+          "material": "minecraft:gold",
+          "pattern": "tnts:firestorm"
+        }
+      }
+    },
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "minecraft:trim": {
+          "material": "minecraft:diamond",
+          "pattern": "tnts:core"
+        }
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.5
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "minecraft:trim": {
+          "material": "minecraft:redstone",
+          "pattern": "minecraft:silence"
+        }
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.5
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "minecraft:trim": {
+          "material": "minecraft:resin",
+          "pattern": "tnts:creaking"
+        }
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.4
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_enchantments",
+      "enchantments": {
+        "minecraft:protection": {
+          "type": "minecraft:uniform",
+          "min": 2,
+          "max": 4
+        },
+        "minecraft:fire_protection": {
+          "type": "uniform",
+          "min": 3,
+          "max": 4
+        }
+      }
+    }
+  ],
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:equipment/fortress/helmet"
+            }
+          ],
+          "name": "minecraft:golden_helmet",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:diamond_chestplate",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:netherite_chestplate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:diamond_leggings",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:netherite_leggings"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:diamond_boots",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:netherite_boots"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "tnts:trial_castle/equipment/equip_ominous"
+        }
+      ]
+    },
+    {
+      "functions": [
+        {
+          "function": "minecraft:reference",
+          "name": "tnts:equipment/trial_castle_random_trim"
+        },
+        {
+          "function": "minecraft:filtered",
+          "item_filter": {
+            "items": "#minecraft:spears"
+          },
+          "on_pass": [
+            {
+              "function": "minecraft:set_attributes",
+              "replace": false,
+              "modifiers": [
+                {
+                  "attribute": "minecraft:knockback_resistance",
+                  "id": "minecraft:less.kb",
+                  "amount": 0.6,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:movement_speed",
+                  "id": "tnts:zombie_spear",
+                  "amount": 0.25,
+                  "operation": "add_multiplied_base",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:shield",
+                "minecraft:attack_range": {
+                  "hitbox_margin": 0.2,
+                  "min_reach": 0,
+                  "max_reach": 2,
+                  "mob_factor": 1
+                },
+                "minecraft:blocks_attacks": {
+                  "block_delay_seconds": 0,
+                  "block_sound": "minecraft:item.shield.block",
+                  "disabled_sound": "minecraft:item.shield.break",
+                  "bypassed_by": "#minecraft:bypasses_shield",
+                  "disable_cooldown_scale": 1
+                },
+                "minecraft:piercing_weapon": {
+                  "hit_sound": "minecraft:item.shield.block",
+                  "deals_knockback": true,
+                  "dismounts": false,
+                  "sound": "minecraft:intentionally_empty"
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:use_effects": {
+                  "can_sprint": true,
+                  "interact_vibrations": false,
+                  "speed_multiplier": 0.9
+                },
+                "minecraft:kinetic_weapon": {
+                  "delay_ticks": 40,
+                  "contact_cooldown_ticks": 10,
+                  "damage_conditions": {
+                    "min_relative_speed": 4.6,
+                    "max_duration_ticks": 100
+                  },
+                  "knockback_conditions": {
+                    "min_speed": 4.6,
+                    "max_duration_ticks": 100
+                  },
+                  "dismount_conditions": {
+                    "min_relative_speed": 4.6,
+                    "max_duration_ticks": 100
+                  },
+                  "damage_multiplier": 1.05,
+                  "forward_movement": 0.15,
+                  "hit_sound": "minecraft:item.shield.block"
+                }
+              }
+            }
+          ],
+          "on_fail": [],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.35
+            }
+          ]
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:sharpness": {
+                  "min": 1,
+                  "max": 2
+                }
+              }
+            }
+          ],
+          "name": "minecraft:diamond_sword",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:breach": 1
+              }
+            }
+          ],
+          "name": "minecraft:iron_sword",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_item",
+              "item": "minecraft:netherite_spear",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:sharpness": {
+                  "min": 1,
+                  "max": 2
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "replace": false,
+              "modifiers": [
+                {
+                  "attribute": "minecraft:movement_speed",
+                  "id": "tnts:zombie_spear",
+                  "amount": 0.25,
+                  "operation": "add_multiplied_base",
+                  "slot": "mainhand"
+                }
+              ]
+            }
+          ],
+          "name": "minecraft:diamond_spear",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "tnts:attribute/low_wind_burst": 1,
+                "minecraft:breach": 1,
+                "minecraft:density": {
+                  "min": 1,
+                  "max": 2
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:attack_range": {
+                  "min_reach": 0,
+                  "max_reach": 1,
+                  "hitbox_margin": 0.125,
+                  "mob_factor": 1
+                }
+              }
+            }
+          ],
+          "name": "minecraft:mace",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

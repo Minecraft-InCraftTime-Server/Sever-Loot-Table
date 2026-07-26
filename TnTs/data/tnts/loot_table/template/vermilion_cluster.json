@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:trim_template/vermilion_cluster"
+            }
+          ],
+          "name": "minecraft:piglin_spawn_egg"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:equipment/fortress/helmet"
+                },
+                {
+                  "function": "minecraft:set_damage",
+                  "damage": {
+                    "type": "minecraft:uniform",
+                    "min": 0.15,
+                    "max": 0.4
+                  }
+                },
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:equipment/random_trim"
+                }
+              ],
+              "name": "minecraft:golden_helmet"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

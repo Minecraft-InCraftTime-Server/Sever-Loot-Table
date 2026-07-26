@@ -1,0 +1,567 @@
+{
+  "type": "minecraft:equipment",
+  "functions": [
+    {
+      "function": "minecraft:reference",
+      "name": "nova_structures:loot_modifier"
+    }
+  ],
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": {
+            "pools": [
+              {
+                "bonus_rolls": 0.0,
+                "conditions": [
+                  {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.6
+                  }
+                ],
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:copper",
+                            "pattern": "minecraft:bolt"
+                          }
+                        },
+                        "function": "minecraft:set_components"
+                      },
+                      {
+                        "function": "enchant_with_levels",
+                        "levels": {
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#minecraft:on_mob_spawn_equipment"
+                      }
+                    ],
+                    "name": "minecraft:iron_helmet"
+                  }
+                ],
+                "rolls": 1.0
+              },
+              {
+                "bonus_rolls": 0.0,
+                "conditions": [
+                  {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.6
+                  }
+                ],
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:copper",
+                            "pattern": "minecraft:bolt"
+                          }
+                        },
+                        "function": "minecraft:set_components"
+                      },
+                      {
+                        "function": "enchant_with_levels",
+                        "levels": {
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#minecraft:on_mob_spawn_equipment"
+                      }
+                    ],
+                    "name": "minecraft:iron_chestplate"
+                  }
+                ],
+                "rolls": 1.0
+              },
+              {
+                "bonus_rolls": 0.0,
+                "conditions": [
+                  {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.6
+                  }
+                ],
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:copper",
+                            "pattern": "minecraft:bolt"
+                          }
+                        },
+                        "function": "minecraft:set_components"
+                      },
+                      {
+                        "function": "enchant_with_levels",
+                        "levels": {
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#minecraft:on_mob_spawn_equipment"
+                      }
+                    ],
+                    "name": "minecraft:iron_leggings"
+                  }
+                ],
+                "rolls": 1.0
+              },
+              {
+                "bonus_rolls": 0.0,
+                "conditions": [
+                  {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.6
+                  }
+                ],
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:copper",
+                            "pattern": "minecraft:bolt"
+                          }
+                        },
+                        "function": "minecraft:set_components"
+                      },
+                      {
+                        "function": "enchant_with_levels",
+                        "levels": {
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#minecraft:on_mob_spawn_equipment"
+                      }
+                    ],
+                    "name": "minecraft:iron_boots"
+                  }
+                ],
+                "rolls": 1.0
+              },
+              {
+                "bonus_rolls": 0.0,
+                "conditions": [
+                  {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.6
+                  }
+                ],
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "enchant_with_levels",
+                        "levels": {
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#nova_structures:structure/shrine_ominous"
+                      }
+                    ],
+                    "name": "minecraft:iron_sword",
+                    "weight": 8
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "enchant_with_levels",
+                        "levels": {
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#nova_structures:structure/shrine_ominous"
+                      }
+                    ],
+                    "name": "minecraft:iron_spear"
+                  }
+                ],
+                "rolls": 1.0
+              }
+            ]
+          },
+          "weight": 4
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": {
+            "pools": [
+              {
+                "bonus_rolls": 0.0,
+                "conditions": [
+                  {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.5
+                  }
+                ],
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:copper",
+                            "pattern": "minecraft:bolt"
+                          }
+                        },
+                        "function": "minecraft:set_components"
+                      },
+                      {
+                        "function": "enchant_with_levels",
+                        "levels": {
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#minecraft:on_mob_spawn_equipment"
+                      }
+                    ],
+                    "name": "minecraft:diamond_helmet"
+                  }
+                ],
+                "rolls": 1.0
+              },
+              {
+                "bonus_rolls": 0.0,
+                "conditions": [
+                  {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.5
+                  }
+                ],
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:copper",
+                            "pattern": "minecraft:bolt"
+                          }
+                        },
+                        "function": "minecraft:set_components"
+                      },
+                      {
+                        "function": "enchant_with_levels",
+                        "levels": {
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#minecraft:on_mob_spawn_equipment"
+                      }
+                    ],
+                    "name": "minecraft:diamond_chestplate"
+                  }
+                ],
+                "rolls": 1.0
+              },
+              {
+                "bonus_rolls": 0.0,
+                "conditions": [
+                  {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.5
+                  }
+                ],
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:copper",
+                            "pattern": "minecraft:bolt"
+                          }
+                        },
+                        "function": "minecraft:set_components"
+                      },
+                      {
+                        "function": "enchant_with_levels",
+                        "levels": {
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#minecraft:on_mob_spawn_equipment"
+                      }
+                    ],
+                    "name": "minecraft:diamond_leggings"
+                  }
+                ],
+                "rolls": 1.0
+              },
+              {
+                "bonus_rolls": 0.0,
+                "conditions": [
+                  {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.5
+                  }
+                ],
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:copper",
+                            "pattern": "minecraft:bolt"
+                          }
+                        },
+                        "function": "minecraft:set_components"
+                      },
+                      {
+                        "function": "enchant_with_levels",
+                        "levels": {
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#minecraft:on_mob_spawn_equipment"
+                      }
+                    ],
+                    "name": "minecraft:diamond_boots"
+                  }
+                ],
+                "rolls": 1.0
+              },
+              {
+                "bonus_rolls": 0.0,
+                "conditions": [
+                  {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.6
+                  }
+                ],
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "enchant_with_levels",
+                        "levels": {
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#nova_structures:structure/shrine_ominous"
+                      }
+                    ],
+                    "name": "minecraft:diamond_sword",
+                    "weight": 8
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "enchant_with_levels",
+                        "levels": {
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#nova_structures:structure/shrine_ominous"
+                      }
+                    ],
+                    "name": "minecraft:diamond_spear"
+                  }
+                ],
+                "rolls": 1.0
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": {
+            "pools": [
+              {
+                "bonus_rolls": 0.0,
+                "conditions": [
+                  {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.7
+                  }
+                ],
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:diamond",
+                            "pattern": "minecraft:bolt"
+                          }
+                        },
+                        "function": "minecraft:set_components"
+                      },
+                      {
+                        "function": "enchant_with_levels",
+                        "levels": {
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#minecraft:on_mob_spawn_equipment"
+                      }
+                    ],
+                    "name": "minecraft:copper_helmet"
+                  }
+                ],
+                "rolls": 1.0
+              },
+              {
+                "bonus_rolls": 0.0,
+                "conditions": [
+                  {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.7
+                  }
+                ],
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:diamond",
+                            "pattern": "minecraft:bolt"
+                          }
+                        },
+                        "function": "minecraft:set_components"
+                      },
+                      {
+                        "function": "enchant_with_levels",
+                        "levels": {
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#minecraft:on_mob_spawn_equipment"
+                      }
+                    ],
+                    "name": "minecraft:copper_chestplate"
+                  }
+                ],
+                "rolls": 1.0
+              },
+              {
+                "bonus_rolls": 0.0,
+                "conditions": [
+                  {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.7
+                  }
+                ],
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:diamond",
+                            "pattern": "minecraft:bolt"
+                          }
+                        },
+                        "function": "minecraft:set_components"
+                      },
+                      {
+                        "function": "enchant_with_levels",
+                        "levels": {
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#minecraft:on_mob_spawn_equipment"
+                      }
+                    ],
+                    "name": "minecraft:copper_leggings"
+                  }
+                ],
+                "rolls": 1.0
+              },
+              {
+                "bonus_rolls": 0.0,
+                "conditions": [
+                  {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.7
+                  }
+                ],
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:diamond",
+                            "pattern": "minecraft:bolt"
+                          }
+                        },
+                        "function": "minecraft:set_components"
+                      },
+                      {
+                        "function": "enchant_with_levels",
+                        "levels": {
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#minecraft:on_mob_spawn_equipment"
+                      }
+                    ],
+                    "name": "minecraft:copper_boots"
+                  }
+                ],
+                "rolls": 1.0
+              },
+              {
+                "bonus_rolls": 0.0,
+                "conditions": [
+                  {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.6
+                  }
+                ],
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "enchant_with_levels",
+                        "levels": {
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#nova_structures:structure/shrine_ominous"
+                      }
+                    ],
+                    "name": "minecraft:copper_sword"
+                  }
+                ],
+                "rolls": 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:elytra_feather/sculk"
+            }
+          ],
+          "name": "minecraft:warden_spawn_egg"
+        }
+      ]
+    }
+  ]
+}

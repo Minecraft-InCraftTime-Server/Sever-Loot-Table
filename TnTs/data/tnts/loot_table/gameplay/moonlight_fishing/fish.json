@@ -1,0 +1,84 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:misc/moonlight_cod"
+            }
+          ],
+          "name": "minecraft:cooked_cod",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:misc/moonlight_flyingfish"
+            }
+          ],
+          "name": "minecraft:cooked_cod",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:misc/moonlight_limacidae"
+            }
+          ],
+          "name": "minecraft:cooked_cod",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:misc/common_glow_cod"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:misc/epic_glow_cod",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.15
+                }
+              ]
+            }
+          ],
+          "name": "minecraft:cooked_cod",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:misc/glow_jellyfish"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:misc/astral_jellyfish",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.05
+                }
+              ]
+            }
+          ],
+          "name": "minecraft:cooked_cod",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
