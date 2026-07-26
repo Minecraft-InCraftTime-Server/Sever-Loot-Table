@@ -1,0 +1,48 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "tnts:special_loot"
+  },
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:storage",
+      "storage": "tnts:special_loot",
+      "path": "tier"
+    },
+    "range": {
+      "min": 2
+    }
+  },
+  {
+    "condition": "minecraft:any_of",
+    "terms": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "minecraft:type_specific/player": {
+            "stats": [
+              {
+                "type": "minecraft:custom",
+                "stat": "minecraft:play_time",
+                "value": {
+                  "min": 3600000
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "minecraft:type_specific/player": {
+            "gamemode": ["creative"]
+          }
+        }
+      }
+    ]
+  }
+]

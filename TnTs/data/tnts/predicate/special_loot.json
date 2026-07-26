@@ -1,0 +1,11 @@
+[
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:storage",
+      "storage": "tnts:special_loot",
+      "path": "boolean"
+    },
+    "range": 1
+  }
+]
