@@ -1,0 +1,55 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "tool.tnts.heavy_pickaxe",
+        "fallback": "Heavy Metal Pickaxe"
+      },
+      "minecraft:rarity": "epic",
+      "minecraft:max_damage": 2501,
+      "minecraft:repairable": {
+        "items": "minecraft:heavy_core"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_damage",
+          "id": "minecraft:base_attack_damage",
+          "amount": 6,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "id": "minecraft:base_attack_speed",
+          "amount": -3,
+          "operation": "add_value",
+          "slot": "mainhand"
+        }
+      ],
+      "minecraft:tool": {
+        "rules": [
+          {
+            "blocks": "#minecraft:incorrect_for_netherite_tool",
+            "correct_for_drops": false
+          },
+          {
+            "speed": 80,
+            "blocks": "#tnts:heavy_pickaxe/deepslate_group",
+            "correct_for_drops": true
+          },
+          {
+            "speed": 110,
+            "blocks": "#tnts:heavy_pickaxe/deepslate_ore",
+            "correct_for_drops": true
+          },
+          {
+            "speed": 12,
+            "blocks": "#minecraft:mineable/pickaxe",
+            "correct_for_drops": true
+          }
+        ]
+      }
+    }
+  }
+]

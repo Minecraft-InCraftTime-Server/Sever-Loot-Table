@@ -1,0 +1,37 @@
+{
+    "function": "minecraft:set_components",
+    "components": {
+        "minecraft:item_name": {
+            "text": "急迫蜂蜜曲奇",
+            "color": "gold"
+        },
+        "minecraft:custom_model_data": {
+            "strings": [
+                "honey_cookie"
+            ]
+        },
+        "minecraft:consumable": {
+            "animation": "eat",
+            "consume_seconds": 0.8,
+            "has_consume_particles": true,
+            "sound": "minecraft:entity.generic.eat",
+            "on_consume_effects": [
+                {
+                    "type": "minecraft:apply_effects",
+                    "effects": [
+                        {
+                            "id": "minecraft:haste",
+                            "duration": 360,
+                            "amplifier": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        "minecraft:food": {
+            "can_always_eat": true,
+            "nutrition": 2,
+            "saturation": 2
+        }
+    }
+}

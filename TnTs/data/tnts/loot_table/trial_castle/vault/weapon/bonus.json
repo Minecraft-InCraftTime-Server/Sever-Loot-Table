@@ -19,7 +19,7 @@
           "functions": [
             {
               "function": "minecraft:reference",
-              "name": "tnts:smithing_template/shield_kinetic_smithing_template"
+              "name": "tnts:smithing_template/balance_weight_smithing_template"
             }
           ],
           "name": "minecraft:test_block",
@@ -30,7 +30,7 @@
           "functions": [
             {
               "function": "minecraft:reference",
-              "name": "tnts:smithing_template/spear_lightweigh_smithing_template"
+              "name": "tnts:smithing_template/spear_lightweight_smithing_template"
             }
           ],
           "name": "minecraft:test_block",

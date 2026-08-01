@@ -1,0 +1,75 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:panic_causes"
+      },
+      "minecraft:custom_data": {
+        "id": "Heavy Metal Upgrade"
+      },
+      "minecraft:item_name": {
+        "translate": "smithing_teamplate.tnts.heavy_upgrade",
+        "fallback": "Heavy Upgrade",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "translate": "smithing_teamplate.tnts.heavy_upgrade.lore.1",
+          "fallback": "Smithing Template",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "",
+          "italic": false
+        },
+        {
+          "translate": "smithing_teamplate.tnts.heavy_upgrade.lore.2",
+          "fallback": "Applies to:",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": " ",
+          "extra": [
+            {
+              "translate": "smithing_teamplate.tnts.heavy_upgrade.lore.3",
+              "fallback": "Netherite Equipment",
+              "color": "blue",
+              "italic": false
+            }
+          ],
+          "italic": false
+        },
+        {
+          "translate": "smithing_teamplate.tnts.heavy_upgrade.lore.4",
+          "fallback": "Ingredients:",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": " ",
+          "extra": [
+            {
+              "translate": "smithing_teamplate.tnts.heavy_upgrade.lore.5",
+              "fallback": "Heavy Core",
+              "color": "blue"
+            }
+          ],
+          "italic": false
+        },
+        {
+          "text": "",
+          "italic": false
+        },
+        {
+          "translate": "smithing_teamplate.tnts.heavy_upgrade.lore.6",
+          "fallback": "Can't Duplicate",
+          "color": "light_purple",
+          "italic": false
+        }
+      ]
+    }
+  }
+]

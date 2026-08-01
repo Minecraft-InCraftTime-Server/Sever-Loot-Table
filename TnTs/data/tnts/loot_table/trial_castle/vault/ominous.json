@@ -19,13 +19,18 @@
                 "min": 2 ,"max": 3
               }
             }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 1
-            }
           ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "structures": "lethal:airship"
+            }
+          }
         }
       ]
     },

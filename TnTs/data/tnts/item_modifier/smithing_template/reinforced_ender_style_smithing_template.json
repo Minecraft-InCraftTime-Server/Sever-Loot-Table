@@ -1,0 +1,110 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:test_block"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:tooltip_style": "tnts:ender",
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:panic_causes"
+      },
+      "minecraft:custom_data": {
+        "id": "reinforced_ender_style"
+      },
+      "minecraft:item_name": {
+        "text": "末影护甲外观模板",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "translate": "smithing_teamplate.tnts.heavy_upgrade.lore.1",
+          "fallback": "Smithing Template",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "type": "object",
+          "atlas": "items",
+          "color": "white",
+          "sprite": "tnts:item/equip/reinforced_ender/helmet",
+          "shadow_color": 0,
+          "extra": [
+            {
+              "type": "object",
+              "atlas": "items",
+              "color": "white",
+              "sprite": "tnts:item/equip/reinforced_ender/chestplate",
+              "shadow_color": 0
+            },
+            {
+              "type": "object",
+              "atlas": "items",
+              "color": "white",
+              "sprite": "tnts:item/equip/reinforced_ender/leggings",
+              "shadow_color": 0
+            },
+            {
+              "type": "object",
+              "atlas": "items",
+              "color": "white",
+              "sprite": "tnts:item/equip/reinforced_ender/boots",
+              "shadow_color": 0
+            }
+          ]
+        },
+        {
+          "translate": "smithing_teamplate.tnts.heavy_upgrade.lore.2",
+          "fallback": "Applies to:",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "type": "object",
+          "atlas": "items",
+          "color": "white",
+          "sprite": "tnts:item/equip/heavy/helmet",
+          "shadow_color": 0,
+          "extra": [
+            {
+              "type": "object",
+              "atlas": "items",
+              "color": "white",
+              "sprite": "tnts:item/equip/heavy/chestplate",
+              "shadow_color": 0
+            },
+            {
+              "type": "object",
+              "atlas": "items",
+              "color": "white",
+              "sprite": "tnts:item/equip/heavy/leggings",
+              "shadow_color": 0
+            },
+            {
+              "type": "object",
+              "atlas": "items",
+              "color": "white",
+              "sprite": "tnts:item/equip/heavy/boots",
+              "shadow_color": 0
+            }
+          ]
+        },
+        {
+          "translate": "smithing_teamplate.tnts.heavy_upgrade.lore.4",
+          "fallback": "Ingredients:",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "type": "object",
+          "atlas": "items",
+          "color": "white",
+          "sprite": "tnts:item/potion/ender_1",
+          "shadow_color": 0,
+          "italic": false
+        }
+      ]
+    }
+  }
+]

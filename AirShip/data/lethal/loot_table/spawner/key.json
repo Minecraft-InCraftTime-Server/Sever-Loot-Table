@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:knowledge_book",
+                "minecraft:item_name": {
+                  "text": "飞艇航行日志",
+                  "color": "gold"
+                },
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:custom_model_data": {
+                  "floats": [999]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

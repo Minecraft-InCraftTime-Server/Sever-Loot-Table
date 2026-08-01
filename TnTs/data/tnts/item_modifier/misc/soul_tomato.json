@@ -1,0 +1,46 @@
+{
+    "function": "minecraft:set_components",
+    "components": {
+        "minecraft:item_name": {
+            "text": "灵魂小西红柿",
+            "color": "red"
+        },
+        "minecraft:custom_model_data": {
+            "strings": [
+                "soul_tomato"
+            ]
+        },
+        "minecraft:potion_contents": "minecraft:healing",
+        "minecraft:tooltip_display": {
+          "hidden_components": ["potion_contents"]
+        },
+        "minecraft:consumable": {
+            "animation": "eat",
+            "consume_seconds": 0.8,
+            "has_consume_particles": true,
+            "sound": "minecraft:entity.generic.eat",
+            "on_consume_effects": [
+                {
+                    "type": "minecraft:apply_effects",
+                    "effects": [
+                        {
+                            "id": "minecraft:health_boost",
+                            "duration": 360,
+                            "amplifier": 0
+                        },
+                        {
+                            "id": "minecraft:instant_health",
+                            "duration": 1,
+                            "amplifier": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        "minecraft:food": {
+            "can_always_eat": true,
+            "nutrition": 2,
+            "saturation": 2
+        }
+    }
+}

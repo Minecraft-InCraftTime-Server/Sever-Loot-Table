@@ -1,0 +1,53 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:attribute_modifiers": [
+      {
+        "type": "minecraft:attack_damage",
+        "id": "minecraft:base_attack_damage",
+        "amount": 4,
+        "operation": "add_value",
+        "slot": "mainhand"
+      },
+      {
+        "type": "minecraft:attack_speed",
+        "id": "minecraft:base_attack_speed",
+        "amount": -2,
+        "operation": "add_value",
+        "slot": "mainhand"
+      }
+    ],
+    "minecraft:rarity": "epic",
+    "minecraft:item_name": {
+      "translate": "tool.tnts.heavy_hoe",
+      "fallback": "Heavy Metal Hoe"
+    },
+    "minecraft:max_damage": 2501,
+    "minecraft:tool": {
+      "rules": [
+        {
+          "blocks": "#minecraft:incorrect_for_netherite_tool",
+          "correct_for_drops": false
+        },
+        {
+          "blocks": "#minecraft:wool",
+          "speed": 9,
+          "correct_for_drops": true
+        },
+        {
+          "blocks": "#minecraft:wool_carpets",
+          "speed": 9,
+          "correct_for_drops": true
+        },
+        {
+          "blocks": "#minecraft:mineable/hoe",
+          "speed": 12,
+          "correct_for_drops": true
+        }
+      ]
+    },
+    "minecraft:repairable": {
+      "items": "minecraft:heavy_core"
+    }
+  }
+}

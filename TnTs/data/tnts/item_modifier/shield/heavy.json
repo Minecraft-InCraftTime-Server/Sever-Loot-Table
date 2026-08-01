@@ -1,0 +1,95 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:use_cooldown": {
+        "cooldown_group": "tnts:heavy_shield",
+        "seconds": 0.05
+      },
+      "minecraft:item_name": {
+        "translate": "item.tnts.heavy_shield",
+        "fallback": "Heavy Metal Shield"
+      },
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:panic_environmental_causes"
+      },
+      "minecraft:rarity": "epic",
+      "minecraft:item_model": "tnts:heavy_metal_shield",
+      "minecraft:weapon": {
+        "item_damage_per_attack": 1
+      },
+      "minecraft:minimum_attack_charge": 1,
+      "minecraft:max_damage": 601,
+      "minecraft:piercing_weapon": {
+        "deals_knockback": true,
+        "dismounts": false,
+        "sound": "minecraft:intentionally_empty",
+        "hit_sound": "minecraft:item.mace.smash_air"
+      },
+      "minecraft:blocks_attacks": {
+        "disable_cooldown_scale": 0.75,
+        "block_delay_seconds": 0.3,
+        "bypassed_by": "#minecraft:bypasses_shield",
+        "item_damage": {
+          "base": 1,
+          "factor": 0.6,
+          "threshold": 3
+        },
+        "disabled_sound": "minecraft:item.shield.break",
+        "block_sound": "minecraft:block.heavy_core.break"
+      },
+      "minecraft:kinetic_weapon": {
+        "delay_ticks": 6,
+        "contact_cooldown_ticks": 10,
+        "dismount_conditions": {
+          "max_duration_ticks": 10000,
+          "min_speed": 1000
+        },
+        "knockback_conditions": {
+          "max_duration_ticks": 10000,
+          "min_relative_speed": 4.1
+        },
+        "damage_conditions": {
+          "max_duration_ticks": 10000,
+          "min_relative_speed": 4.1
+        },
+        "forward_movement": 0.38,
+        "damage_multiplier": 1.2,
+        "sound": "minecraft:intentionally_empty",
+        "hit_sound": "minecraft:item.mace.smash_air"
+      },
+      "minecraft:attack_range": {
+        "min_reach": 0,
+        "max_reach": 3,
+        "min_creative_reach": 0,
+        "max_creative_reach": 5,
+        "hitbox_margin": 0.2,
+        "mob_factor": 0.5
+      },
+      "minecraft:use_effects": {
+        "can_sprint": true,
+        "speed_multiplier": 0.8,
+        "interact_vibrations": false
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_damage",
+          "id": "minecraft:base_attack_damage",
+          "amount": 4,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "id": "minecraft:base_attack_speed",
+          "amount": -3.2,
+          "operation": "add_value",
+          "slot": "mainhand"
+        }
+      ],
+      "minecraft:repairable": {
+        "items": "minecraft:heavy_core"
+      }
+    }
+  }
+]

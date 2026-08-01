@@ -1,0 +1,35 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_model": "tnts:breeze_mace",
+      "minecraft:tooltip_style": "tnts:breeze",
+      "minecraft:item_name": {
+        "text": "旋风制造机",
+        "color": "#546899"
+      },
+      "minecraft:enchantments": {
+        "tnts:attribute/breeze_mace": 1
+      },
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:panic_causes"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_damage",
+          "id": "minecraft:base_attack_damage",
+          "amount": 7,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "id": "minecraft:base_attack_speed",
+          "amount": -3.4,
+          "operation": "add_value",
+          "slot": "mainhand"
+        }
+      ]
+    }
+  }
+]

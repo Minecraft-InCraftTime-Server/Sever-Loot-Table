@@ -1,0 +1,26 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:book"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "!minecraft:enchantable": {},
+      "minecraft:max_stack_size": 1,
+      "minecraft:item_name": {
+        "text": "飞艇工程师证",
+        "color": "yellow"
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["airship_engineer_license"]
+      },
+      "minecraft:equippable": {
+        "slot": "saddle",
+        "allowed_entities": "minecraft:player",
+        "swappable": true,
+        "equip_sound": "minecraft:block.chiseled_bookshelf.insert.enchanted"
+      }
+    }
+  }
+]

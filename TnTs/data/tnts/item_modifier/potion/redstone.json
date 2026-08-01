@@ -1,0 +1,50 @@
+[
+  {
+    "function": "minecraft:reference",
+    "name": "tnts:potion/parent"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_model_data": {
+        "strings": ["redstone"]
+      },
+      "minecraft:tooltip_style": "tnts:vermilion",
+      "minecraft:item_name": {
+        "text": "红石精华",
+        "color": "red"
+      },
+      "minecraft:consumable": {
+        "animation": "drink",
+        "consume_seconds": 1.6,
+        "has_consume_particles": false,
+        "sound": "minecraft:entity.generic.drink",
+        "on_consume_effects": [
+          {
+            "type": "minecraft:clear_all_effects"
+          },
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:haste",
+                "amplifier": 0,
+                "duration": 7200
+              },
+              {
+                "id": "minecraft:health_boost",
+                "amplifier": 0,
+                "duration": 7200
+              },
+              {
+                "id": "minecraft:instant_health",
+                "amplifier": 0,
+                "duration": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,284 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:repairable": {
+                  "items": "minecraft:heavy_core"
+                },
+                "minecraft:weapon": {
+                  "item_damage_per_attack": 1,
+                  "disable_blocking_for_seconds": 3
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "id": "minecraft:base_attack_damage",
+                    "amount": 8,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "id": "minecraft:base_attack_speed",
+                    "amount": -2.5,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "lethal:airship_sword": 1
+                },
+                "minecraft:item_model": "tnts:airship_sword"
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_sword",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "weight": 2
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_enchantments",
+          "enchantments": {
+            "minecraft:sharpness": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 4
+            },
+            "minecraft:breach": {
+              "type": "minecraft:uniform",
+              "min": 1 ,"max": 2
+            }
+          }
+        },
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:trim": {
+              "material": "tnts:trial",
+              "pattern": "tnts:core"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:equippable": {
+                  "slot": "head",
+                  "asset_id": "tnts:airship",
+                  "allowed_entities": "#minecraft:undead"
+                },
+                "minecraft:trim": {
+                  "material": "tnts:trial",
+                  "pattern": "tnts:core"
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "id": "tnts:heavy_helmet",
+                    "amount": 4,
+                    "operation": "add_value",
+                    "slot": "head"
+                  },
+                  {
+                    "type": "minecraft:armor_toughness",
+                    "id": "tnts:heavy_helmet",
+                    "amount": 4,
+                    "operation": "add_value",
+                    "slot": "head"
+                  },
+                  {
+                    "type": "minecraft:knockback_resistance",
+                    "id": "tnts:heavy_helmet",
+                    "amount": 0.15,
+                    "operation": "add_value",
+                    "slot": "head"
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": 4,
+                "minecraft:fire_protection": 4,
+                "minecraft:projectile_protection": 4
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:equippable": {
+                  "slot": "chest",
+                  "asset_id": "tnts:airship",
+                  "allowed_entities": "#minecraft:undead"
+                },
+                "minecraft:trim": {
+                  "material": "tnts:trial",
+                  "pattern": "minecraft:bolt"
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "id": "tnts:heavy_chestplate",
+                    "amount": 10,
+                    "operation": "add_value",
+                    "slot": "chest"
+                  },
+                  {
+                    "type": "minecraft:armor_toughness",
+                    "id": "tnts:heavy_chestplate",
+                    "amount": 4,
+                    "operation": "add_value",
+                    "slot": "chest"
+                  },
+                  {
+                    "type": "minecraft:knockback_resistance",
+                    "id": "tnts:heavy_chestplate",
+                    "amount": 0.15,
+                    "operation": "add_value",
+                    "slot": "chest"
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": 4,
+                "minecraft:fire_protection": 4,
+                "minecraft:projectile_protection": 4
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:equippable": {
+                  "slot": "legs",
+                  "asset_id": "tnts:airship",
+                  "allowed_entities": "#minecraft:undead"
+                },
+                "minecraft:trim": {
+                  "material": "tnts:trial",
+                  "pattern": "minecraft:snout"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": 4,
+                "minecraft:fire_protection": 4,
+                "minecraft:projectile_protection": 4
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.25
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:equippable": {
+                  "slot": "feet",
+                  "asset_id": "tnts:airship",
+                  "allowed_entities": "#minecraft:undead"
+                },
+                "minecraft:trim": {
+                  "material": "tnts:trial",
+                  "pattern": "minecraft:spire"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": 4,
+                "minecraft:fire_protection": 4,
+                "minecraft:projectile_protection": 4
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.25
+        }
+      ]
+    }
+  ]
+}

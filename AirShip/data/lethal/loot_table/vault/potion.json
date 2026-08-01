@@ -1,0 +1,108 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_item",
+              "item": "minecraft:splash_potion",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "生命提升药水",
+                  "color": "red"
+                },
+                "minecraft:potion_contents": {
+                  "custom_color": 14688108,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:health_boost",
+                      "duration": 1800,
+                      "amplifier": 0
+                    },
+                    {
+                      "id": "minecraft:instant_health",
+                      "duration": 1,
+                      "amplifier": 0
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_item",
+              "item": "minecraft:splash_potion",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "急迫药水",
+                  "color": "yellow",
+                  "italic": false
+                },
+                "minecraft:potion_contents": {
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:haste",
+                      "duration": 9600,
+                      "amplifier": 0
+                    }
+                  ],
+                  "custom_color": 16574595
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:haste",
+                      "duration": 3600,
+                      "amplifier": 1
+                    }
+                  ],
+                  "custom_color": 16574595
+                }
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

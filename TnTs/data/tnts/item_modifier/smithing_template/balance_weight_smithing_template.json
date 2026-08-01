@@ -1,0 +1,80 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:panic_causes"
+      },
+      "minecraft:custom_data": {
+        "id": "balance_weight_upgrade"
+      },
+      "minecraft:tooltip_style": "tnts:sanctity",
+      "minecraft:item_name": {
+        "translate": "smithing_teamplate.tnts.balance_weight_upgrade",
+        "fallback": "Balance Weight Upgrade",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "translate": "smithing_teamplate.tnts.balance_weight_upgrade.1",
+          "fallback": "Smithing Template",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "",
+          "italic": false
+        },
+        {
+          "translate": "smithing_teamplate.tnts.balance_weight_upgrade.2",
+          "fallback": "Applies to:",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "type": "object",
+          "atlas": "items",
+          "color": "white",
+          "sprite": "minecraft:item/shield",
+          "shadow_color": 0,
+          "extra": [
+            {
+              "type": "object",
+              "atlas": "items",
+              "color": "white",
+              "sprite": "minecraft:item/bow",
+              "shadow_color": 0
+            },
+            {
+              "type": "object",
+              "atlas": "items",
+              "color": "white",
+              "sprite": "minecraft:item/crossbow_standby",
+              "shadow_color": 0
+            },
+            {
+              "type": "object",
+              "atlas": "items",
+              "color": "white",
+              "sprite": "minecraft:item/trident",
+              "shadow_color": 0
+            }
+          ]
+        },
+        {
+          "translate": "smithing_teamplate.tnts.balance_weight_upgrade.4",
+          "fallback": "Ingredients:",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "type": "object",
+          "atlas": "items",
+          "color": "white",
+          "sprite": "minecraft:item/phantom_membrane",
+          "shadow_color": 0
+        }
+      ]
+    }
+  }
+]

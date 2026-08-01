@@ -21,21 +21,6 @@
         "types": "#minecraft:is_fire"
       },
       "minecraft:rarity": "epic",
-      "minecraft:lore": [
-        {
-          "text": ""
-        },
-        {
-          "text": "ICT愚人节限定道具",
-          "color": "#57AE8F",
-          "italic": false
-        },
-        {
-          "text": "老大，你说我们用这个钓竿真的能钓到鱼嘛？",
-          "color": "#57AE8F",
-          "italic": false
-        }
-      ],
       "minecraft:use_cooldown": {
         "seconds": 0.75,
         "cooldown_group": "tnts:copper_bobber"

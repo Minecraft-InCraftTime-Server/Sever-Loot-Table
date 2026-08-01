@@ -14,7 +14,8 @@
       "minecraft:damage_resistant": {
         "types": "#minecraft:is_fire"
       },
-      "minecraft:rarity": "epic"
+      "minecraft:rarity": "epic",
+      "minecraft:repair_cost": 1
     }
   },
   {

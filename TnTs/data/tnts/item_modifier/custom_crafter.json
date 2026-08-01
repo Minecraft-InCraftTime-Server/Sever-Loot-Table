@@ -1,0 +1,48 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:item_name": "高级锻造台",
+    "minecraft:item_model": "minecraft:crafting_table",
+    "minecraft:damage_resistant": {
+      "types": "#minecraft:panic_causes"
+    },
+    "minecraft:lore": [
+      {
+        "text": "请放置于完整方块上表面使用",
+        "color": "blue",
+        "italic": false
+      }
+    ],
+    "minecraft:custom_model_data": {
+      "strings": ["custom_crafter"]
+    },
+    "minecraft:entity_data": {
+      "id": "minecraft:armor_stand",
+      "Invisible": true,
+      "Invulnerable": true,
+      "NoGravity": true,
+      "Marker": true,
+      "attributes": [
+        {
+          "id": "minecraft:scale",
+          "base": 0.0625
+        }
+      ],
+      "Tags": ["custom_crafter_pre"],
+      "equipment": {
+        "body": {
+          "id": "minecraft:barrier",
+          "components": {
+            "minecraft:enchantments": {
+              "tnts:attribute/custom_crafter": 1
+            },
+            "equippable": {
+              "slot": "body",
+              "allowed_entities": "minecraft:armor_stand"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:item_name": {
+      "text": "试作型飞艇护腿",
+      "color": "#FF6A25"
+    },
+    "minecraft:enchantable": {
+      "value": 12
+    },
+    "minecraft:damage_resistant": {
+      "types": "#minecraft:is_fire"
+    },
+    "minecraft:attribute_modifiers": [
+      {
+        "type": "minecraft:armor",
+        "id": "tnts:airship_leggings",
+        "amount": 6,
+        "operation": "add_value",
+        "slot": "legs"
+      },
+      {
+        "type": "minecraft:armor_toughness",
+        "id": "tnts:airship_leggings",
+        "amount": 3,
+        "operation": "add_value",
+        "slot": "legs"
+      },
+      {
+        "type": "minecraft:knockback_resistance",
+        "id": "tnts:airship_leggings",
+        "amount": 0.1,
+        "operation": "add_value",
+        "slot": "legs"
+      }
+    ],
+    "minecraft:equippable": {
+      "slot": "legs",
+      "asset_id": "tnts:airship",
+      "equip_sound": "minecraft:item.armor.equip_iron"
+    },
+    "minecraft:max_damage": 495
+  }
+}
