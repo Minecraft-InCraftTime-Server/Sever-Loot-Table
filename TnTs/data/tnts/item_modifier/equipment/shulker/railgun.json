@@ -1,0 +1,25 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:repair_cost": 1,
+    "minecraft:max_damage": 300,
+    "minecraft:item_name": {
+      "text": "潜影轨道发射器",
+      "color": "#b35190"
+    },
+    "minecraft:enchantments": {
+      "stellarity:shulker_railgun": 1
+    },
+    "minecraft:item_model": "tnts:shulker_railgun",
+    "minecraft:enchantment_glint_override": false,
+    "minecraft:tooltip_style": "tnts:endrod",
+    "minecraft:attack_range": {
+      "hitbox_margin": 0,
+      "max_creative_reach": 0,
+      "max_reach": 0,
+      "min_creative_reach": 0,
+      "min_reach": 0,
+      "mob_factor": 0
+    }
+  }
+}

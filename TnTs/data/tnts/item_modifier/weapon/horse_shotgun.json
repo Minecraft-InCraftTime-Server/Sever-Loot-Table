@@ -1,0 +1,78 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "!minecraft:enchantable": {},
+      "minecraft:item_model": "tnts:horse_shotgun",
+      "minecraft:swing_animation": {
+        "type": "stab",
+        "duration": 1
+      },
+      "minecraft:use_effects": {
+        "can_sprint": true,
+        "interact_vibrations": false,
+        "speed_multiplier": 0.5
+      },
+      "minecraft:minimum_attack_charge": 1,
+      "minecraft:tooltip_display": {
+        "hidden_components": [
+          "minecraft:enchantments",
+          "minecraft:attribute_modifiers",
+          "minecraft:charged_projectiles",
+          "minecraft:intangible_projectile"
+        ]
+      },
+      "minecraft:attack_range": {
+        "hitbox_margin": 0,
+        "mob_factor": 0,
+        "min_reach": 0,
+        "max_reach": 0,
+        "min_creative_reach": 0,
+        "max_creative_reach": 0
+      },
+      "minecraft:item_name": {
+        "text": "马鼻枪",
+        "color": "red"
+      },
+      "minecraft:enchantments": {
+        "tnts:attribute/horse_shotgun": 1
+      },
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:panic_causes"
+      },
+      "minecraft:enchantment_glint_override": false,
+      "minecraft:charged_projectiles": [
+        {
+          "id": "minecraft:arrow",
+          "count": 1
+        }
+      ],
+      "minecraft:max_damage": 6,
+      "minecraft:piercing_weapon": {
+        "deals_knockback": false,
+        "dismounts": false,
+        "sound": "minecraft:intentionally_empty",
+        "hit_sound": "minecraft:intentionally_empty"
+      }
+    }
+  },
+  {
+    "function": "minecraft:set_custom_model_data",
+    "floats": {
+      "mode": "replace_all",
+      "values": [
+        {
+          "type": "minecraft:uniform",
+          "min": 2310001,
+          "max": 2310008
+        }
+      ]
+    }
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "new_year_gun": false
+    }
+  }
+]

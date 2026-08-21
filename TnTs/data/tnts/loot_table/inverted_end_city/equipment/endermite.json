@@ -1,0 +1,26 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "tnts:attribute/trial_mob_team": 1
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "看啥呢，你真的觉得一条区也会穿装备？",
+              "target": "item_name"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

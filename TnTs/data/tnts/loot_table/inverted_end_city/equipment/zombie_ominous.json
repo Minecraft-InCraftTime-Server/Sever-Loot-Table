@@ -1,0 +1,79 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "tnts:inverted_end_city/equipment/equip_ominous",
+          "weight": 7
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "tnts:inverted_end_city/equipment/equip_ominous_difficult",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "functions": [
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:trim": {
+              "material": "tnts:ender",
+              "pattern": "minecraft:silence"
+            }
+          }
+        },
+        {
+          "function": "minecraft:enchant_with_levels",
+          "levels": {
+            "type": "minecraft:uniform",
+            "min": 25,
+            "max": 35
+          },
+          "options": "#minecraft:non_treasure"
+        },
+        {
+          "function": "minecraft:set_enchantments",
+          "enchantments": {
+            "tnts:shatter": 1
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_spear",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "stellarity:amethyst_spear"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "replace": false,
+              "modifiers": [
+                {
+                  "attribute": "minecraft:movement_speed",
+                  "id": "tnts:movement_speed",
+                  "amount": 0.25,
+                  "operation": "add_multiplied_base",
+                  "slot": "mainhand"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

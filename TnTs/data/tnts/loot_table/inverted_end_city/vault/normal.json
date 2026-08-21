@@ -1,0 +1,191 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:reference",
+          "name": "tnts:loot_tier_2"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:chests/end_city_treasure",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:filtered",
+              "item_filter": {
+                "items": "minecraft:iron_helmet"
+              },
+              "on_pass": {
+                "function": "minecraft:reference",
+                "name": "tnts:equipment/shulker/helmet"
+              }
+            },
+            {
+              "function": "minecraft:filtered",
+              "item_filter": {
+                "items": "minecraft:iron_chestplate"
+              },
+              "on_pass": {
+                "function": "minecraft:reference",
+                "name": "tnts:equipment/shulker/chestplate"
+              }
+            },
+            {
+              "function": "minecraft:filtered",
+              "item_filter": {
+                "items": "minecraft:iron_leggings"
+              },
+              "on_pass": {
+                "function": "minecraft:reference",
+                "name": "tnts:equipment/shulker/leggings"
+              }
+            },
+            {
+              "function": "minecraft:filtered",
+              "item_filter": {
+                "items": "minecraft:iron_boots"
+              },
+              "on_pass": {
+                "function": "minecraft:reference",
+                "name": "tnts:equipment/shulker/boots"
+              }
+            },
+            {
+              "function": "minecraft:filtered",
+              "item_filter": {
+                "predicates": {
+                  "minecraft:enchantments": [
+                    {
+                      "enchantments": "#minecraft:curse"
+                    }
+                  ]
+                }
+              },
+              "on_pass": {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:binding_curse": 0,
+                  "minecraft:vanishing_curse": 0
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 2 ,"max": 3
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:dragon_head",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ender_dragon_spawn_egg",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:trim_template/endrod_cluster"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1 ,"max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shulker_spawn_egg",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:trim_template/amethyst_cluster"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1 ,"max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ender_pearl",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "stellarity:phantom_pearl",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.50
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_count",
+              "add": true,
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1 ,"max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:amethyst_shard",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:special_item/ender_ingot"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1 ,"max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_ingot",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:special_item/rose_gold_ingot"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1 ,"max": 2
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

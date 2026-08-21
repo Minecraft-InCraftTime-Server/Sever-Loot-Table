@@ -1,0 +1,31 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:item_name": {
+      "text": "潜影护腿",
+      "color": "#924577"
+    },
+    "minecraft:enchantable": {
+      "value": 12
+    },
+    "minecraft:attribute_modifiers": [
+      {
+        "type": "minecraft:armor",
+        "id": "tnts:shulker_leggings",
+        "amount": 6,
+        "operation": "add_value",
+        "slot": "legs"
+      }
+    ],
+    "minecraft:equippable": {
+      "slot": "legs",
+      "asset_id": "tnts:shulker",
+      "equip_sound": "minecraft:entity.shulker.close"
+    },
+    "minecraft:max_damage": 495,
+    "minecraft:repairable": {
+      "items": "minecraft:shulker_shell"
+    },
+    "minecraft:tooltip_style": "tnts:endrod"
+  }
+}

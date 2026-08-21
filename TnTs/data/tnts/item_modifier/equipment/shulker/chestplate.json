@@ -1,0 +1,38 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:item_name": {
+      "text": "潜影胸甲",
+      "color": "#924577"
+    },
+    "minecraft:enchantable": {
+      "value": 12
+    },
+    "minecraft:attribute_modifiers": [
+      {
+        "type": "minecraft:armor",
+        "id": "tnts:shulker_chestplate",
+        "amount": 8,
+        "operation": "add_value",
+        "slot": "chest"
+      },
+      {
+        "type": "minecraft:armor_toughness",
+        "id": "tnts:shulker_chestplate",
+        "amount": 4,
+        "operation": "add_value",
+        "slot": "chest"
+      }
+    ],
+    "minecraft:equippable": {
+      "slot": "chest",
+      "asset_id": "tnts:shulker",
+      "equip_sound": "minecraft:entity.shulker.close"
+    },
+    "minecraft:max_damage": 528,
+    "minecraft:repairable": {
+      "items": "minecraft:shulker_shell"
+    },
+    "minecraft:tooltip_style": "tnts:endrod"
+  }
+}

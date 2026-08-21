@@ -6,7 +6,7 @@
   {
     "function": "minecraft:set_components",
     "components": {
-      "minecraft:tooltip_style": "tnts:ender",
+      "minecraft:tooltip_style": "tnts:endrod",
       "minecraft:damage_resistant": {
         "types": "#minecraft:panic_causes"
       },

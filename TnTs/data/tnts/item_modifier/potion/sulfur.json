@@ -1,0 +1,42 @@
+[
+  {
+    "function": "minecraft:reference",
+    "name": "tnts:potion/parent"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_model_data": {
+        "strings": ["sulfur"]
+      },
+      "minecraft:tooltip_style": "tnts:sulfur",
+      "minecraft:item_name": {
+        "text": "硫方精华",
+        "color": "#E5E533"
+      },
+      "minecraft:consumable": {
+        "animation": "drink",
+        "consume_seconds": 1.6,
+        "has_consume_particles": false,
+        "sound": "minecraft:entity.generic.drink",
+        "on_consume_effects": [
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:nausea",
+                "amplifier": 0,
+                "duration": 600
+              },
+              {
+                "id": "minecraft:poison",
+                "amplifier": 2,
+                "duration": 600
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+]

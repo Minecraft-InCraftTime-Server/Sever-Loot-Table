@@ -1,0 +1,17 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:village/small_house"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:village/cartographer"
+        }
+      ]
+    }
+  ]
+}

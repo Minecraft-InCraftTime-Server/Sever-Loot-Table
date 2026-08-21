@@ -1,0 +1,54 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "weapon.tnts.heavy_axe",
+        "fallback": "Heavy Metal Axe"
+      },
+      "minecraft:rarity": "epic",
+      "minecraft:max_damage": 2501,
+      "minecraft:repairable": {
+        "items": "minecraft:heavy_core"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_damage",
+          "id": "minecraft:base_attack_damage",
+          "amount": 10,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "id": "minecraft:base_attack_speed",
+          "amount": -3.1,
+          "operation": "add_value",
+          "slot": "mainhand"
+        }
+      ],
+      "minecraft:weapon": {
+        "item_damage_per_attack": 2,
+        "disable_blocking_for_seconds": 8
+      },
+      "minecraft:tool": {
+        "rules": [
+          {
+            "blocks": "#minecraft:incorrect_for_netherite_tool",
+            "correct_for_drops": false
+          },
+          {
+            "speed": 10,
+            "blocks": "#minecraft:leaves",
+            "correct_for_drops": true
+          },
+          {
+            "speed": 12,
+            "blocks": "#minecraft:mineable/axe",
+            "correct_for_drops": true
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:golden_spear"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "text": "紫水晶矛",
+        "color": "#CFA0F3"
+      },
+      "minecraft:tooltip_style": "tnts:amethyst",
+      "minecraft:custom_model_data": {
+        "strings": ["amethyst_spear"]
+      },
+      "minecraft:swing_animation": {
+        "type": "stab",
+        "duration": 20
+      },
+      "minecraft:enchantable": {
+        "value": 25
+      },
+      "minecraft:repairable": {
+        "items": "minecraft:amethyst_shard"
+      },
+      "minecraft:max_damage": 1251,
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_damage",
+          "id": "minecraft:base_attack_damage",
+          "amount": 3,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "id": "minecraft:base_attack_speed",
+          "amount": -3,
+          "operation": "add_value",
+          "slot": "mainhand"
+        }
+      ],
+      "minecraft:kinetic_weapon": {
+        "contact_cooldown_ticks": 10,
+        "damage_multiplier": 1.05,
+        "delay_ticks": 8,
+        "forward_movement": 0.38,
+        "sound": "minecraft:item.spear.use",
+        "hit_sound": "minecraft:item.spear.hit",
+        "dismount_conditions": {
+          "min_speed": 13,
+          "max_duration_ticks": 70
+        },
+        "knockback_conditions": {
+          "min_speed": 5.1,
+          "max_duration_ticks": 170
+        },
+        "damage_conditions": {
+          "min_relative_speed": 4.6,
+          "max_duration_ticks": 275
+        }
+      }
+    }
+  }
+]

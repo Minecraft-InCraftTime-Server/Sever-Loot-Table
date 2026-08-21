@@ -1,0 +1,59 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:wooden_sword"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:weapon": {
+        "item_damage_per_attack": 1
+      },
+      "minecraft:minimum_attack_charge": 0.75,
+      "minecraft:max_damage": 325,
+      "minecraft:swing_animation": {
+        "type": "stab",
+        "duration": 5
+      },
+      "minecraft:damage_type": "tnts:shining_dagger",
+      "minecraft:item_model": "tnts:shining_dagger",
+      "minecraft:repairable": {
+        "items": "minecraft:amethyst_shard"
+      },
+      "minecraft:item_name": {
+        "text": "闪光匕首",
+        "color": "#D196DA"
+      },
+      "minecraft:piercing_weapon": {
+        "deals_knockback": true,
+        "dismounts": false,
+        "hit_sound": "minecraft:item.spear.hit",
+        "sound": "minecraft:entity.player.attack.nodamage"
+      },
+      "minecraft:attack_range": {
+        "min_reach": 0,
+        "min_creative_reach": 0,
+        "max_reach": 2,
+        "max_creative_reach": 5,
+        "hitbox_margin": 0.125,
+        "mob_factor": 0.5
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_damage",
+          "id": "minecraft:base_attack_damage",
+          "amount": 3,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "id": "minecraft:base_attack_speed",
+          "amount": -1.2,
+          "operation": "add_value",
+          "slot": "mainhand"
+        }
+      ]
+    }
+  }
+]

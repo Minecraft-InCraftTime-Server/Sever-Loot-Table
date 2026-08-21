@@ -1,0 +1,24 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_model": "tnts:breeze_bow",
+      "minecraft:rarity": "epic",
+      "minecraft:tooltip_style": "tnts:breeze",
+      "minecraft:item_name": {
+        "text": "旋风气旋",
+        "color": "#546899"
+      },
+      "minecraft:enchantments": {
+        "tnts:attribute/breeze_burst": 1
+      },
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:panic_causes"
+      },
+      "minecraft:use_cooldown": {
+        "seconds": 1.25,
+        "cooldown_group": "tnts:breeze_bow"
+      }
+    }
+  }
+]

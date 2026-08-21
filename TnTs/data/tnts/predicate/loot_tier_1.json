@@ -20,7 +20,7 @@
                 "type": "minecraft:custom",
                 "stat": "minecraft:play_time",
                 "value": {
-                  "min": 3600000
+                  "min": 1728000
                 }
               }
             ]

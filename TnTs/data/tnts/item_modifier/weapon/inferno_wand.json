@@ -1,0 +1,82 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:max_damage": 125,
+      "minecraft:repairable": {
+        "items": "minecraft:blaze_rod"
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["inferno_wand"]
+      },
+      "minecraft:enchantments": {
+        "tnts:attribute/inferno_wand": 1
+      },
+      "minecraft:tooltip_style": "tnts:inferno",
+      "minecraft:rarity": "epic",
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:panic_causes"
+      },
+      "minecraft:item_name": {
+        "translate": "weapon.tnts.inferno_wand",
+        "fallback": "Inferno Wand",
+        "color": "#FB9439"
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_damage",
+          "id": "minecraft:base_attack_damage",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "id": "minecraft:base_attack_speed",
+          "amount": -3,
+          "operation": "add_value",
+          "slot": "mainhand"
+        }
+      ]
+    }
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:burning_time",
+        "id": "tnts:inferno_firearm",
+        "amount": 0.05,
+        "operation": "add_multiplied_base",
+        "slot": "hand"
+      }
+    ],
+    "replace": false
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "add": true,
+    "enchantments": {
+      "tnts:attribute/inferno_wand": 1
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:random_chance",
+        "chance": 0.4
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "add": true,
+    "enchantments": {
+      "tnts:attribute/inferno_wand": 1
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:random_chance",
+        "chance": 0.25
+      }
+    ]
+  }
+]

@@ -1,0 +1,55 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:golden_pickaxe"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "text": "紫水晶镐",
+        "color": "#CFA0F3"
+      },
+      "minecraft:tooltip_style": "tnts:amethyst",
+      "minecraft:custom_model_data": {
+        "strings": ["amethyst_pickaxe"]
+      },
+      "minecraft:enchantable": {
+        "value": 25
+      },
+      "minecraft:repairable": {
+        "items": "minecraft:amethyst_shard"
+      },
+      "minecraft:max_damage": 1251,
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_damage",
+          "id": "minecraft:base_attack_damage",
+          "amount": 3,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "id": "minecraft:base_attack_speed",
+          "amount": -3,
+          "operation": "add_value",
+          "slot": "mainhand"
+        }
+      ],
+      "minecraft:tool": {
+        "rules": [
+          {
+            "blocks": "#minecraft:incorrect_for_diamond_tool",
+            "correct_for_drops": false
+          },
+          {
+            "blocks": "#minecraft:mineable/pickaxe",
+            "speed": 12,
+            "correct_for_drops": true
+          }
+        ]
+      }
+    }
+  }
+]

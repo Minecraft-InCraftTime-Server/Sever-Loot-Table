@@ -1,0 +1,24 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_model": "tnts:wraith_bow",
+      "minecraft:rarity": "epic",
+      "minecraft:tooltip_style": "tnts:sanctity",
+      "minecraft:item_name": {
+        "text": "圣洁光粒",
+        "color": "#F6EADF"
+      },
+      "minecraft:enchantments": {
+        "tnts:attribute/wraith_burst": 1
+      },
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:panic_causes"
+      },
+      "minecraft:use_cooldown": {
+        "seconds": 1.25,
+        "cooldown_group": "tnts:wraith_bow"
+      }
+    }
+  }
+]

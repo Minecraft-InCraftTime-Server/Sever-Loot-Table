@@ -1,0 +1,37 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "tnts:inverted_end_city/equipment/equip_normal"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:quick_charge": {
+                  "type": "minecraft:uniform",
+                  "min": 3 ,"max": 4
+                },
+                "minecraft:power": {
+                  "type": "minecraft:uniform",
+                  "min": 1 ,"max": 3
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

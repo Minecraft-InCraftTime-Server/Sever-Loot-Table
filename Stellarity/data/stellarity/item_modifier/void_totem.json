@@ -7,7 +7,7 @@
     "function": "minecraft:set_components",
     "components": {
       "minecraft:enchantments": {
-        "tnts:attribute/void_totem": 1
+        "stellarity:void_totem": 1
       },
       "minecraft:item_model": "tnts:void_totem",
       "minecraft:rarity": "epic",

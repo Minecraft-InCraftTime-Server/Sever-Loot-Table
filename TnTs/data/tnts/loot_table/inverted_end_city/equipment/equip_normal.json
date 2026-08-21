@@ -1,0 +1,67 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:equipment/trial_chamber"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:filtered",
+          "item_filter": {
+            "items": "#minecraft:enchantable/armor",
+            "predicates": {
+              "minecraft:trim": {
+                "pattern": "minecraft:bolt"
+              }
+            }
+          },
+          "on_pass": {
+            "function": "minecraft:set_components",
+            "components": {
+              "minecraft:trim": {
+                "material": "tnts:ender",
+                "pattern": "minecraft:eye"
+              }
+            }
+          }
+        },
+        {
+          "function": "minecraft:filtered",
+          "item_filter": {
+            "items": "#minecraft:enchantable/armor",
+            "predicates": {
+              "minecraft:trim": {
+                "pattern": "minecraft:flow"
+              }
+            }
+          },
+          "on_pass": {
+            "function": "minecraft:set_components",
+            "components": {
+              "minecraft:trim": {
+                "material": "tnts:ender",
+                "pattern": "minecraft:spire"
+              }
+            }
+          }
+        },
+        {
+          "function": "minecraft:filtered",
+          "item_filter": {
+            "items": "#minecraft:head_armor"
+          },
+          "on_pass": {
+            "function": "minecraft:set_enchantments",
+            "enchantments": {
+              "tnts:attribute/trial_mob_team": 1
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:pumpkin_pie"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": {
+        "text": "紫颂果派",
+        "color": "light_purple"
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["chorus_pie"]
+      },
+      "minecraft:food": {
+        "can_always_eat": true,
+        "nutrition": 6,
+        "saturation": 6
+      },
+      "minecraft:consumable": {
+        "animation": "eat",
+        "consume_seconds": 1.6,
+        "has_consume_particles": true,
+        "sound": "minecraft:entity.generic.eat",
+        "on_consume_effects": [
+          {
+            "type": "minecraft:teleport_randomly",
+            "diameter": 64
+          }
+        ]
+      }
+    }
+  }
+]

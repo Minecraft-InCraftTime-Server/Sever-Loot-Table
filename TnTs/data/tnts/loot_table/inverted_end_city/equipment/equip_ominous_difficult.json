@@ -1,0 +1,107 @@
+{
+  "functions": [
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "minecraft:trim": {
+          "pattern": "minecraft:bolt",
+          "material": "tnts:ender"
+        }
+      }
+    }
+  ],
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:equipment/reinforced_ender/helmet"
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": 4,
+                "minecraft:fire_protection": 4,
+                "minecraft:projectile_protection": 4
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:equipment/reinforced_ender/chestplate"
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": 4,
+                "minecraft:fire_protection": 4,
+                "minecraft:projectile_protection": 4
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:equipment/reinforced_ender/leggings"
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": 4,
+                "minecraft:fire_protection": 4,
+                "minecraft:projectile_protection": 4
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:equipment/reinforced_ender/boots"
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": 4,
+                "minecraft:fire_protection": 4,
+                "minecraft:projectile_protection": 4
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

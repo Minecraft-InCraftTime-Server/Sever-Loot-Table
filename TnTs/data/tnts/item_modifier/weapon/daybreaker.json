@@ -1,0 +1,35 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:item_model": "tnts:daybreaker",
+    "minecraft:max_damage": 1051,
+    "minecraft:item_name": {
+      "text": "破晓",
+      "color": "gold"
+    },
+    "minecraft:rarity": "epic",
+    "minecraft:enchantments": {
+      "tnts:attribute/daybreaker": 1
+    },
+    "minecraft:tooltip_style": "tnts:sanctity",
+    "minecraft:damage_resistant": {
+      "types": "#minecraft:panic_causes"
+    },
+    "minecraft:attribute_modifiers": [
+      {
+        "type": "minecraft:attack_damage",
+        "id": "minecraft:base_attack_damage",
+        "amount": 6,
+        "operation": "add_value",
+        "slot": "mainhand"
+      },
+      {
+        "type": "minecraft:attack_speed",
+        "id": "minecraft:base_attack_speed",
+        "amount": -2,
+        "operation": "add_value",
+        "slot": "mainhand"
+      }
+    ]
+  }
+}

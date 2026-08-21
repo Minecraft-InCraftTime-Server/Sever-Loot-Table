@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:village/archer_tower"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:village/armorer"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:village/butcher"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:village/farm"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:village/misc"
+        }
+      ]
+    }
+  ]
+}

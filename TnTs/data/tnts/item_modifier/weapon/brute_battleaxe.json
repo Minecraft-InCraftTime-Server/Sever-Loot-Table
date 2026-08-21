@@ -1,0 +1,45 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:attribute_modifiers": [
+      {
+        "type": "minecraft:attack_damage",
+        "id": "minecraft:base_attack_damage",
+        "amount": 6,
+        "operation": "add_value",
+        "slot": "mainhand"
+      },
+      {
+        "type": "minecraft:attack_speed",
+        "id": "minecraft:base_attack_speed",
+        "amount": -3,
+        "operation": "add_value",
+        "slot": "mainhand"
+      }
+    ],
+    "minecraft:enchantments": {
+      "tnts:attribute/brute_rush": 1
+    },
+    "minecraft:max_damage": 1561,
+    "minecraft:item_name": {
+      "text": "蛮兵战斧",
+      "color": "gold"
+    },
+    "minecraft:attack_range": {
+      "min_reach": 0,
+      "min_creative_reach": 0,
+      "max_reach": 4,
+      "max_creative_reach": 8,
+      "hitbox_margin": 0.125,
+      "mob_factor": 1
+    },
+    "minecraft:item_model": "tnts:brute_axe",
+    "minecraft:rarity": "epic",
+    "minecraft:piercing_weapon": {
+      "deals_knockback": true,
+      "dismounts": false,
+      "sound": "minecraft:intentionally_empty",
+      "hit_sound": "minecraft:intentionally_empty"
+    }
+  }
+}
