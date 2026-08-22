@@ -44,6 +44,22 @@
           "chance": 0.75
         }
       ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_pickaxe",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "stellarity:amethyst_pickaxe"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -89,7 +89,7 @@
               "destination": "stellarity:end_buried_treasure",
               "decoration": "minecraft:banner_purple",
               "skip_existing_chunks": true,
-              "search_radius": 50
+              "search_radius": 80
             },
             {
               "function": "minecraft:set_name",
