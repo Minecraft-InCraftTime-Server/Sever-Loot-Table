@@ -3,6 +3,28 @@
   "pools": [
     {
       "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:reference",
+          "name": "tnts:loot_tier_2"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "tnts:potion/breeze"
+            }
+          ],
+          "name": "minecraft:dragon_breath",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
@@ -67,59 +89,6 @@
                     ],
                     "name": "minecraft:dragon_breath",
                     "weight": 1
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "type": "minecraft:loot_table",
-          "conditions": [
-            {
-              "condition": "minecraft:reference",
-              "name": "tnts:loot_tier_3"
-            }
-          ],
-          "weight": 1,
-          "value": {
-            "pools": [
-              {
-                "rolls": 1,
-                "entries": [
-                  {
-                    "type": "minecraft:item",
-                    "functions": [
-                      {
-                        "function": "minecraft:reference",
-                        "name": "tnts:weapon/breeze_bow"
-                      }
-                    ],
-                    "name": "minecraft:bow",
-                    "weight": 1,
-                    "conditions": [
-                      {
-                        "condition": "minecraft:reference",
-                        "name": "tnts:loot_tier_3"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "minecraft:item",
-                    "functions": [
-                      {
-                        "function": "minecraft:reference",
-                        "name": "tnts:weapon/breeze_mace"
-                      }
-                    ],
-                    "name": "minecraft:mace",
-                    "weight": 1,
-                    "conditions": [
-                      {
-                        "condition": "minecraft:reference",
-                        "name": "tnts:loot_tier_3"
-                      }
-                    ]
                   }
                 ]
               }

@@ -46,10 +46,7 @@
       "conditions": [
         {
           "condition": "minecraft:random_chance",
-          "chance": {
-            "type": "minecraft:uniform",
-            "min": 0.05 ,"max": 0.10
-          }
+          "chance": 0.075
         }
       ]
     },

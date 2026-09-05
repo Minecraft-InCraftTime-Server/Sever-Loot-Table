@@ -48,23 +48,114 @@
           "weight": 1
         },
         {
-          "type": "minecraft:item",
-          "functions": [
+          "type": "minecraft:alternatives",
+          "children": [
             {
-              "function": "minecraft:reference",
-              "name": "tnts:equipment/mobhat/puffer_fish"
+              "type": "minecraft:item",
+              "name": "minecraft:leather_helmet",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:equipment/mobhat/frog"
+                },
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:custom_model_data": {
+                      "floats": [2310259]
+                    }
+                  }
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "minecraft:entity_tags": {
+                      "all_of": ["frog"]
+                    }
+                  }
+                }
+              ]
             },
             {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_model_data": {
-                  "floats": [2310085]
+              "type": "minecraft:item",
+              "name": "minecraft:leather_helmet",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:equipment/mobhat/baby/cat"
+                },
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:custom_model_data": {
+                      "floats": [2310257]
+                    }
+                  }
                 }
-              }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "minecraft:entity_tags": {
+                      "all_of": ["cat_baby"]
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:leather_helmet",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:equipment/cathat"
+                },
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:custom_model_data": {
+                      "floats": [2310258]
+                    }
+                  }
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "minecraft:entity_tags": {
+                      "all_of": ["cat"]
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:leather_helmet",
+              "functions": [
+                {
+                  "function": "minecraft:reference",
+                  "name": "tnts:equipment/mobhat/puffer_fish"
+                },
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:custom_model_data": {
+                      "floats": [2310085]
+                    }
+                  }
+                }
+              ]
             }
-          ],
-          "name": "minecraft:leather_helmet",
-          "weight": 1
+          ]
         }
       ]
     }
